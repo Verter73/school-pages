@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Задача 4. Три графика скорости</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap">
+<link rel="stylesheet" href="style.css?v=7">
+<script src="graph.js?v=4" defer></script>
+  <script src="declutter.js?v=2" defer></script>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<a class="home" href="index.html">Ки­не­ма­тика · 9 класс</a>
+<nav class="tasks" aria-label="Разделы">
+      <a class="theory" href="https://verter73.github.io/school-pages/">← Витрина</a>
+<a class="theory" href="teoriya.html">Теория</a>
+<a href="zadacha-1.html" title="Задача 1">1</a>
+<a href="zadacha-2.html" title="Задача 2">2</a>
+<a href="zadacha-3.html" title="Задача 3">3</a>
+<a href="zadacha-4.html" title="Задача 4" aria-current="page">4</a>
+<a href="zadacha-5.html" title="Задача 5">5</a>
+<a href="zadacha-6.html" title="Задача 6">6</a>
+</nav>
+</header>
+
+<main>
+<h1><span class="num">Задача 4</span>Три графика ско­ро­сти в одних осях</h1>
+
+<div class="cond"><div class="label">Условие</div><p>В одних и тех же ко­ор­ди­нат­ных осях по­стройте графики за­ви­си­мо­сти от времени про­ек­ции вектора ско­ро­сти при пря­мо­ли­ней­ном рав­но­уско­рен­ном дви­же­нии для случаев: а) <i class="v">v₀ₓ</i> = 1 м/⁠с, <i class="v">aₓ</i> = 0,5 м/⁠с²; б) <i class="v">v₀ₓ</i> = 1 м/⁠с, <i class="v">aₓ</i> = 1 м/⁠с²; в) <i class="v">v₀ₓ</i> = 2 м/⁠с, <i class="v">aₓ</i> = 1 м/⁠с². Масштаб: 1 см — 1 м/⁠с; 1 см — 1 с.</p></div>
+
+<h2>Что нужно знать</h2>
+<p>При рав­но­уско­рен­ном дви­же­нии ско­рость зависит от времени по закону</p>
+<div class="rule">
+<div class="formula"><i class="v">vₓ</i> = <i class="v">v₀ₓ</i> + <i class="v">aₓ</i>·<i class="v">t</i></div>
+<p class="legend">Здесь <i class="v">t</i> — время в се­кун­дах от начала дви­же­ния; <i class="v">vₓ</i> — про­ек­ция вектора ско­ро­сти на ось <i class="v">X</i> в момент <i class="v">t</i> (м/⁠с); <i class="v">v₀ₓ</i> — про­ек­ция на­чаль­ной ско­ро­сти (м/⁠с); <i class="v">aₓ</i> — про­ек­ция вектора уско­ре­ния (м/⁠с²). Про­ек­ция вектора на ось (ма­лень­кая ₓ внизу) — это его модуль со знаком: «+», если вектор на­прав­лен по оси, «−», если против. В этой задаче все про­ек­ции по­ло­жи­тель­ные: тело едет по оси <i class="v">X</i> и раз­го­ня­ется, поэтому каждая про­ек­ция равна модулю своего вектора.</p>
+<p>График такой за­ви­си­мо­сти — всегда <b>прямая линия</b>. Чтобы про­ве­сти прямую, до­ста­точно двух точек, а третья нужна для про­верки.</p>
+</div>
+<p>Как «читать» прямую:</p>
+<ul>
+<li><b>Про­ек­ция на­чаль­ной ско­ро­сти <i class="v">v₀ₓ</i></b> — какая ско­рость была у тела в самый первый момент, когда вклю­чили се­кун­до­мер (<i class="v">t</i> = 0). На графике это точка, <b>где прямая на­чи­на­ется</b> на вер­ти­каль­ной оси: при <i class="v">v₀ₓ</i> = 2 м/⁠с прямая стар­тует с высоты 2.</li>
+<li><b>Про­ек­ция уско­ре­ния <i class="v">aₓ</i></b> — на сколько м/⁠с про­ек­ция ско­ро­сти ме­ня­ется за каждую секунду. На графике это <b>кру­тизна</b> прямой: при <i class="v">aₓ</i> = 1 м/⁠с² за 1 с прямая под­ни­ма­ется на 1 клетку, при <i class="v">aₓ</i> = 0,5 м/⁠с² — только на пол­клетки. Чем больше про­ек­ция уско­ре­ния, тем круче прямая.</li>
+</ul>
+<p>Масштаб «1 см — 1 м/⁠с; 1 см — 1 с» значит: 1 см на рисунке изоб­ра­жает 1 секунду (по го­ри­зон­тали) и 1 м/⁠с (по вер­ти­кали). В тетради в клетку 1 см — это две клетки.</p>
+
+<h2>Кар­тинка</h2>
+<figure class="fig"><div class="graph" data-graph='{"title":"Три графика скорости: а) 1 + 0,5t, б) 1 + t, в) 2 + t","w":460,"h":360,"x":{"min":0,"max":5,"step":1,"label":"t, с"},"y":{"min":0,"max":7,"step":1,"label":"vₓ, м/с"},"lines":[{"pts":[[0,1],[5,3.5]],"c":"blue","label":"а","at":[5.25,3.5]},{"pts":[[0,1],[5,6]],"c":"red","label":"б","at":[5.25,6]},{"pts":[[0,2],[5,7]],"c":"green","label":"в","at":[4.7,6.9]}],"dots":[{"x":0,"y":1,"c":"blue"},{"x":2,"y":2,"c":"blue"},{"x":4,"y":3,"c":"blue"},{"x":2,"y":3,"c":"red"},{"x":4,"y":5,"c":"red"},{"x":0,"y":2,"c":"green"},{"x":2,"y":4,"c":"green"},{"x":4,"y":6,"c":"green"}]}'></div><figcaption>Одна клетка сетки на этом рисунке — это 1 см в тетради (то есть две тет­рад­ные клетки): по го­ри­зон­тали 1 с, по вер­ти­кали 1 м/⁠с. Точки — зна­че­ния, которые по­счи­таем в решении (таблица в шаге 2).</figcaption></figure>
+
+<h2>Дано</h2>
+<div class="dano">
+<div class="left">
+<div>а) <i class="v">v₀ₓ</i> = 1 м/⁠с, <i class="v">aₓ</i> = 0,5 м/⁠с²</div>
+<div>б) <i class="v">v₀ₓ</i> = 1 м/⁠с, <i class="v">aₓ</i> = 1 м/⁠с²</div>
+<div>в) <i class="v">v₀ₓ</i> = 2 м/⁠с, <i class="v">aₓ</i> = 1 м/⁠с²</div>
+<div class="find">Найти: графики <i class="v">vₓ</i>(<i class="v">t</i>)</div>
+</div>
+<div class="right"><i class="v">v₀ₓ</i> — про­ек­ция на­чаль­ной ско­ро­сти (при <i class="v">t</i> = 0), <i class="v">aₓ</i> — про­ек­ция уско­ре­ния, <i class="v">vₓ</i>(<i class="v">t</i>) — как про­ек­ция ско­ро­сти зависит от времени <i class="v">t</i> (в се­кун­дах). Все ве­ли­чины уже в СИ.</div>
+</div>
+
+<h2>Решение по шагам</h2>
+<ol class="steps">
+<li><b>За­пи­сы­ваем закон для каждого случая</b> — под­став­ляем <i class="v">v₀ₓ</i> и <i class="v">aₓ</i> в формулу:
+<div class="formula">а) <i class="v">vₓ</i> = 1 + 0,5·<i class="v">t</i>&nbsp;&nbsp;&nbsp; б) <i class="v">vₓ</i> = 1 + <i class="v">t</i>&nbsp;&nbsp;&nbsp; в) <i class="v">vₓ</i> = 2 + <i class="v">t</i></div>
+</li>
+<li><b>Считаем таблицу</b> — берём удобные моменты времени 0, 2 и 4 с:
+<div class="tbl-wrap"><table class="tbl">
+<tr><th><i class="v">t</i>, с</th><th>0</th><th>2</th><th>4</th></tr>
+<tr><th>а) <i class="v">vₓ</i>, м/⁠с</th><td>1</td><td>2</td><td>3</td></tr>
+<tr><th>б) <i class="v">vₓ</i>, м/⁠с</th><td>1</td><td>3</td><td>5</td></tr>
+<tr><th>в) <i class="v">vₓ</i>, м/⁠с</th><td>2</td><td>4</td><td>6</td></tr>
+</table></div>
+<p>На­при­мер, для случая а) при <i class="v">t</i> = 4 с: 1 м/⁠с + 0,5 м/⁠с²·4 с = 1 м/⁠с + 2 м/⁠с = 3 м/⁠с.</p>
+</li>
+<li><b>От­ме­чаем точки и про­во­дим прямые</b> по линейке (каждую — своим цветом).</li>
+<li><b>Срав­ни­ваем.</b> а) и б) на­чи­на­ются в одной точке (<i class="v">v₀ₓ</i> = 1 м/⁠с), но б) круче — у неё про­ек­ция уско­ре­ния больше. б) и в) идут па­рал­лельно (б ∥ в — значок ∥ значит «па­рал­лельны»): про­ек­ции уско­ре­ния оди­на­ко­вые, а стар­туют они с разной высоты.</li>
+</ol>
+
+<div class="trap"><b class="tag">Ловушка.</b> Не начинай все прямые из нуля! Прямая стар­тует с высоты <i class="v">v₀ₓ</i>: у а) и б) — с 1 м/⁠с, у в) — с 2 м/⁠с.</div>
+
+<div class="answer"><b class="tag">Ответ:</b> три прямые, как на рисунке: а) про­хо­дит через точки (0; 1), (2; 2), (4; 3); б) — через (0; 1), (2; 3), (4; 5); в) — через (0; 2), (2; 4), (4; 6). Прямые б) и в) па­рал­лельны, а) — самая пологая.</div>
+
+<details class="check"><summary>Проверь себя: как будет вы­гля­деть график, если <i class="v">v₀ₓ</i> = 3 м/⁠с, а <i class="v">aₓ</i> = 0?</summary><p>Го­ри­зон­таль­ная прямая на высоте 3 м/⁠с: уско­ре­ния нет, ско­рость не ме­ня­ется.</p></details>
+
+</main>
+
+<footer class="pager"><a href="zadacha-3.html">← Задача 3</a><a href="zadacha-5.html">Задача 5 →</a></footer>
+</div>
+</body>
+</html>

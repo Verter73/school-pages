@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Задача 1. Туда и обратно</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap">
+<link rel="stylesheet" href="style.css?v=7">
+<script src="graph.js?v=4" defer></script>
+  <script src="declutter.js?v=2" defer></script>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<a class="home" href="index.html">Ки­не­ма­тика · 9 класс</a>
+<nav class="tasks" aria-label="Разделы">
+      <a class="theory" href="https://verter73.github.io/school-pages/">← Витрина</a>
+<a class="theory" href="teoriya.html">Теория</a>
+<a href="zadacha-1.html" aria-current="page" title="Задача 1">1</a>
+<a href="zadacha-2.html" title="Задача 2">2</a>
+<a href="zadacha-3.html" title="Задача 3">3</a>
+<a href="zadacha-4.html" title="Задача 4">4</a>
+<a href="zadacha-5.html" title="Задача 5">5</a>
+<a href="zadacha-6.html" title="Задача 6">6</a>
+</nav>
+</header>
+
+<main>
+<h1><span class="num">Задача 1</span>Туда и обратно: путь и пе­ре­ме­ще­ние</h1>
+
+<div class="cond">
+<div class="label">Условие</div>
+<p>Тело за 2 с прошло 2 м в по­ло­жи­тель­ном на­прав­ле­нии оси <i class="v">X</i>, а затем за 3 с — 1 м в про­ти­во­по­лож­ном на­прав­ле­нии. Опре­де­лите среднюю путевую ско­рость и модуль средней ско­ро­сти пе­ре­ме­ще­ния за про­ме­жу­ток времени: а) 2 с; б) 5 с.</p>
+</div>
+
+<h2>Что нужно знать</h2>
+<p><b>Путь</b> — сколько метров тело прошло на самом деле. Он никогда не умень­ша­ется (стоит тело — путь не ме­ня­ется), даже если тело по­вер­нуло назад: как шагомер, который считает все шаги.</p>
+<p><b>Пе­ре­ме­ще­ние</b> — вектор, то есть на­прав­лен­ный отрезок (стрелка) от на­чаль­ной точки к ко­неч­ной. Его модуль — длина этой стрелки, в метрах. Если тело пошло вперёд, а потом вер­ну­лось немного назад, стрелка пе­ре­ме­ще­ния ста­но­вится короче.</p>
+<p>Поэтому бывают две разные «средние ско­ро­сти»:</p>
+
+<div class="rule">
+<div class="formula"><i class="v">v</i><sub>путь</sub> = <span class="frac"><span>весь путь</span><span>всё время</span></span></div>
+<div class="formula">|<i class="v">v</i><sub>перем</sub>| = <span class="frac"><span>модуль пе­ре­ме­ще­ния</span><span>всё время</span></span></div>
+<p class="legend">Здесь <i class="v">v</i><sub>путь</sub> — средняя путевая ско­рость, |<i class="v">v</i><sub>перем</sub>| — модуль вектора средней ско­ро­сти пе­ре­ме­ще­ния, то есть длина его стрелки (модуль вектора не бывает от­ри­ца­тель­ным). «Модуль пе­ре­ме­ще­ния» — длина стрелки пе­ре­ме­ще­ния. Путь и модуль пе­ре­ме­ще­ния — в метрах, время — в се­кун­дах, ско­рость — в м/⁠с.</p>
+</div>
+
+<h2>Кар­тинка</h2>
+<figure class="fig">
+<div class="graph" data-graph='{"type":"axis","title":"Движение тела по оси X: 2 м вперёд, потом 1 м назад","w":480,"min":0,"max":3,"step":1,"label":"x, м","arrows":[{"from":0,"to":2,"c":"blue","label":"1) 2 м вперёд за 2 с"},{"from":2,"to":1,"c":"red","label":"2) 1 м назад за 3 с"},{"from":0,"to":1,"c":"green","label":"перемещение 1 м"}]}'></div>
+<figcaption>Синяя стрелка — первые 2 с, красная — сле­ду­ю­щие 3 с. Зелёная — ито­го­вое пе­ре­ме­ще­ние: откуда вышли и куда пришли.</figcaption>
+</figure>
+
+<h2>Дано</h2>
+<div class="dano">
+<div class="left">
+<div><i class="v">s</i>₁ = 2 м (вперёд)</div>
+<div><i class="v">t</i>₁ = 2 с</div>
+<div><i class="v">s</i>₂ = 1 м (назад)</div>
+<div><i class="v">t</i>₂ = 3 с</div>
+<div class="find">Найти: <i class="v">v</i><sub>путь</sub>, |<i class="v">v</i><sub>перем</sub>| за 2 с и за 5 с</div>
+</div>
+<div class="right">
+<i class="v">s</i> — путь (метры), <i class="v">t</i> — время (секунды). Цифра внизу — номер участка: 1 — первый (вперёд), 2 — второй (назад). Все ве­ли­чины уже в СИ — пе­ре­во­дить ничего не нужно.
+</div>
+</div>
+
+<h2>Решение по шагам</h2>
+
+<h3>а) За первые 2 с</h3>
+<ol class="steps">
+<li><b>Путь.</b> Тело шло только вперёд: <i class="v">s</i> = 2 м.</li>
+<li><b>Пе­ре­ме­ще­ние.</b> Назад тело ещё не по­во­ра­чи­вало, значит пе­ре­ме­ще­ние тоже 2 м.</li>
+<li><b>Ско­ро­сти.</b> Делим путь и пе­ре­ме­ще­ние на время <i class="v">t</i> = 2 с: <div class="formula"><i class="v">v</i><sub>путь</sub> = <span class="frac"><span>2 м</span><span>2 с</span></span> = 1 м/⁠с</div> <div class="formula">|<i class="v">v</i><sub>перем</sub>| = <span class="frac"><span>2 м</span><span>2 с</span></span> = 1 м/⁠с</div></li>
+<li>Ско­ро­сти совпали. Так бывает всегда, когда тело дви­жется по прямой в одну сторону и не по­во­ра­чи­вает.</li>
+</ol>
+
+<h3>б) За все 5 с</h3>
+<ol class="steps">
+<li><b>Время.</b> 2 с + 3 с = 5 с.</li>
+<li><b>Путь</b> — скла­ды­ваем все метры, как шагомер: <i class="v">s</i> = 2 м + 1 м = 3 м.</li>
+<li><b>Пе­ре­ме­ще­ние</b> — где тело ока­за­лось в итоге: ушло на 2 м вперёд, вер­ну­лось на 1 м, значит 2 м − 1 м = 1 м от старта.</li>
+<li><b>Ско­ро­сти.</b> Делим путь и пе­ре­ме­ще­ние на всё время <i class="v">t</i> = 5 с: <div class="formula"><i class="v">v</i><sub>путь</sub> = <span class="frac"><span>3 м</span><span>5 с</span></span> = 0,6 м/⁠с</div> <div class="formula">|<i class="v">v</i><sub>перем</sub>| = <span class="frac"><span>1 м</span><span>5 с</span></span> = 0,2 м/⁠с</div></li>
+</ol>
+
+<div class="trap"><b class="tag">Ловушка.</b> Средняя ско­рость — это НЕ среднее ариф­ме­ти­че­ское ско­ро­стей на участ­ках. На первом участке ско­рость 1 м/⁠с, на втором 1/3 м/⁠с; если сложить и по­де­лить пополам, по­лу­чится ≈ 0,67 м/⁠с (знак ≈ значит «при­мерно равно») — это неверно. Пра­вильно: весь путь делить на всё время.</div>
+
+<div class="answer"><b class="tag">Ответ:</b> а) <i class="v">v</i><sub>путь</sub> = 1 м/⁠с, |<i class="v">v</i><sub>перем</sub>| = 1 м/⁠с; б) <i class="v">v</i><sub>путь</sub> = 0,6 м/⁠с, |<i class="v">v</i><sub>перем</sub>| = 0,2 м/⁠с.</div>
+
+<details class="check"><summary>Проверь себя: бегун про­бе­жал один круг ста­ди­она — 400 м за 80 с — и вер­нулся на старт. Чему равны средняя путевая ско­рость и модуль средней ско­ро­сти пе­ре­ме­ще­ния?</summary><p>Путевая: 400 м / 80 с = 5 м/⁠с. Пе­ре­ме­ще­ние равно нулю — бегун вер­нулся туда, откуда начал, поэтому модуль средней ско­ро­сти пе­ре­ме­ще­ния равен 0.</p></details>
+
+</main>
+
+<footer class="pager">
+<a href="index.html">← К списку задач</a>
+<a href="zadacha-2.html">Задача 2 →</a>
+</footer>
+</div>
+</body>
+</html>

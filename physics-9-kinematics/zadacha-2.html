@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Задача 2. Шайба тормозит</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="style.css?v=7">
+  <script src="graph.js?v=4" defer></script>
+  <script src="declutter.js?v=2" defer></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="home" href="index.html">Ки­не­ма­тика · 9 класс</a>
+    <nav class="tasks" aria-label="Разделы">
+      <a class="theory" href="https://verter73.github.io/school-pages/">← Витрина</a>
+<a class="theory" href="teoriya.html">Теория</a>
+      <a href="zadacha-1.html" title="Задача 1">1</a>
+      <a href="zadacha-2.html" aria-current="page" title="Задача 2">2</a>
+      <a href="zadacha-3.html" title="Задача 3">3</a>
+      <a href="zadacha-4.html" title="Задача 4">4</a>
+      <a href="zadacha-5.html" title="Задача 5">5</a>
+      <a href="zadacha-6.html" title="Задача 6">6</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1><span class="num">Задача 2</span>Шайба тор­мо­зит: когда она оста­но­вится</h1>
+
+    <div class="cond">
+      <div class="label">Условие</div>
+      <p>Шайба после удара клюшкой дви­жется с на­чаль­ной ско­ро­стью 10 м/⁠с по льду. Лёд уже не гладкий, и шайба тор­мо­зит с уско­ре­нием 2 м/⁠с². Через какое время после удара шайба оста­но­вится?</p>
+    </div>
+
+    <h2>Что нужно знать</h2>
+    <div class="rule">
+      <p><b>Уско­ре­ние</b> — вектор. Его модуль при дви­же­нии по прямой по­ка­зы­вает, на сколько ме­ня­ется ско­рость за каждую секунду. В условии дан модуль уско­ре­ния 2 м/⁠с² — значит, каждую секунду шайба теряет 2 м/⁠с ско­ро­сти.</p>
+      <p><b>Тор­мо­же­ние</b> — это когда вектор уско­ре­ния на­прав­лен против вектора ско­ро­сти. На­пра­вим ось <i class="v">X</i> туда, куда летит шайба. Тогда про­ек­ция ско­ро­сти на ось <i class="v">X</i> по­ло­жи­тель­ная, а про­ек­ция уско­ре­ния от­ри­ца­тель­ная: <i class="v">aₓ</i> = −2 м/⁠с².</p>
+      <div class="formula"><i class="v">vₓ</i> = <i class="v">v₀ₓ</i> + <i class="v">aₓ</i>·<i class="v">t</i></div>
+      <p class="legend">Здесь <i class="v">t</i> — время в се­кун­дах, про­шед­шее после удара; <i class="v">vₓ</i> — про­ек­ция ско­ро­сти шайбы на ось <i class="v">X</i> в этот момент; <i class="v">v₀ₓ</i> — про­ек­ция на­чаль­ной ско­ро­сти, сразу после удара (при <i class="v">t</i> = 0); <i class="v">aₓ</i> — про­ек­ция уско­ре­ния. Про­ек­ция вектора на ось (ма­лень­кая ₓ внизу) — это его модуль со знаком: «+», если вектор на­прав­лен по оси <i class="v">X</i>, и «−», если против.</p>
+      <p>«Оста­но­ви­лась» на языке физики значит: модуль ско­ро­сти стал равен нулю, <i class="v">v</i> = 0 (буква <i class="v">v</i> без индекса — модуль ско­ро­сти, длина стрелки).</p>
+    </div>
+
+    <p>По­смот­рим, как тает ско­рость секунда за се­кун­дой:</p>
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <tr>
+          <th><i class="v">t</i>, с</th>
+          <td>0</td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <th><i class="v">v</i>, м/⁠с</th>
+          <td>10</td>
+          <td>8</td>
+          <td>6</td>
+          <td>4</td>
+          <td>2</td>
+          <td>0</td>
+        </tr>
+      </table>
+    </div>
+
+    <h2>Кар­тинка</h2>
+    <figure class="fig">
+      <div class="graph" data-graph='{"title":"График скорости шайбы: от 10 м/с до нуля за 5 секунд","w":480,"h":280,"x":{"min":0,"max":6,"step":1,"label":"t, с"},"y":{"min":0,"max":12,"step":2,"label":"v, м/с"},"tris":[{"x1":0,"y1":10,"x2":5,"y2":0,"c":"muted","dt":"Δt = 5 с","dv":"Δv = −10 м/с"}],"lines":[{"pts":[[0,10],[5,0]],"c":"red","label":"шайба","at":[2.9,6.6]}],"dots":[{"x":0,"y":10,"c":"red","label":"v₀ = 10 м/с","dx":10,"dy":-12},{"x":5,"y":0,"c":"red","label":"остановка","dx":10,"dy":-16}]}'></div>
+      <figcaption>Ско­рость падает рав­но­мерно — по 2 м/⁠с за секунду. Прямая доходит до нуля при t = 5 с. Пунктир — «тре­уголь­ник»: Δ («дельта») значит «из­ме­не­ние»; Δt = 5 с — сколько прошло времени, Δv = −10 м/⁠с — на сколько из­ме­ни­лась ско­рость: ко­неч­ная минус на­чаль­ная, 0 − 10 м/⁠с = −10 м/⁠с (минус — потому что она умень­ши­лась).</figcaption>
+    </figure>
+
+    <h2>Дано</h2>
+    <div class="dano">
+      <div class="left">
+        <div><i class="v">v₀</i> = 10 м/⁠с</div>
+        <div><i class="v">a</i> = 2 м/⁠с² (тор­мо­же­ние)</div>
+        <div><i class="v">v</i> = 0 (оста­новка)</div>
+        <div class="find">Найти: <i class="v">t</i></div>
+      </div>
+      <div class="right"><i class="v">v₀</i> — модуль на­чаль­ной ско­ро­сти, <i class="v">a</i> — модуль уско­ре­ния (длина вектора, поэтому без знака), <i class="v">v</i> — модуль ко­неч­ной ско­ро­сти, <i class="v">t</i> — искомое время до оста­новки. Ось <i class="v">X</i> — по дви­же­нию шайбы, поэтому про­ек­ция уско­ре­ния <i class="v">aₓ</i> = −2 м/⁠с².</div>
+    </div>
+
+    <h2>Решение по шагам</h2>
+    <ol class="steps">
+      <li><b>За­пи­сы­ваем формулу</b> с учётом знака уско­ре­ния: <div class="formula"><i class="v">v</i> = <i class="v">v₀</i> − <i class="v">a</i>·<i class="v">t</i></div> Шайба едет по оси <i class="v">X</i>, поэтому про­ек­ции её ско­ро­сти равны модулям: <i class="v">v₀ₓ</i> = <i class="v">v₀</i>, <i class="v">vₓ</i> = <i class="v">v</i>. А про­ек­ция уско­ре­ния <i class="v">aₓ</i> = −<i class="v">a</i>: здесь <i class="v">a</i> = 2 м/⁠с² — модуль уско­ре­ния, а минус по­явился потому, что вектор уско­ре­ния на­прав­лен против оси. Формула ра­бо­тает только до оста­новки: дальше шайба просто лежит.</li>
+      <li><b>Под­став­ляем «оста­новку»</b> — ско­рость в конце равна нулю: <div class="formula">0 м/⁠с = 10 м/⁠с − 2 м/⁠с²·<i class="v">t</i></div></li>
+      <li><b>Решаем урав­не­ние.</b> Пе­ре­но­сим 2 м/⁠с²·<i class="v">t</i> влево: 2 м/⁠с²·<i class="v">t</i> = 10 м/⁠с. <div class="formula"><i class="v">t</i> = <span class="frac"><span>10 м/⁠с</span><span>2 м/⁠с²</span></span> = 5 с</div></li>
+      <li><b>Про­ве­ряем</b> по таблице выше: через 5 с ско­рость как раз стала 0 ✓. А ещё можно про­ве­рить единицы: (м/⁠с) : (м/⁠с²) = с — по­лу­чи­лись секунды, как и должно быть.</li>
+    </ol>
+
+    <div class="trap">
+      <b class="tag">Ловушка.</b> Если забыть про минус и на­пи­сать <i class="v">v</i> = 10 + 2·<i class="v">t</i>, ско­рость будет только расти, и шайба никогда не оста­но­вится. Тор­мо­же­ние — всегда минус у про­ек­ции уско­ре­ния (когда ось на­прав­лена по дви­же­нию); у модуля уско­ре­ния знака нет.
+    </div>
+
+    <div class="note">
+      <b class="tag">Ко­рот­кий путь.</b> Когда тело тор­мо­зит до полной оста­новки, время можно найти сразу: <i class="v">t</i> = <span class="frac"><span><i class="v">v₀</i></span><span><i class="v">a</i></span></span> — модуль на­чаль­ной ско­ро­сти делим на модуль уско­ре­ния.
+    </div>
+
+    <div class="answer">
+      <b class="tag">Ответ:</b> шайба оста­но­вится через <i class="v">t</i> = 5 с.
+    </div>
+
+    <details class="check">
+      <summary>Проверь себя: санки ска­ти­лись с горки со ско­ро­стью 12 м/⁠с и тор­мо­зят по снегу с уско­ре­нием 3 м/⁠с². Через сколько секунд они оста­но­вятся?</summary>
+      <p><i class="v">t</i> = 12 м/⁠с : 3 м/⁠с² = 4 с. Ско­рость по се­кун­дам: 12 → 9 → 6 → 3 → 0.</p>
+    </details>
+  </main>
+
+  <footer class="pager">
+    <a href="zadacha-1.html">← Задача 1</a>
+    <a href="zadacha-3.html">Задача 3 →</a>
+  </footer>
+</div>
+</body>
+</html>

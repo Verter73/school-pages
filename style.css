@@ -395,7 +395,7 @@ figure.fig {
   min-width: 300px;
 }
 
-.vec {
+div.vec {
   background: var(--paper);
   border: 1px solid var(--line);
   border-radius: 12px;
@@ -403,7 +403,7 @@ figure.fig {
   overflow-x: auto;
 }
 
-.vec svg { display: block; max-width: 100%; height: auto; margin: 0 auto; }
+div.vec svg { display: block; max-width: 100%; height: auto; margin: 0 auto; }
 .g-lbl { font-size: 16px; font-weight: 700; font-style: italic; }
 .g-name { font-style: italic; }
 

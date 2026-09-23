@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Школьные разборы</title>
+<meta name="description" content="Витрина учебных страниц: физика и математика, теория и задачи с разбором">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.filters{display:grid;gap:10px;margin:18px 0 8px}
+.frow{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.frow .flabel{font-family:var(--font-ui);font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);min-width:92px}
+.chip{font-family:var(--font-ui);font-size:.92rem;font-weight:600;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:999px;padding:6px 14px;cursor:pointer}
+.chip:hover{border-color:var(--blue)}
+.chip[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:var(--on-accent)}
+.search{font:inherit;font-family:var(--font-ui);width:100%;max-width:420px;padding:8px 12px;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink)}
+.count{font-family:var(--font-ui);font-size:.9rem;color:var(--muted);margin:6px 0 0}
+.group h2{display:flex;align-items:baseline;gap:10px}
+.group h2 small{font-family:var(--font-ui);font-size:.85rem;font-weight:600;color:var(--muted)}
+.cards .meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.tag{font-family:var(--font-ui);font-size:.75rem;font-weight:600;padding:2px 8px;border-radius:6px;background:var(--surface);color:var(--muted)}
+.tag.t-phys{background:var(--blue-tint);color:var(--blue)}
+.tag.t-math{background:var(--green-tint);color:var(--green)}
+.tag.t-all{background:var(--red-tint);color:var(--red)}
+.empty{font-family:var(--font-ui);color:var(--muted);padding:24px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><a class="home" href="index.html">Школьные разборы</a><nav class="tasks" aria-label="Разделы"><a class="theory" href="index.html" aria-current="page">Витрина</a><a class="theory" href="prompt.html">Промпт для ИИ</a></nav></header>
+<main>
+<h1><span class="num">Витрина</span>Учебные страницы с разбором</h1>
+<p class="lead">Здесь собраны все страницы: теория «с нуля» и задачи с решением по шагам. Выбери предмет и тему — или найди страницу поиском. Каждая страница написана для ученика, которому предмет пока даётся трудно.</p>
+<div class="filters">
+  <div class="frow" id="f-subj"><span class="flabel">Предмет</span></div>
+  <div class="frow" id="f-topic"><span class="flabel">Тема</span></div>
+  <div class="frow" id="f-group"><span class="flabel">Группировать</span></div>
+  <div class="frow"><input class="search" id="q" type="search" placeholder="Поиск: например, «проекция» или «торможение»" aria-label="Поиск по страницам"></div>
+</div>
+<p class="count" id="count"></p>
+<div id="list"></div>
+</main>
+<footer class="pager"><span>Нашёл ошибку или непонятное место — напиши автору.</span><a href="prompt.html">Разобрать свою задачу с ИИ →</a></footer>
+</div>
+<script>
+const K = "https://verter73.github.io/physics-9-kinematics/";
+const V = "https://verter73.github.io/physics-9-vectors/";
+const PAGES = [
+ {subj:["Физика"], topic:"Кинематика", grade:9, kind:"Теория и задачи", date:"23.09.2026", title:"Кинематика для 9 класса", desc:"Равноускоренное движение с нуля: путь и перемещение, скорость, ускорение, графики. Шесть задач с разбором по шагам.", url:K+"index.html"},
+ {subj:["Математика","Физика"], topic:"Векторы", grade:9, kind:"Теория и задачи", date:"23.09.2026", title:"Векторы для 9 класса", desc:"Одна страница, две вкладки. Математика: понятия, проекции, действия с векторами. Физика: векторные величины и задачи — турист, лодка, равнодействующая сил.", url:V+"index.html"}
+];
+
+let subj = "Все";
+let topic = "Все";
+let group = "subj";
+let q = "";
+
+function render() {
+  updateSubjectChips();
+  updateTopicChips();
+  updateGroupChips();
+  const list = document.getElementById("list");
+  const count = document.getElementById("count");
+
+  const filtered = PAGES.filter(page => {
+    if (subj !== "Все" && !page.subj.includes(subj)) return false;
+    if (topic !== "Все" && page.topic !== topic) return false;
+    if (q && !(`${page.title} ${page.desc} ${page.topic}`).toLowerCase().includes(q.trim().toLowerCase())) return false;
+    return true;
+  });
+
+  const uniqueCount = new Set(filtered.map(p => p.url)).size;
+  count.textContent = `Показано страниц: ${uniqueCount}`;
+
+  if (filtered.length === 0) {
+    list.innerHTML = "";
+    const empty = document.createElement("p");
+    empty.className = "empty";
+    empty.textContent = "Ничего не нашлось. Попробуй другое слово или сбрось фильтры.";
+    list.appendChild(empty);
+    return;
+  }
+
+  list.innerHTML = "";
+
+  let groups;
+  if (group === "subj") {
+    const subjects = [...new Set(PAGES.flatMap(p => p.subj))];
+    groups = subj === "Все" ? [...new Set(filtered.map(p => p.subj.join(" и ")))] : [subj];
+  } else {
+    const topics = [...new Set(PAGES.map(p => p.topic))];
+    groups = topics.filter(t => filtered.some(p => p.topic === t));
+  }
+
+  groups.forEach(name => {
+    const groupPages = filtered.filter(page => {
+      if (group === "subj") return subj === "Все" ? page.subj.join(" и ") === name : page.subj.includes(name);
+      else return page.topic === name;
+    });
+
+    const section = document.createElement("section");
+    section.className = "group";
+
+    const h2 = document.createElement("h2");
+    const title = document.createTextNode(name);
+    h2.appendChild(title);
+
+    const small = document.createElement("small");
+    small.textContent = `${groupPages.length} стр.`;
+    h2.appendChild(small);
+
+    section.appendChild(h2);
+
+    const ul = document.createElement("ul");
+    ul.className = "cards";
+
+    groupPages.forEach(page => {
+      const li = document.createElement("li");
+
+      const a = document.createElement("a");
+      a.href = page.url;
+
+      const nSpan = document.createElement("span");
+      nSpan.className = "n";
+      nSpan.textContent = `${page.kind} · ${page.topic}`;
+      a.appendChild(nSpan);
+
+      const tSpan = document.createElement("span");
+      tSpan.className = "t";
+      tSpan.textContent = page.title;
+      a.appendChild(tSpan);
+
+      const dSpan = document.createElement("span");
+      dSpan.className = "d";
+      dSpan.textContent = page.desc;
+      a.appendChild(dSpan);
+
+      const meta = document.createElement("span");
+      meta.className = "meta";
+
+      page.subj.forEach(s => {
+        const tag = document.createElement("span");
+        tag.className = `tag t-${s === "Физика" ? "phys" : s === "Математика" ? "math" : "all"}`;
+        tag.textContent = s;
+        meta.appendChild(tag);
+      });
+
+      if (page.grade !== null) {
+        const gradeTag = document.createElement("span");
+        gradeTag.className = "tag";
+        gradeTag.textContent = `${page.grade} класс`;
+        meta.appendChild(gradeTag);
+      }
+      if (page.date) {
+        const dateTag = document.createElement("span");
+        dateTag.className = "tag";
+        dateTag.textContent = `опубликовано ${page.date}`;
+        meta.appendChild(dateTag);
+      }
+
+      a.appendChild(meta);
+      li.appendChild(a);
+      ul.appendChild(li);
+    });
+
+    section.appendChild(ul);
+    list.appendChild(section);
+  });
+}
+
+function updateSubjectChips() {
+  const subjContainer = document.getElementById("f-subj");
+  subjContainer.querySelectorAll(".chip").forEach(c => c.remove());
+
+  const allChip = document.createElement("button");
+  allChip.type = "button";
+  allChip.className = "chip";
+  allChip.textContent = "Все";
+  allChip.setAttribute("aria-pressed", subj === "Все" ? "true" : "false");
+  allChip.onclick = () => {
+    subj = "Все";
+    topic = "Все";
+    updateTopicChips();
+    render();
+  };
+  subjContainer.appendChild(allChip);
+
+  const subjects = [...new Set(PAGES.flatMap(p => p.subj))];
+  subjects.forEach(s => {
+    const chip = document.createElement("button");
+    chip.type = "button";
+    chip.className = "chip";
+    chip.textContent = s;
+    chip.setAttribute("aria-pressed", subj === s ? "true" : "false");
+    chip.onclick = () => {
+      subj = s;
+      topic = "Все";
+      updateTopicChips();
+      render();
+    };
+    subjContainer.appendChild(chip);
+  });
+}
+
+function updateTopicChips() {
+  const topicContainer = document.getElementById("f-topic");
+  topicContainer.querySelectorAll(".chip").forEach(c => c.remove());
+
+  const allChip = document.createElement("button");
+  allChip.type = "button";
+  allChip.className = "chip";
+  allChip.textContent = "Все";
+  allChip.setAttribute("aria-pressed", topic === "Все" ? "true" : "false");
+  allChip.onclick = () => {
+    topic = "Все";
+    render();
+  };
+  topicContainer.appendChild(allChip);
+
+  const topics = [...new Set(PAGES.filter(p => subj === "Все" || p.subj.includes(subj)).map(p => p.topic))];
+  topics.forEach(t => {
+    const chip = document.createElement("button");
+    chip.type = "button";
+    chip.className = "chip";
+    chip.textContent = t;
+    chip.setAttribute("aria-pressed", topic === t ? "true" : "false");
+    chip.onclick = () => {
+      topic = t;
+      render();
+    };
+    topicContainer.appendChild(chip);
+  });
+}
+
+function updateGroupChips() {
+  const groupContainer = document.getElementById("f-group");
+  groupContainer.querySelectorAll(".chip").forEach(c => c.remove());
+
+  const subjChip = document.createElement("button");
+  subjChip.type = "button";
+  subjChip.className = "chip";
+  subjChip.textContent = "по предметам";
+  subjChip.setAttribute("aria-pressed", group === "subj" ? "true" : "false");
+  subjChip.onclick = () => {
+    group = "subj";
+    render();
+  };
+  groupContainer.appendChild(subjChip);
+
+  const topicChip = document.createElement("button");
+  topicChip.type = "button";
+  topicChip.className = "chip";
+  topicChip.textContent = "по темам";
+  topicChip.setAttribute("aria-pressed", group === "topic" ? "true" : "false");
+  topicChip.onclick = () => {
+    group = "topic";
+    render();
+  };
+  groupContainer.appendChild(topicChip);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  updateSubjectChips();
+  updateTopicChips();
+  updateGroupChips();
+  render();
+
+  document.getElementById("q").addEventListener("input", (e) => {
+    q = e.target.value;
+    render();
+  });
+});
+</script>
+</body>
+</html>

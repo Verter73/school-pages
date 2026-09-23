@@ -137,6 +137,8 @@ function render() {
     const a = document.createElement("a");
     a.className = "card";
     a.href = page.url;
+    a.target = "_blank";
+    a.rel = "noopener";
 
     const thumb = document.createElement("span");
     thumb.className = "thumb";
@@ -181,7 +183,7 @@ function render() {
 
     const open = document.createElement("span");
     open.className = "open";
-    open.textContent = "Открыть →";
+    open.textContent = "Открыть ↗";
 
     body.appendChild(kind);
     body.appendChild(title);

@@ -90,11 +90,7 @@ a {
   border-radius: 4px;
 }
 
-p, li, dd {
-  max-width: 92ch;
-}
-
-p, li, dd, figcaption, .cards .d {
+p, li, dd, figcaption, .cards .d, .trap, .note, .answer, .rule {
   text-align: justify;
   hyphens: auto;
   -webkit-hyphens: auto;
@@ -377,7 +373,6 @@ details.check[open] summary {
 
 figure.fig {
   margin: 1.4em 0;
-  max-width: 820px;
 }
 
 .graph {

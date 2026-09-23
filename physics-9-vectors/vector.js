@@ -234,11 +234,15 @@
           if (showVec) {
             const b = t.getBBox();
             if (b.width > 0) {
+              // черта только над буквой (не над индексом ₁₂) и ближе к строчной букве, как у i.vec в тексте
+              const w1 = t.getSubStringLength(0, 1);
+              const low = /[a-zа-яё]/.test(label[0]) && !/[bdfhklt]/.test(label[0]);
+              const by = b.y + (low ? 0.2 * b.height : 0) - 1;
               el("line", {
                 x1: b.x + 1,
-                y1: b.y - 1,
-                x2: b.x + b.width - 1,
-                y2: b.y - 1,
+                y1: by,
+                x2: b.x + w1 - 1,
+                y2: by,
                 class: `s-${c}`,
                 "stroke-width": 1.4
               }, svg);

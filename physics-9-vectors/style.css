@@ -475,6 +475,11 @@ figure.fig figcaption {
   fill: var(--ink);
 }
 
+/* рисунки векторов на широком экране почти не масштабируются: 13 единиц viewBox = 13 px (аудит C) */
+div.vec .g-text {
+  font-size: 16px;
+}
+
 .s-blue { stroke: var(--blue); }
 .s-red { stroke: var(--red); }
 .s-green { stroke: var(--green); }
@@ -663,3 +668,5 @@ input::placeholder { color: var(--muted); opacity: 1; }
 div.rule { border-left: 5px solid var(--blue); }
 /* Внутри блока расшифровка букв — тем же размером и цветом, что остальной текст блока */
 :is(.rule, .def, dl.terms dd, .trap, .note, .answer) .legend { font-size: inherit; color: inherit; margin: .3em 0; }
+/* Узкая правая колонка «Дано» и строки с корнями (корень не переносится) — без растяжки по ширине: иначе дыры (аудит C) */
+.dano .right, .dano .right p, :is(p, li):has(.sqrt) { text-align: left; }

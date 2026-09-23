@@ -2,7 +2,7 @@
 
 Шесть задач на равноускоренное движение с разбором «с нуля»: теория, картинка, решение по шагам, ответ и вопрос для самопроверки.
 
-Сайт: https://verter73.github.io/physics-9-kinematics/
+Сайт: https://verter73.github.io/school-pages/physics-9-kinematics/
 
 | Задача | О чём |
 |---|---|

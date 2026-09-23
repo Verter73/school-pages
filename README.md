@@ -5,6 +5,7 @@
 Сайт: https://verter73.github.io/school-pages/
 
 - `index.html` — витрина: список страниц хранится в массиве `PAGES` внутри страницы; новая страница добавляется одной строкой.
+- `physics-9-kinematics/`, `physics-9-vectors/` — сайты тем (подпроекты, перенесены 24.09.2026 из отдельных репозиториев вместе с историей). Новая тема — новая подпапка здесь, не новый репозиторий.
 - `prompt.html` — готовый промпт для любого ИИ-чата: подсказки, разбор задачи или объяснение темы с нуля.
 
-Сейчас в витрине: «Кинематика для 9 класса» (https://verter73.github.io/physics-9-kinematics/) и «Векторы для 9 класса» (https://verter73.github.io/physics-9-vectors/).
+Сейчас в витрине: «Кинематика для 9 класса» (https://verter73.github.io/school-pages/physics-9-kinematics/) и «Векторы для 9 класса» (https://verter73.github.io/school-pages/physics-9-vectors/).

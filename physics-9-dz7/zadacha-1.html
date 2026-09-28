@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Задача 1. Мяч летит вверх</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="style.css?v=2">
+  <script src="graph.js?v=2" defer></script>
+  <script src="declutter.js?v=2" defer></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="home" href="index.html">До­маш­няя работа 7 от 24.09.2026 · 9 класс</a>
+    <nav class="tasks" aria-label="Разделы">
+      <a class="theory" href="https://verter73.github.io/school-pages/">← Витрина</a>
+      <a class="theory" href="teoriya.html">Теория</a>
+      <a href="zadacha-1.html" title="Задача 1" aria-current="page">1</a>
+      <a href="zadacha-2.html" title="Задача 2">2</a>
+      <a href="zadacha-3.html" title="Задача 3">3</a>
+      <a href="zadacha-4.html" title="Задача 4">4</a>
+      <a href="zadacha-5.html" title="Задача 5">5</a>
+      <a href="zadacha-6.html" title="Задача 6">6</a>
+      <a href="zadacha-7.html" title="Задача 7">7</a>
+      <a href="zadacha-8.html" title="Задача 8">8</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1><span class="num">Задача 1</span>Мяч летит вверх: модуль уско­ре­ния</h1>
+
+    <div class="cond">
+      <div class="label">Условие</div>
+      <p>Мяч, бро­шен­ный вер­ти­кально вверх со ско­ро­стью 18 м/⁠с, под­нялся до верхней точки за 3 с и на мгно­ве­ние оста­но­вился. Опре­де­лите модуль уско­ре­ния мяча.</p>
+    </div>
+
+    <h2>Что нужно знать</h2>
+    <div class="rule">
+      <div class="formula"><i class="v">aₓ</i> = <span class="frac"><span><i class="v">vₓ</i> − <i class="v">v₀ₓ</i></span><span><i class="v">t</i></span></span></div>
+      <p class="legend">На­пра­вим ось <i class="v">X</i> вер­ти­кально вверх — туда, куда летит мяч. Здесь <i class="v">aₓ</i> — про­ек­ция уско­ре­ния мяча на ось <i class="v">X</i> (м/⁠с²), <i class="v">v₀ₓ</i> — про­ек­ция на­чаль­ной ско­ро­сти, с которой мяч бросили (м/⁠с), <i class="v">vₓ</i> — про­ек­ция ско­ро­сти в верхней точке (м/⁠с), <i class="v">t</i> — время подъёма в се­кун­дах.</p>
+      <p>Раз­ность <i class="v">vₓ</i> − <i class="v">v₀ₓ</i> пишут коротко Δ<i class="v">vₓ</i>. Значок Δ — гре­че­ская буква «дельта», в физике она значит «из­ме­не­ние»: Δ<i class="v">vₓ</i> — на сколько из­ме­ни­лась про­ек­ция ско­ро­сти, из «стало» вычесть «было».</p>
+      <p><b>Модуль уско­ре­ния</b> <i class="v">a</i> — длина вектора уско­ре­ния, число без знака: <i class="v">a</i> = |<i class="v">aₓ</i>|. Две вер­ти­каль­ные черты |…| значат «модуль».</p>
+    </div>
+
+    <p>Формула верна, если уско­ре­ние во время подъёма не ме­ня­ется — так и считаем в этой задаче. Пока мяч летит вверх, он тор­мо­зит: вектор уско­ре­ния на­прав­лен вниз, против оси <i class="v">X</i>, поэтому про­ек­ция уско­ре­ния по­лу­чится от­ри­ца­тель­ной.</p>
+
+    <h2>Кар­тинка</h2>
+    <figure class="fig">
+      <div class="graph" data-graph='{"title":"Модуль скорости мяча при подъёме","w":480,"h":280,"x":{"min":0,"max":5,"step":1,"label":"t, с"},"y":{"min":0,"max":21,"step":3,"label":"v, м/с"},"lines":[{"pts":[[0,18],[3,0]],"c":"red","label":"подъём","at":[1.9,10]}],"dots":[{"x":0,"y":18,"c":"red","label":"бросок: v₀ = 18 м/с","dx":12,"dy":-4},{"x":3,"y":0,"c":"red","label":"v = 0","dx":8,"dy":-12}]}'></div>
+      <figcaption>Модуль ско­ро­сти мяча умень­ша­ется от 18 м/⁠с до нуля за 3 с. В верхней точке мяч на мгно­ве­ние оста­нав­ли­ва­ется.</figcaption>
+    </figure>
+
+    <h2>Дано</h2>
+    <div class="dano">
+      <div class="left">
+        <div><i class="v">v₀</i> = 18 м/⁠с</div>
+        <div><i class="v">v</i> = 0</div>
+        <div><i class="v">t</i> = 3 с</div>
+        <div class="find">Найти: <i class="v">a</i></div>
+      </div>
+      <div class="right">
+        <i class="v">v₀</i> — модуль на­чаль­ной ско­ро­сти, <i class="v">v</i> — модуль ско­ро­сти в верхней точке («на мгно­ве­ние оста­но­вился»), <i class="v">t</i> — время подъёма, <i class="v">a</i> — искомый модуль уско­ре­ния. Все ве­ли­чины уже в СИ.
+      </div>
+    </div>
+
+    <h2>Под­сказки по шагам</h2>
+    <ol class="steps">
+      <li><b>Выбери ось.</b> Направь ось <i class="v">X</i> вверх, по дви­же­нию мяча. Тогда про­ек­ция на­чаль­ной ско­ро­сти <i class="v">v₀ₓ</i> равна модулю со знаком «+».</li>
+      <li><b>Найди ко­неч­ную ско­рость в условии.</b> Слова «на мгно­ве­ние оста­но­вился» значат: в верхней точке <i class="v">vₓ</i> = 0.</li>
+      <li><b>Под­ставь в формулу</b> про­ек­ции уско­ре­ния — с еди­ни­цами: м/⁠с в чис­ли­теле, с в зна­ме­на­теле. По­лу­чится от­ри­ца­тель­ное число — так и должно быть: мяч тор­мо­зит.</li>
+      <li><b>Возьми модуль</b> — то же число без знака «минус». Его и спра­ши­вают в задаче.</li>
+      <li><b>Проверь:</b> умножь най­ден­ный модуль уско­ре­ния на 3 с. Должно по­лу­читься 18 м/⁠с — ровно на столько умень­ши­лась ско­рость до нуля.</li>
+    </ol>
+
+    <div class="trap"><b class="tag">Ловушка.</b> Не под­став­ляй 9,8 м/⁠с² или 10 м/⁠с² из учеб­ника. В задаче всё нужное дано: ско­рость и время подъёма. Считай по ним, даже если число выйдет другим.</div>
+
+    <p>За­стря­нешь — открой <a href="teoriya.html">«Теорию»</a>, разделы «Уско­ре­ние» и «Тело, бро­шен­ное вверх».</p>
+
+    <details class="check">
+      <summary>Проверь себя: на Луне мяч под­бро­сили вверх со ско­ро­стью 8 м/⁠с, и он под­ни­мался 5 с. Найди модуль уско­ре­ния мяча.</summary>
+      <p><i class="v">a</i> = 8 м/⁠с : 5 с = 1,6 м/⁠с². Это уско­ре­ние сво­бод­ного падения на Луне — оно при­мерно в 6 раз меньше, чем на Земле.</p>
+    </details>
+
+  </main>
+
+  <footer class="pager">
+    <a href="teoriya.html">← Теория</a>
+    <a href="zadacha-2.html">Задача 2 →</a>
+  </footer>
+</div>
+</body>
+</html>

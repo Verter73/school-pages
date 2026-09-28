@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Задача 6</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="style.css?v=2">
+  <script src="graph.js?v=2" defer></script>
+  <script src="declutter.js?v=2" defer></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="home" href="index.html">До­маш­няя работа 7 от 24.09.2026 · 9 класс</a>
+    <nav class="tasks" aria-label="Разделы">
+      <a class="theory" href="https://verter73.github.io/school-pages/">← Витрина</a>
+      <a class="theory" href="teoriya.html">Теория</a>
+      <a href="zadacha-1.html" title="Задача 1">1</a>
+      <a href="zadacha-2.html" title="Задача 2">2</a>
+      <a href="zadacha-3.html" title="Задача 3">3</a>
+      <a href="zadacha-4.html" title="Задача 4">4</a>
+      <a href="zadacha-5.html" title="Задача 5">5</a>
+      <a href="zadacha-6.html" title="Задача 6" aria-current="page">6</a>
+      <a href="zadacha-7.html" title="Задача 7">7</a>
+      <a href="zadacha-8.html" title="Задача 8">8</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1><span class="num">Задача 6</span>Средняя путевая ско­рость на трёх участ­ках</h1>
+
+    <div class="cond">
+      <div class="label">Условие</div>
+      <p>Ав­то­мо­биль за первые 15 минут дви­же­ния проехал 20 км, за сле­ду­ю­щие 25 минут проехал 30 км, а за по­след­ние 20 минут — еще 40 км. Найдите среднюю путевую ско­рость машины на каждом участке и на всём пути. Ответы вы­ра­зите в еди­ни­цах СИ.</p>
+    </div>
+
+    <h2>Что нужно знать</h2>
+    <div class="rule">
+      <div class="formula"><i class="v">v</i><sub>ср</sub> = <span class="frac"><span><i class="v">s</i></span><span><i class="v">t</i></span></span></div>
+      <p class="legend"><b>Средняя путевая ско­рость</b> <i class="v">v</i><sub>ср</sub> — путь, делён­ный на время, за которое он пройден (м/⁠с). Здесь <i class="v">s</i> — путь (м), <i class="v">t</i> — время (с). Для одного участка: путь участка делить на время участка. Для всего пути: <b>весь путь делить на всё время</b>:</p>
+      <div class="formula"><i class="v">v</i><sub>ср</sub> = <span class="frac"><span><i class="v">s₁</i> + <i class="v">s₂</i> + <i class="v">s₃</i></span><span><i class="v">t₁</i> + <i class="v">t₂</i> + <i class="v">t₃</i></span></span></div>
+      <p class="legend">Индексы ₁ ₂ ₃ внизу — номер участка: <i class="v">s₁</i> и <i class="v">t₁</i> — путь и время первого участка, <i class="v">s₂</i> и <i class="v">t₂</i> — второго, <i class="v">s₃</i> и <i class="v">t₃</i> — тре­тьего.</p>
+    </div>
+
+    <p><b>СИ</b> — Меж­ду­на­род­ная система единиц: путь в метрах, время в се­кун­дах, ско­рость в м/⁠с. Перевод: 1 км = 1000 м, 1 мин = 60 с.</p>
+
+    <h2>Кар­тинка</h2>
+    <figure class="fig">
+      <div class="graph" data-graph='{"type":"axis","title":"Три участка пути автомобиля","w":520,"min":0,"max":90,"step":10,"label":"x, км","arrows":[{"from":0,"to":20,"c":"blue","label":"20 км за 15 мин"},{"from":20,"to":50,"c":"green","label":"30 км за 25 мин"},{"from":50,"to":90,"c":"red","label":"40 км за 20 мин"}]}'></div>
+      <figcaption>Три участка пути друг за другом. Самый длинный участок — по­след­ний, а по времени самый долгий — второй.</figcaption>
+    </figure>
+
+    <h2>Дано</h2>
+    <div class="dano">
+      <div class="left">
+        <div><i class="v">s₁</i> = 20 км</div>
+        <div><i class="v">t₁</i> = 15 мин</div>
+        <div><i class="v">s₂</i> = 30 км</div>
+        <div><i class="v">t₂</i> = 25 мин</div>
+        <div><i class="v">s₃</i> = 40 км</div>
+        <div><i class="v">t₃</i> = 20 мин</div>
+        <div class="find">Найти: <i class="v">v₁</i>, <i class="v">v₂</i>, <i class="v">v₃</i>, <i class="v">v</i><sub>ср</sub></div>
+      </div>
+      <div class="right">
+        <i class="v">s₁</i>, <i class="v">s₂</i>, <i class="v">s₃</i> — пути на участ­ках, <i class="v">t₁</i>, <i class="v">t₂</i>, <i class="v">t₃</i> — время на участ­ках, <i class="v">v₁</i>, <i class="v">v₂</i>, <i class="v">v₃</i> — средние путевые ско­ро­сти на участ­ках, <i class="v">v</i><sub>ср</sub> — на всём пути. Перевод в СИ сделай сам: ки­ло­метры умножь на 1000, минуты — на 60.
+      </div>
+    </div>
+
+    <h2>Под­сказки по шагам</h2>
+    <ol class="steps">
+      <li><b>Пе­ре­веди всё в СИ.</b> Три пути — в метры, три времени — в секунды. Запиши рядом с «Дано».</li>
+      <li><b>Найди ско­рость на каждом участке:</b> путь участка раздели на его время. Две ско­ро­сти по­лу­чатся не целыми — округли их до десятых.</li>
+      <li><b>Найди среднюю ско­рость на всём пути:</b> сложи три пути, сложи три времени и раздели первую сумму на вторую.</li>
+      <li><b>Проверь:</b> средняя ско­рость на всём пути должна ока­заться между самой ма­лень­кой и самой большой ско­ро­стью участ­ков.</li>
+      <li><b>Проверь на здравый смысл:</b> умножь каждый ответ в м/⁠с на 3,6 — по­лу­чится ско­рость в км/⁠ч. Для ав­то­мо­биля прав­до­по­добно от 50 до 130 км/⁠ч.</li>
+    </ol>
+
+    <div class="trap">
+      <b class="tag">Ловушка.</b> Средняя ско­рость на всём пути — это <b>не</b> среднее ариф­ме­ти­че­ское трёх ско­ро­стей (сложить и раз­де­лить на 3). Участки длились разное время, поэтому считай только так: весь путь делить на всё время.
+    </div>
+
+    <p>За­стря­нешь — открой <a href="teoriya.html">«Теорию»</a>, раздел «Средняя путевая ско­рость».</p>
+
+    <details class="check">
+      <summary>Проверь себя: мо­то­цик­лист первые 10 мин проехал 9 км, а сле­ду­ю­щие 20 мин — ещё 9 км. Найди среднюю путевую ско­рость на каждом участке и на всём пути в м/⁠с.</summary>
+      <p><i class="v">v₁</i> = 9000 м : 600 с = 15 м/⁠с, <i class="v">v₂</i> = 9000 м : 1200 с = 7,5 м/⁠с, <i class="v">v</i><sub>ср</sub> = 18 000 м : 1800 с = 10 м/⁠с. Среднее ариф­ме­ти­че­ское (15 + 7,5) : 2 = 11,25 м/⁠с — не­вер­ный ответ.</p>
+    </details>
+
+  </main>
+
+  <footer class="pager">
+    <a href="zadacha-5.html">← Задача 5</a>
+    <a href="zadacha-7.html">Задача 7 →</a>
+  </footer>
+</div>
+</body>
+</html>

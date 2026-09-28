@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Задача 5. Путь по графику скорости</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="style.css?v=2">
+  <script src="graph.js?v=2" defer></script>
+  <script src="declutter.js?v=2" defer></script>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <a class="home" href="index.html">До­маш­няя работа 7 от 24.09.2026 · 9 класс</a>
+  <nav class="tasks" aria-label="Разделы">
+    <a class="theory" href="https://verter73.github.io/school-pages/">← Витрина</a>
+    <a class="theory" href="teoriya.html">Теория</a>
+    <a href="zadacha-1.html" title="Задача 1">1</a>
+    <a href="zadacha-2.html" title="Задача 2">2</a>
+    <a href="zadacha-3.html" title="Задача 3">3</a>
+    <a href="zadacha-4.html" title="Задача 4">4</a>
+    <a href="zadacha-5.html" title="Задача 5" aria-current="page">5</a>
+    <a href="zadacha-6.html" title="Задача 6">6</a>
+    <a href="zadacha-7.html" title="Задача 7">7</a>
+    <a href="zadacha-8.html" title="Задача 8">8</a>
+  </nav>
+</header>
+<main>
+<h1><span class="num">Задача 5</span>Путь по графику ско­ро­сти</h1>
+
+<div class="cond"><div class="label">Условие</div><p>Тело дви­жется по оси Ox. Про­ек­ция его ско­ро­сти <i class="v">vₓ</i>(<i class="v">t</i>) ме­ня­ется по закону, при­ведён­ному на графике. Опре­де­лите путь, прой­ден­ный телом за 10 с.</p></div>
+
+<h2>Что нужно знать</h2>
+<div class="rule">
+<p>Если тело не раз­во­ра­чи­ва­ется (про­ек­ция ско­ро­сти всё время одного знака), <b>путь равен площади фигуры под гра­фи­ком ско­ро­сти</b> — между линией графика, осью времени и вер­ти­ка­лями в начале и в конце про­ме­жутка. Когда график — на­клон­ная прямая, эта фигура — тра­пе­ция, и её площадь:</p>
+<div class="formula"><i class="v">s</i> = <span class="frac"><span><i class="v">v₀</i> + <i class="v">v</i></span><span>2</span></span>·<i class="v">t</i></div>
+<p class="legend">Здесь <i class="v">s</i> — путь (м), <i class="v">v₀</i> — модуль ско­ро­сти в начале про­ме­жутка (м/⁠с), <i class="v">v</i> — модуль ско­ро­сти в конце про­ме­жутка (м/⁠с), <i class="v">t</i> — дли­тель­ность про­ме­жутка (с). Точка «·» — умно­же­ние.</p>
+</div>
+<p><b>Путь</b> — длина линии, по которой дви­га­лось тело; он не бывает от­ри­ца­тель­ным. Формула верна, только пока ско­рость ме­ня­ется рав­но­мерно (график — прямая) и тело не раз­во­ра­чи­ва­ется.</p>
+
+<h2>Кар­тинка</h2>
+<figure class="fig"><div class="graph" data-graph='{"title":"График проекции скорости тела из задачи 5","w":480,"h":300,"x":{"min":0,"max":13,"step":5,"label":"t, с"},"y":{"min":0,"max":25,"step":5,"label":"vₓ, м/с"},"lines":[{"pts":[[0,20],[12,8]],"c":"blue"}],"dots":[{"x":0,"y":20,"c":"blue"},{"x":10,"y":10,"c":"blue","guide":true}]}'></div><figcaption>График пе­ре­ри­со­ван из за­дач­ника. Кружки — точки, где числа чи­та­ются точно: начало графика и точка, к которой идут пунк­тиры. Нужная фигура — под линией графика от 0 до 10 с.</figcaption></figure>
+
+<h2>Дано</h2>
+<div class="dano"><div class="left"><div>по графику:</div><div><i class="v">v₀</i> — при <i class="v">t</i> = 0</div><div><i class="v">v</i> — при <i class="v">t</i> = 10 с</div><div><i class="v">t</i> = 10 с</div><div class="find">Найти: <i class="v">s</i></div></div><div class="right"><i class="v">v₀</i> и <i class="v">v</i> про­чи­тай на графике сам. Про­ек­ция ско­ро­сти здесь по­ло­жи­тельна, поэтому модуль ско­ро­сти равен про­ек­ции. Шкалы уже в СИ.</div></div>
+
+<h2>Под­сказки по шагам</h2>
+<ol class="steps"><li><b>Проверь, не раз­во­ра­чи­ва­ется ли тело.</b> От 0 до 10 с линия всё время выше оси времени? Если да — про­ек­ция ско­ро­сти не меняет знак, и путь можно искать как площадь.</li><li><b>Про­чи­тай две ско­ро­сти:</b> в начале (линия пе­ре­се­кает вер­ти­каль­ную ось) и в момент 10 с (к этой точке идёт пунктир).</li><li><b>Нарисуй фигуру под гра­фи­ком</b> от 0 до 10 с. Её левая сторона — на­чаль­ная ско­рость, правая — ско­рость в момент 10 с, осно­ва­ние — 10 с. Это тра­пе­ция.</li><li><b>По­счи­тай площадь</b> по формуле — с еди­ни­цами: м/⁠с · с = м.</li><li><b>Проверь другим спо­со­бом:</b> разрежь тра­пе­цию го­ри­зон­таль­ной линией на пря­мо­уголь­ник (снизу) и тре­уголь­ник (сверху), найди площадь каждого и сложи. Числа должны сов­пасть.</li></ol>
+
+<div class="trap"><b class="tag">Ловушка.</b> Не умножай на­чаль­ную ско­рость на 10 с. Так по­лу­чился бы путь, если бы ско­рость не ме­ня­лась. Тело тор­мо­зило, значит, прошло меньше.</div>
+
+<p>За­стря­нешь — открой <a href="teoriya.html">«Теорию»</a>, раздел «Путь по графику ско­ро­сти».</p>
+
+<details class="check"><summary>Проверь себя: про­ек­ция ско­ро­сти тела рав­но­мерно умень­ши­лась с 8 до 4 м/⁠с за 4 с. Какой путь прошло тело?</summary><p><i class="v">s</i> = <span class="frac"><span>8 м/⁠с + 4 м/⁠с</span><span>2</span></span> · 4 с = 6 м/⁠с · 4 с = 24 м.</p></details>
+</main>
+<footer class="pager"><a href="zadacha-4.html">← Задача 4</a><a href="zadacha-6.html">Задача 6 →</a></footer>
+</div>
+</body>
+</html>

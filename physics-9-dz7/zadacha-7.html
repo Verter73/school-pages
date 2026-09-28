@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Задача 7. Поезд тормозит</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="style.css?v=2">
+  <script src="graph.js?v=2" defer></script>
+  <script src="declutter.js?v=2" defer></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="home" href="index.html">До­маш­няя работа 7 от 24.09.2026 · 9 класс</a>
+    <nav class="tasks" aria-label="Разделы">
+      <a class="theory" href="https://verter73.github.io/school-pages/">← Витрина</a>
+      <a class="theory" href="teoriya.html">Теория</a>
+      <a href="zadacha-1.html" title="Задача 1">1</a>
+      <a href="zadacha-2.html" title="Задача 2">2</a>
+      <a href="zadacha-3.html" title="Задача 3">3</a>
+      <a href="zadacha-4.html" title="Задача 4">4</a>
+      <a href="zadacha-5.html" title="Задача 5">5</a>
+      <a href="zadacha-6.html" title="Задача 6">6</a>
+      <a href="zadacha-7.html" title="Задача 7" aria-current="page">7</a>
+      <a href="zadacha-8.html" title="Задача 8">8</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1><span class="num">Задача 7</span>Поезд тор­мо­зит: пе­ре­ме­ще­ние до оста­новки</h1>
+
+    <div class="cond">
+      <div class="label">Условие</div>
+      <p>Поезд, идущий со ско­ро­стью 15 м/⁠с, оста­но­вился через 20 с после начала тор­мо­же­ния. Считая, что тор­мо­же­ние про­ис­хо­дило с по­сто­ян­ным уско­ре­нием, опре­де­лите пе­ре­ме­ще­ние поезда за 20 с.</p>
+    </div>
+
+    <h2>Что нужно знать</h2>
+    <div class="rule">
+      <div class="formula"><i class="v">s</i> = <span class="frac"><span><i class="v">v₀</i> + <i class="v">v</i></span><span>2</span></span>·<i class="v">t</i></div>
+      <p class="legend">Здесь <i class="v">s</i> — модуль пе­ре­ме­ще­ния (м), <i class="v">v₀</i> — модуль ско­ро­сти в начале тор­мо­же­ния (м/⁠с), <i class="v">v</i> — модуль ско­ро­сти в конце (м/⁠с), <i class="v">t</i> — время тор­мо­же­ния (с). Дробь — средняя ско­рость при рав­но­уско­рен­ном дви­же­нии. Формула верна, если уско­ре­ние по­сто­ян­ное — так сказано в условии.</p>
+    </div>
+
+    <p><b>Пе­ре­ме­ще­ние</b> — вектор (стрелка) от на­чаль­ной точки до ко­неч­ной. Поезд едет по прямой в одну сторону и не раз­во­ра­чи­ва­ется, поэтому модуль пе­ре­ме­ще­ния равен пути, а путь — площади фигуры под гра­фи­ком ско­ро­сти. При тор­мо­же­нии до оста­новки эта фигура — тре­уголь­ник.</p>
+
+    <p>Второй способ — через про­ек­ции на ось <i class="v">X</i>, на­прав­лен­ную по дви­же­нию поезда:</p>
+    <div class="formula"><i class="v">aₓ</i> = <span class="frac"><span><i class="v">vₓ</i> − <i class="v">v₀ₓ</i></span><span><i class="v">t</i></span></span>, <i class="v">sₓ</i> = <i class="v">v₀ₓ</i>·<i class="v">t</i> + <span class="frac"><span><i class="v">aₓ</i>·<i class="v">t</i>²</span><span>2</span></span></div>
+    <p class="legend">Здесь <i class="v">aₓ</i> — про­ек­ция уско­ре­ния (м/⁠с²), <i class="v">v₀ₓ</i> и <i class="v">vₓ</i> — про­ек­ции на­чаль­ной и ко­неч­ной ско­ро­сти (м/⁠с), <i class="v">sₓ</i> — про­ек­ция пе­ре­ме­ще­ния (м), <i class="v">t</i> — время (с), <i class="v">t</i>² — время, умно­жен­ное само на себя.</p>
+
+    <h2>Кар­тинка</h2>
+    <figure class="fig">
+      <div class="graph" data-graph='{"title":"Модуль скорости поезда при торможении","w":480,"h":280,"x":{"min":0,"max":24,"step":5,"label":"t, с"},"y":{"min":0,"max":18,"step":3,"label":"v, м/с"},"lines":[{"pts":[[0,15],[20,0]],"c":"red","label":"торможение","at":[12,9]}],"dots":[{"x":0,"y":15,"c":"red","label":"начало: v₀ = 15 м/с","dx":10,"dy":-10},{"x":20,"y":0,"c":"red","label":"остановка","dx":-40,"dy":-16}]}'></div>
+      <figcaption>Ско­рость поезда рав­но­мерно падает от 15 м/⁠с до нуля за 20 с. Модуль пе­ре­ме­ще­ния равен площади тре­уголь­ника под этой линией.</figcaption>
+    </figure>
+
+    <h2>Дано</h2>
+    <div class="dano">
+      <div class="left">
+        <div><i class="v">v₀</i> = 15 м/⁠с</div>
+        <div><i class="v">v</i> = 0</div>
+        <div><i class="v">t</i> = 20 с</div>
+        <div class="find">Найти: <i class="v">s</i></div>
+      </div>
+      <div class="right"><i class="v">v₀</i> — модуль ско­ро­сти в начале тор­мо­же­ния, <i class="v">v</i> — модуль ко­неч­ной ско­ро­сти («оста­но­вился»), <i class="v">t</i> — время тор­мо­же­ния, <i class="v">s</i> — искомый модуль пе­ре­ме­ще­ния. Все ве­ли­чины уже в СИ.</div>
+    </div>
+
+    <h2>Под­сказки по шагам</h2>
+    <ol class="steps">
+      <li><b>Найди в условии ко­неч­ную ско­рость.</b> «Оста­но­вился» — значит, <i class="v">v</i> = 0.</li>
+      <li><b>По­смотри на кар­тинку.</b> Под гра­фи­ком — пря­мо­уголь­ный тре­уголь­ник: один катет — на­чаль­ная ско­рость, другой — время тор­мо­же­ния. Его площадь — по­ло­вина про­из­ве­де­ния катетов.</li>
+      <li><b>Под­ставь в формулу</b> <i class="v">s</i> = <span class="frac"><span><i class="v">v₀</i> + <i class="v">v</i></span><span>2</span></span>·<i class="v">t</i> — с еди­ни­цами: м/⁠с · с = м. Это та же по­ло­вина про­из­ве­де­ния катетов.</li>
+      <li><b>Проверь вторым спо­со­бом:</b> найди про­ек­цию уско­ре­ния <i class="v">aₓ</i> (она от­ри­ца­тель­ная — поезд тор­мо­зит), затем под­ставь её в формулу для <i class="v">sₓ</i>. Ответы должны сов­пасть.</li>
+    </ol>
+
+    <div class="trap"><b class="tag">Ловушка.</b> Не умножай 15 м/⁠с на 20 с. Так поезд проехал бы, если бы все 20 с шёл с по­сто­ян­ной ско­ро­стью. Он тор­мо­зил, и его средняя ско­рость меньше на­чаль­ной.</div>
+
+    <p>За­стря­нешь — открой <a href="teoriya.html">«Теорию»</a>, раздел «Путь по графику ско­ро­сти».</p>
+
+    <details class="check">
+      <summary>Проверь себя: ав­то­мо­биль ехал со ско­ро­стью 20 м/⁠с, за­тор­мо­зил и оста­но­вился через 5 с. Найди модуль его пе­ре­ме­ще­ния при тор­мо­же­нии.</summary>
+      <p><i class="v">s</i> = <span class="frac"><span>20 м/⁠с + 0</span><span>2</span></span> · 5 с = 10 м/⁠с · 5 с = 50 м.</p>
+    </details>
+
+  </main>
+
+  <footer class="pager">
+    <a href="zadacha-6.html">← Задача 6</a>
+    <a href="zadacha-8.html">Задача 8 →</a>
+  </footer>
+</div>
+</body>
+</html>

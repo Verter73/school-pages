@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Задача 3. Ускорение по графику</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="style.css?v=2">
+  <script src="graph.js?v=2" defer></script>
+  <script src="declutter.js?v=2" defer></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="home" href="index.html">До­маш­няя работа 7 от 24.09.2026 · 9 класс</a>
+    <nav class="tasks" aria-label="Разделы">
+      <a class="theory" href="https://verter73.github.io/school-pages/">← Витрина</a>
+      <a class="theory" href="teoriya.html">Теория</a>
+      <a href="zadacha-1.html" title="Задача 1">1</a>
+      <a href="zadacha-2.html" title="Задача 2">2</a>
+      <a href="zadacha-3.html" title="Задача 3" aria-current="page">3</a>
+      <a href="zadacha-4.html" title="Задача 4">4</a>
+      <a href="zadacha-5.html" title="Задача 5">5</a>
+      <a href="zadacha-6.html" title="Задача 6">6</a>
+      <a href="zadacha-7.html" title="Задача 7">7</a>
+      <a href="zadacha-8.html" title="Задача 8">8</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1><span class="num">Задача 3</span>Уско­ре­ние по графику ско­ро­сти</h1>
+
+    <div class="cond">
+      <div class="label">Условие</div>
+      <p>Поль­зу­ясь гра­фи­ком за­ви­си­мо­сти про­ек­ции ско­ро­сти от времени <i class="v">vₓ</i>(<i class="v">t</i>), опре­де­лите про­ек­цию уско­ре­ния тела на ось Ox.</p>
+    </div>
+
+    <h2>Что нужно знать</h2>
+    <div class="rule">
+      <div class="formula"><i class="v">aₓ</i> = <span class="frac"><span>Δ<i class="v">vₓ</i></span><span>Δ<i class="v">t</i></span></span> = <span class="frac"><span><i class="v">vₓ</i> − <i class="v">v₀ₓ</i></span><span><i class="v">t</i></span></span></div>
+      <p class="legend">Здесь <i class="v">aₓ</i> — про­ек­ция уско­ре­ния на ось <i class="v">X</i> (м/⁠с²), <i class="v">v₀ₓ</i> — про­ек­ция на­чаль­ной ско­ро­сти, при <i class="v">t</i> = 0 (м/⁠с), <i class="v">vₓ</i> — про­ек­ция ско­ро­сти в момент <i class="v">t</i> (м/⁠с), <i class="v">t</i> — время в се­кун­дах.</p>
+      <p>Значок Δ — гре­че­ская буква «дельта», в физике она значит «из­ме­не­ние». Δ<i class="v">vₓ</i> = <i class="v">vₓ</i> − <i class="v">v₀ₓ</i> — на сколько из­ме­ни­лась про­ек­ция ско­ро­сти (из «стало» вычесть «было»), Δ<i class="v">t</i> — сколько секунд прошло между двумя мо­мен­тами.</p>
+    </div>
+
+    <p><b>Про­ек­ция ско­ро­сти</b> <i class="v">vₓ</i> — число со знаком: модуль вектора ско­ро­сти со знаком «+», если тело дви­жется по оси <i class="v">X</i>, и «−», если против. На графике она от­ло­жена по вер­ти­кали, а время — по го­ри­зон­тали. График — прямая, значит, уско­ре­ние по­сто­ян­ное, и его можно найти по любым двум точкам прямой. Точки бери только там, где линия про­хо­дит через пе­ре­се­че­ние линий сетки или от­ме­чена пунк­ти­ром, — там числа чи­та­ются точно.</p>
+
+    <h2>Кар­тинка</h2>
+    <figure class="fig">
+      <div class="graph" data-graph='{"title":"График проекции скорости тела из задачи 3","w":480,"h":300,"x":{"min":0,"max":4.5,"step":1,"label":"t, с"},"y":{"min":0,"max":24,"step":6,"label":"vₓ, м/с"},"lines":[{"pts":[[0,6],[4.2,22.8]],"c":"blue"}],"dots":[{"x":0,"y":6,"c":"blue"},{"x":3,"y":18,"c":"blue","guide":true}]}'></div>
+      <figcaption>График пе­ре­ри­со­ван из за­дач­ника. Две удобные точки от­ме­чены круж­ками: начало графика на вер­ти­каль­ной оси и точка, к которой идут пунк­тиры.</figcaption>
+    </figure>
+
+    <h2>Дано</h2>
+    <div class="dano">
+      <div class="left">
+        <div>по графику:</div>
+        <div><i class="v">v₀ₓ</i> — при <i class="v">t</i> = 0</div>
+        <div><i class="v">vₓ</i> — при <i class="v">t</i> = 3 с</div>
+        <div class="find">Найти: <i class="v">aₓ</i></div>
+      </div>
+      <div class="right"><i class="v">v₀ₓ</i> и <i class="v">vₓ</i> про­чи­тай на графике сам. Шкала <i class="v">vₓ</i> — в м/⁠с, шкала <i class="v">t</i> — в се­кун­дах, это уже СИ.</div>
+    </div>
+
+    <h2>Под­сказки по шагам</h2>
+    <ol class="steps">
+      <li><b>Про­чи­тай на­чаль­ную про­ек­цию ско­ро­сти.</b> Это точка, где линия пе­ре­се­кает вер­ти­каль­ную ось (момент <i class="v">t</i> = 0). На каком делении шкалы <i class="v">vₓ</i> она стоит?</li>
+      <li><b>Про­чи­тай вторую точку.</b> Пунк­тиры идут к моменту <i class="v">t</i> = 3 с. Про­следи го­ри­зон­таль­ный пунктир до вер­ти­каль­ной оси — какая там про­ек­ция ско­ро­сти?</li>
+      <li><b>Найди Δ<i class="v">vₓ</i>:</b> из второго числа вычти первое.</li>
+      <li><b>Раздели Δ<i class="v">vₓ</i> на Δ<i class="v">t</i> = 3 с</b> — с еди­ни­цами. Линия идёт вверх, значит, ответ должен быть по­ло­жи­тель­ным.</li>
+      <li><b>Проверь:</b> если уско­ре­ние найдено верно, то через 1,5 с (по­се­ре­дине между 1 и 2 с) про­ек­ция ско­ро­сти должна быть ровно 12 м/⁠с. По­смотри на график — так ли это?</li>
+    </ol>
+
+    <div class="trap"><b class="tag">Ловушка.</b> Не дели 18 на 3. Тело в момент <i class="v">t</i> = 0 уже дви­га­лось — график на­чи­на­ется не с нуля. Уско­ре­ние — это <b>из­ме­не­ние</b> ско­ро­сти за секунду: сначала вычти «было» из «стало», потом дели.</div>
+
+    <p>За­стря­нешь — открой <a href="teoriya.html">«Теорию»</a>, раздел «Уско­ре­ние по графику ско­ро­сти».</p>
+
+    <details class="check"><summary>Проверь себя: про­ек­ция ско­ро­сти тела за 4 с рав­но­мерно выросла с 2 до 10 м/⁠с. Найди про­ек­цию уско­ре­ния.</summary><p><i class="v">aₓ</i> = (10 м/⁠с − 2 м/⁠с) : 4 с = 8 м/⁠с : 4 с = 2 м/⁠с².</p></details>
+  </main>
+
+  <footer class="pager"><a href="zadacha-2.html">← Задача 2</a><a href="zadacha-4.html">Задача 4 →</a></footer>
+</div>
+</body>
+</html>

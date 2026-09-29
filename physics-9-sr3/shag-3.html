@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Шаг 3. Перемещение</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap">
+<link rel="stylesheet" href="style.css?v=1">
+<link rel="stylesheet" href="motion.css?v=1">
+<script src="graph.js?v=1" defer></script>
+<script src="declutter.js?v=1" defer></script>
+<script src="motion.js?v=2" defer></script>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <a class="home" href="index.html">Рав­но­уско­рен­ное дви­же­ние · 9 класс</a>
+  <nav class="tasks" aria-label="Разделы">
+    <a class="theory" href="https://verter73.github.io/school-pages/">← Витрина</a>
+    <a class="theory" href="index.html">Карта</a>
+    <a href="shag-1.html" title="Шаг 1: ускорение">1</a>
+    <a href="shag-2.html" title="Шаг 2: скорость">2</a>
+    <a href="shag-3.html" title="Шаг 3: перемещение" aria-current="page">3</a>
+    <a href="shag-4.html" title="Шаг 4: координата">4</a>
+  </nav>
+</header>
+
+<main>
+<h1><span class="num">Шаг 3 · пункты 3, 6, 8 спра­воч­ника</span>Пе­ре­ме­ще­ние: площадь под гра­фи­ком ско­ро­сти</h1>
+
+<p class="lead">В спра­воч­нике три формулы для про­ек­ции пе­ре­ме­ще­ния. Их не нужно учить как три разных правила: все три — площадь одной и той же фигуры под гра­фи­ком ско­ро­сти, за­пи­сан­ная тремя спо­со­бами.</p>
+
+<h2 id="p8">Идея: пе­ре­ме­ще­ние — это площадь</h2>
+<p class="def"><b>Пе­ре­ме­ще­ние</b> — вектор, про­ведён­ный из на­чаль­ного по­ло­же­ния тела в ко­неч­ное. Его <b>про­ек­ция</b> на ось <i class="v">X</i>, <i class="v">sₓ</i>, — на сколько из­ме­ни­лась ко­ор­ди­ната тела: <i class="v">sₓ</i> = <i class="v">x</i> − <i class="v">x₀</i>, где <i class="v">x₀</i> — на­чаль­ная ко­ор­ди­ната (м), <i class="v">x</i> — ко­неч­ная ко­ор­ди­ната (м). Она бывает от­ри­ца­тель­ной, если тело в итоге сдви­ну­лось против оси.</p>
+<p>Начнём с рав­но­мер­ного дви­же­ния: ско­рость не ме­ня­ется. Тогда <i class="v">sₓ</i> = <i class="v">vₓ</i>·<i class="v">t</i>, где <i class="v">vₓ</i> — про­ек­ция ско­ро­сти (м/⁠с), <i class="v">t</i> — время (с). На графике ско­ро­сти это го­ри­зон­таль­ная линия, а под ней — пря­мо­уголь­ник высотой <i class="v">vₓ</i> и шириной <i class="v">t</i>. Его площадь — ровно <i class="v">vₓ</i>·<i class="v">t</i>. Отсюда главное правило: <b>про­ек­ция пе­ре­ме­ще­ния равна площади фигуры под гра­фи­ком ско­ро­сти</b> — между гра­фи­ком, осью времени и вер­ти­ка­лями в начале и в конце про­ме­жутка.</p>
+<div class="motion" data-motion='{"title":"Равномерное движение: перемещение — площадь прямоугольника","x0":0,"v0":3,"a":0,"T":5,"t0":4,"panels":["v"],"area":true,"controls":false,"sliders":[],"readout":["t","sx"]}'></div>
+<p>Ско­рость 3 м/⁠с, время 4 с: площадь пря­мо­уголь­ника 3 м/⁠с · 4 с = 12 м. Это и есть <i class="v">sₓ</i>. Единицы тоже схо­дятся: м/⁠с умно­жить на с — по­лу­ча­ются метры.</p>
+<p>Правило ра­бо­тает и тогда, когда ско­рость ме­ня­ется: фигуру можно раз­ре­зать на узкие полоски, в каждой из которых ско­рость почти по­сто­янна, и сложить их площади.</p>
+
+<h2 id="p3">Три формулы — одна тра­пе­ция</h2>
+<p>При рав­но­уско­рен­ном дви­же­нии график ско­ро­сти — на­клон­ная прямая от <i class="v">v₀ₓ</i> до <i class="v">vₓ</i>. Если тело не раз­во­ра­чи­ва­ется, фигура под ним — тра­пе­ция. В модели она раз­ре­зана на жёлтый пря­мо­уголь­ник и голубой тре­уголь­ник. Нажми «Пуск» и по­дви­гай пол­зунки.</p>
+<div class="motion" data-motion='{"title":"Перемещение как площадь: прямоугольник плюс треугольник","x0":0,"v0":2,"a":1,"T":6,"t0":4,"panels":["v"],"area":true,"split":true,"sliders":["v0","a"],"ranges":{"v0":[0,6,1],"a":[0,2,0.5]},"readout":["t","vx","sx"]}'></div>
+
+<h3>Формула 1: из­вестны время и уско­ре­ние</h3>
+<div class="rule">
+<div class="formula"><i class="v">sₓ</i> = <i class="v">v₀ₓ</i>·<i class="v">t</i> + <span class="frac"><span><i class="v">aₓ</i>·<i class="v">t</i>²</span><span>2</span></span></div>
+<p class="legend">Здесь <i class="v">sₓ</i> — про­ек­ция пе­ре­ме­ще­ния (м), <i class="v">v₀ₓ</i> — про­ек­ция на­чаль­ной ско­ро­сти (м/⁠с), <i class="v">aₓ</i> — про­ек­ция уско­ре­ния (м/⁠с²), <i class="v">t</i> — время (с), <i class="v">t</i>² — время, умно­жен­ное само на себя.</p>
+</div>
+<p>Откуда она. Жёлтый пря­мо­уголь­ник: высота <i class="v">v₀ₓ</i>, ширина <i class="v">t</i>, площадь <i class="v">v₀ₓ</i>·<i class="v">t</i> — столько тело про­ехало бы без уско­ре­ния. Голубой тре­уголь­ник сверху: ширина <i class="v">t</i>, высота — при­бавка ско­ро­сти <i class="v">aₓ</i>·<i class="v">t</i>. Площадь пря­мо­уголь­ного тре­уголь­ника — по­ло­вина про­из­ве­де­ния катетов: <span class="frac"><span><i class="v">t</i> · <i class="v">aₓ</i><i class="v">t</i></span><span>2</span></span> = <span class="frac"><span><i class="v">aₓ</i><i class="v">t</i>²</span><span>2</span></span>. Скла­ды­ваем две площади — по­лу­чаем формулу.</p>
+<p><b>Пример.</b> <i class="v">v₀ₓ</i> = 2 м/⁠с, <i class="v">aₓ</i> = 1 м/⁠с², <i class="v">t</i> = 4 с: <i class="v">sₓ</i> = 2 м/⁠с · 4 с + <span class="frac"><span>1 м/⁠с² · (4 с)²</span><span>2</span></span> = 8 м + 8 м = 16 м.</p>
+
+<h3>Формула 3: уско­ре­ние не задано</h3>
+<div class="rule">
+<div class="formula"><i class="v">sₓ</i> = <span class="frac"><span><i class="v">v₀ₓ</i> + <i class="v">vₓ</i></span><span>2</span></span>·<i class="v">t</i></div>
+<p class="legend">Здесь <i class="v">vₓ</i> — про­ек­ция ко­неч­ной ско­ро­сти (м/⁠с), осталь­ные буквы — как в формуле 1. Дробь <span class="frac"><span><i class="v">v₀ₓ</i> + <i class="v">vₓ</i></span><span>2</span></span> — среднее двух про­ек­ций ско­ро­сти; при рав­но­уско­рен­ном дви­же­нии это про­ек­ция средней ско­ро­сти по пе­ре­ме­ще­нию, то есть <i class="v">sₓ</i> : <i class="v">t</i>. Не путь : время — если тело раз­вер­ну­лось, это разные числа.</p>
+</div>
+<p>Номера формул идут по порядку спра­воч­ника; формулу 3 раз­би­раем раньше формулы 2, потому что формула 2 вы­во­дится из неё. Откуда формула 3. Площадь тра­пе­ции — по­лу­сумма осно­ва­ний, умно­жен­ная на высоту. У нашей тра­пе­ции «осно­ва­ния» — вер­ти­каль­ные стороны <i class="v">v₀ₓ</i> и <i class="v">vₓ</i>, а «высота» — ширина по времени <i class="v">t</i>.</p>
+<p><b>Пример.</b> Та же тра­пе­ция: <i class="v">v₀ₓ</i> = 2 м/⁠с, <i class="v">vₓ</i> = 6 м/⁠с, <i class="v">t</i> = 4 с: <i class="v">sₓ</i> = <span class="frac"><span>2 м/⁠с + 6 м/⁠с</span><span>2</span></span> · 4 с = 4 м/⁠с · 4 с = 16 м — столько же, сколько по формуле 1.</p>
+
+<h3>Формула 2: время не задано</h3>
+<div class="rule">
+<div class="formula"><i class="v">sₓ</i> = <span class="frac"><span><i class="v">vₓ</i>² − <i class="v">v₀ₓ</i>²</span><span>2<i class="v">aₓ</i></span></span></div>
+<p class="legend">Здесь <i class="v">vₓ</i>² и <i class="v">v₀ₓ</i>² — квад­раты про­ек­ций ко­неч­ной и на­чаль­ной ско­ро­сти (число, умно­жен­ное само на себя), <i class="v">aₓ</i> — про­ек­ция уско­ре­ния (м/⁠с²). Формула ра­бо­тает только при <i class="v">aₓ</i> ≠ 0 (знак ≠ — «не равно»): на ноль делить нельзя.</p>
+</div>
+<p>Откуда она. Возьмём формулу тра­пе­ции и уберём из неё время. Из закона ско­ро­сти (шаг 2) время <i class="v">t</i> = <span class="frac"><span><i class="v">vₓ</i> − <i class="v">v₀ₓ</i></span><span><i class="v">aₓ</i></span></span>. Под­ста­вим:</p>
+<div class="formula"><i class="v">sₓ</i> = <span class="frac"><span><i class="v">vₓ</i> + <i class="v">v₀ₓ</i></span><span>2</span></span> · <span class="frac"><span><i class="v">vₓ</i> − <i class="v">v₀ₓ</i></span><span><i class="v">aₓ</i></span></span> = <span class="frac"><span>(<i class="v">vₓ</i> + <i class="v">v₀ₓ</i>)(<i class="v">vₓ</i> − <i class="v">v₀ₓ</i>)</span><span>2<i class="v">aₓ</i></span></span> = <span class="frac"><span><i class="v">vₓ</i>² − <i class="v">v₀ₓ</i>²</span><span>2<i class="v">aₓ</i></span></span></div>
+<p>В по­след­нем шаге ра­бо­тает формула раз­но­сти квад­ра­тов из алгебры: (<i class="v">A</i> + <i class="v">B</i>)(<i class="v">A</i> − <i class="v">B</i>) = <i class="v">A</i>² − <i class="v">B</i>².</p>
+<p><b>Пример.</b> Та же тра­пе­ция: <i class="v">sₓ</i> = <span class="frac"><span>(6 м/⁠с)² − (2 м/⁠с)²</span><span>2 · 1 м/⁠с²</span></span> = <span class="frac"><span>36 м²/⁠с² − 4 м²/⁠с²</span><span>2 м/⁠с²</span></span> = 16 м. Опять 16 м: это одна и та же площадь.</p>
+
+<h3>Какую формулу выбрать</h3>
+<div class="tbl-wrap">
+<table class="tbl">
+<thead>
+<tr><th>Что из­вестно</th><th>Чего нет</th><th>Формула</th></tr>
+</thead>
+<tbody>
+<tr><td><i class="v">v₀ₓ</i>, <i class="v">aₓ</i>, <i class="v">t</i></td><td><i class="v">vₓ</i></td><td><i class="v">sₓ</i> = <i class="v">v₀ₓ</i>·<i class="v">t</i> + <span class="frac"><span><i class="v">aₓ</i>·<i class="v">t</i>²</span><span>2</span></span></td></tr>
+<tr><td><i class="v">v₀ₓ</i>, <i class="v">vₓ</i>, <i class="v">aₓ</i></td><td><i class="v">t</i></td><td><i class="v">sₓ</i> = <span class="frac"><span><i class="v">vₓ</i>² − <i class="v">v₀ₓ</i>²</span><span>2<i class="v">aₓ</i></span></span></td></tr>
+<tr><td><i class="v">v₀ₓ</i>, <i class="v">vₓ</i>, <i class="v">t</i></td><td><i class="v">aₓ</i></td><td><i class="v">sₓ</i> = <span class="frac"><span><i class="v">v₀ₓ</i> + <i class="v">vₓ</i></span><span>2</span></span>·<i class="v">t</i></td></tr>
+</tbody>
+</table>
+</div>
+<p>Правило выбора: из пяти величин <i class="v">v₀ₓ</i>, <i class="v">vₓ</i>, <i class="v">aₓ</i>, <i class="v">t</i>, <i class="v">sₓ</i> найди ту, которой нет ни в условии, ни в вопросе, — и бери формулу без неё. Формулы без <i class="v">v₀ₓ</i> в спра­воч­нике нет. Если на­чаль­ная ско­рость не дана и не спро­шена, сначала найди её из закона ско­ро­сти: <i class="v">v₀ₓ</i> = <i class="v">vₓ</i> − <i class="v">aₓ</i>·<i class="v">t</i>, — а потом бери любую из трёх формул.</p>
+
+<h2 id="p6">Площадь под осью и путь</h2>
+<p>Если тело раз­вер­ну­лось, график ско­ро­сти пе­ре­се­кает ось времени. Часть фигуры ока­зы­ва­ется под осью: там <i class="v">vₓ</i> &lt; 0, тело едет против оси, и эта площадь берётся <b>со знаком минус</b>.</p>
+<div class="rule">
+<div class="formula"><i class="v">sₓ</i> = (площадь над осью) − (площадь под осью)</div>
+<div class="formula"><i class="v">l</i> = (площадь над осью) + (площадь под осью)</div>
+<p class="legend">Здесь <i class="v">sₓ</i> — про­ек­ция пе­ре­ме­ще­ния (м), <i class="v">l</i> — путь (м): длина всей линии, по которой дви­га­лось тело. Путь не бывает от­ри­ца­тель­ным, поэтому в нём все площади скла­ды­ва­ются по модулю.</p>
+</div>
+<div class="motion" data-motion='{"title":"Тело разворачивается: площадь над осью и под осью","x0":0,"v0":4,"a":-1,"T":7,"panels":["track","v"],"area":true,"sliders":[],"readout":["t","vx","sx","l"]}'></div>
+<p>Запусти модель до конца, до <i class="v">t</i> = 7 с. Голубая площадь над осью — 8 м: тело уехало вперёд на 8 м. Красная площадь под осью — 4,5 м: тело вер­ну­лось на 4,5 м. Про­ек­ция пе­ре­ме­ще­ния <i class="v">sₓ</i> = 8 м − 4,5 м = 3,5 м, путь <i class="v">l</i> = 8 м + 4,5 м = 12,5 м.</p>
+
+<div class="trap"><b class="tag">Ловушка.</b> Все три формулы дают <b>про­ек­цию пе­ре­ме­ще­ния</b>, а не путь. Для модели выше формула 1 даёт 4 м/⁠с · 7 с + <span class="frac"><span>−1 м/⁠с² · (7 с)²</span><span>2</span></span> = 28 м − 24,5 м = 3,5 м — это <i class="v">sₓ</i>, а путь 12,5 м. Формула 1 верна и здесь, хотя вы­во­ди­лась без раз­во­рота: пря­мо­уголь­ник <i class="v">v₀ₓ</i>·<i class="v">t</i> и тре­уголь­ник высотой <i class="v">aₓ</i>·<i class="v">t</i> в ней скла­ды­ва­ются как площади со знаком (здесь высота тре­уголь­ника от­ри­ца­тельна), а сумма пло­ща­дей со знаком и есть «площадь над осью минус площадь под осью». Так же верны формулы 2 и 3. Если тело раз­вер­ну­лось, раздели дви­же­ние на «до оста­новки» и «после» и сложи модули.</div>
+
+<div class="note"><b class="tag">Связь со стерж­нем.</b> Площадь под гра­фи­ком ско­ро­сти — пе­ре­ме­ще­ние: второе дей­ствие «вперёд» по цепочке. Прибавь пе­ре­ме­ще­ние к на­чаль­ной ко­ор­ди­нате — и узнаешь, где на­хо­дится тело. Это шаг 4.</div>
+
+<details class="check"><summary>Проверь себя: ав­то­мо­биль ехал со ско­ро­стью 20 м/⁠с и за­тор­мо­зил до оста­новки; модуль уско­ре­ния 4 м/⁠с². Какую формулу выбрать и чему равен тор­моз­ной путь?</summary><p>Время не дано — берём формулу 2. Ось X по дви­же­нию: <i class="v">v₀ₓ</i> = 20 м/⁠с, <i class="v">vₓ</i> = 0, <i class="v">aₓ</i> = −4 м/⁠с² (тор­мо­зит). <i class="v">sₓ</i> = <span class="frac"><span>0 − (20 м/⁠с)²</span><span>2 · (−4 м/⁠с²)</span></span> = <span class="frac"><span>−400 м²/⁠с²</span><span>−8 м/⁠с²</span></span> = 50 м. Ав­то­мо­биль не раз­во­ра­чи­вался, поэтому путь тоже 50 м.</p></details>
+</main>
+
+<footer class="pager"><a href="shag-2.html">← Шаг 2</a><a href="shag-4.html">Шаг 4: ко­ор­ди­ната →</a></footer>
+</div>
+</body>
+</html>

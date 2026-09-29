@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Равноускоренное движение: как всё связано</title>
+  <meta name="description" content="Справочник к самостоятельной работе 3: все формулы равноускоренного движения из одной идеи, с картинками и живой моделью">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="style.css?v=1">
+  <link rel="stylesheet" href="motion.css?v=1">
+  <script src="graph.js?v=1" defer></script>
+  <script src="declutter.js?v=1" defer></script>
+  <script src="motion.js?v=2" defer></script>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <a class="home" href="index.html">Рав­но­уско­рен­ное дви­же­ние · 9 класс</a>
+  <nav class="tasks" aria-label="Разделы">
+    <a class="theory" href="https://verter73.github.io/school-pages/">← Витрина</a>
+    <a class="theory" href="index.html" aria-current="page">Карта</a>
+    <a href="shag-1.html" title="Шаг 1: ускорение">1</a>
+    <a href="shag-2.html" title="Шаг 2: скорость">2</a>
+    <a href="shag-3.html" title="Шаг 3: перемещение">3</a>
+    <a href="shag-4.html" title="Шаг 4: координата">4</a>
+  </nav>
+</header>
+
+<main>
+<h1><span class="num">Физика · 9 класс · спра­воч­ник к СР 3</span>Рав­но­уско­рен­ное дви­же­ние: как всё связано</h1>
+
+<p class="lead">Это разбор спра­воч­ного листа к са­мо­сто­я­тель­ной работе 3. В нём 11 пунктов и больше десяти формул. Кажется, что их надо зубрить. На деле почти все они по­лу­ча­ются из одной идеи и двух дей­ствий с гра­фи­ками. Здесь по­ка­зано, откуда берётся каждая формула и как они связаны между собой.</p>
+
+<h2 id="sterzhen">Стер­жень темы: одна идея и два дей­ствия</h2>
+
+<div class="rule">
+<p><b>Одна идея.</b> Рав­но­уско­рен­ное дви­же­ние — это дви­же­ние, при котором уско­ре­ние не ме­ня­ется: про­ек­ция уско­ре­ния <i class="v">aₓ</i> = const. «const» — со­кра­ще­ние от ла­тин­ского constans, «по­сто­ян­ный». Закон ско­ро­сти, три формулы пе­ре­ме­ще­ния и урав­не­ние ко­ор­ди­наты верны только при этом условии. А два правила верны для любого дви­же­ния: пе­ре­ме­ще­ние равно площади под гра­фи­ком ско­ро­сти, путь — сумме модулей пе­ре­ме­ще­ний на участ­ках без раз­во­рота.</p>
+<p><b>Три графика.</b> Дви­же­ние тела вдоль оси <i class="v">X</i> опи­сы­вают три графика: про­ек­ции уско­ре­ния <i class="v">aₓ</i>(<i class="v">t</i>), про­ек­ции ско­ро­сти <i class="v">vₓ</i>(<i class="v">t</i>) и ко­ор­ди­наты <i class="v">x</i>(<i class="v">t</i>). По го­ри­зон­тали у всех трёх — время <i class="v">t</i> в се­кун­дах. Запись «(<i class="v">t</i>)» чи­та­ется «зависит от <i class="v">t</i>», это не умно­же­ние.</p>
+<p><b>Два дей­ствия.</b> <b>Площадь</b> под гра­фи­ком ведёт по цепочке вперёд: площадь под гра­фи­ком уско­ре­ния — это из­ме­не­ние про­ек­ции ско­ро­сти, площадь под гра­фи­ком ско­ро­сти — это про­ек­ция пе­ре­ме­ще­ния <i class="v">sₓ</i>. <b>Наклон</b> графика ведёт обратно: наклон графика ко­ор­ди­наты — это про­ек­ция ско­ро­сти, наклон графика ско­ро­сти — это про­ек­ция уско­ре­ния. Значок Δ — гре­че­ская буква «дельта», в физике она значит «из­ме­не­ние»: Δ<i class="v">vₓ</i> — на сколько из­ме­ни­лась про­ек­ция ско­ро­сти, из «стало» вычесть «было».</p>
+</div>
+
+<div class="spine">
+  <div class="spine-node">
+    <div class="spine-step">Шаг 1 · пункт 1</div>
+    <div class="spine-name"><a href="shag-1.html">Уско­ре­ние <i class="v">aₓ</i>(<i class="v">t</i>)</a></div>
+    <div class="graph" data-graph='{"title":"График проекции ускорения: aₓ = 1 м/с²","w":180,"h":110,"x":{"min":0,"max":4,"step":1,"label":"t, с"},"y":{"min":0,"max":2,"step":1,"label":"aₓ, м/с²"},"lines":[{"pts":[[0,1],[4,1]],"c":"red"}]}'></div>
+    <p>Го­ри­зон­таль­ная прямая: уско­ре­ние не ме­ня­ется.</p>
+  </div>
+  <div class="spine-link">
+    <span class="up"><span class="arr-h">площадь →</span><span class="arr-v">площадь ↓</span><br>даёт Δ<i class="v">vₓ</i></span>
+    <span class="down"><span class="arr-h">← наклон</span><span class="arr-v">↑ наклон</span><br>даёт <i class="v">aₓ</i></span>
+  </div>
+  <div class="spine-node">
+    <div class="spine-step">Шаг 2 · пункты 2, 5, 7</div>
+    <div class="spine-name"><a href="shag-2.html">Ско­рость <i class="v">vₓ</i>(<i class="v">t</i>)</a></div>
+    <div class="graph" data-graph='{"title":"График проекции скорости: от 1 до 5 м/с за 4 с","w":180,"h":110,"x":{"min":0,"max":4,"step":1,"label":"t, с"},"y":{"min":0,"max":6,"step":2,"label":"vₓ, м/с"},"lines":[{"pts":[[0,1],[4,5]],"c":"blue"}]}'></div>
+    <p>На­клон­ная прямая: ско­рость ме­ня­ется рав­но­мерно.</p>
+  </div>
+  <div class="spine-link">
+    <span class="up"><span class="arr-h">площадь →</span><span class="arr-v">площадь ↓</span><br>даёт <i class="v">sₓ</i></span>
+    <span class="down"><span class="arr-h">← наклон</span><span class="arr-v">↑ наклон</span><br>даёт <i class="v">vₓ</i></span>
+  </div>
+  <div class="spine-node">
+    <div class="spine-step">Шаги 3 и 4 · пункты 3, 4, 6, 8–11</div>
+    <div class="spine-name"><a href="shag-4.html">Ко­ор­ди­ната <i class="v">x</i>(<i class="v">t</i>)</a></div>
+    <div class="graph" data-graph='{"title":"График координаты: парабола от 0 до 12 м за 4 с","w":180,"h":110,"x":{"min":0,"max":4,"step":1,"label":"t, с"},"y":{"min":0,"max":12,"step":4,"label":"x, м"},"lines":[{"pts":[[0,0],[0.5,0.625],[1,1.5],[1.5,2.625],[2,4],[2.5,5.625],[3,7.5],[3.5,9.625],[4,12]],"c":"green"}]}'></div>
+    <p>Па­ра­бола: за каждую секунду ко­ор­ди­ната ме­ня­ется на разное число.</p>
+  </div>
+</div>
+
+<p>Все три графика на схеме — одно и то же дви­же­ние: тело стар­тует из точки с на­чаль­ной ко­ор­ди­на­той <i class="v">x₀</i> = 0, про­ек­ция на­чаль­ной ско­ро­сти <i class="v">v₀ₓ</i> = 1 м/⁠с, про­ек­ция уско­ре­ния <i class="v">aₓ</i> = 1 м/⁠с². Проверь связь сам. Площадь под гра­фи­ком уско­ре­ния за 4 с: 1 м/⁠с² · 4 с = 4 м/⁠с — ровно на столько выросла ско­рость, с 1 до 5 м/⁠с. Площадь под гра­фи­ком ско­ро­сти за 4 с (тра­пе­ция): <span class="frac"><span>1 м/⁠с + 5 м/⁠с</span><span>2</span></span> · 4 с = 12 м — ровно на столько выросла ко­ор­ди­ната, с 0 до 12 м.</p>
+
+<h2 id="model">Живая модель</h2>
+<p>Запусти модель и по­смотри, как связаны три графика. Вверху — тело на оси <i class="v">X</i>: зелёный кружок — само тело, синяя стрелка — вектор ско­ро­сти, красная — вектор уско­ре­ния, серые точки — где было тело через каждую секунду. Ниже — графики <i class="v">aₓ</i>(<i class="v">t</i>), <i class="v">vₓ</i>(<i class="v">t</i>) и <i class="v">x</i>(<i class="v">t</i>). Голубая заливка под гра­фи­ком ско­ро­сти — площадь над осью, красная — под осью. Пол­зунки меняют на­чаль­ную ко­ор­ди­нату <i class="v">x₀</i>, про­ек­цию на­чаль­ной ско­ро­сти <i class="v">v₀ₓ</i> и про­ек­цию уско­ре­ния <i class="v">aₓ</i>.</p>
+
+<div class="motion" data-motion='{"title":"Модель равноускоренного движения: тело на оси и три графика","x0":0,"v0":4,"a":-1,"T":8,"panels":["track","a","v","x"],"area":true,"sliders":["x0","v0","a"],"readout":["t","vx","x","sx","l"]}'></div>
+
+<p>Модель от­кры­ва­ется с <i class="v">v₀ₓ</i> = 4 м/⁠с и <i class="v">aₓ</i> = −1 м/⁠с²: тело едет по оси и тор­мо­зит. Дойди до <i class="v">t</i> = 8 с. В момент 4 с ско­рость стала нулём, и тело раз­вер­ну­лось. К 8 с оно вер­ну­лось в начало: про­ек­ция пе­ре­ме­ще­ния <i class="v">sₓ</i> = 0, а путь <i class="v">l</i> = 16 м. На графике ско­ро­сти голубая площадь над осью (8 м) и красная под осью (8 м) в сумме со знаками дают ноль, а по модулю — 16 м.</p>
+
+<p>По­про­буй сам: что будет при <i class="v">aₓ</i> = 0? А если <i class="v">v₀ₓ</i> и <i class="v">aₓ</i> одного знака — раз­вер­нётся ли тело?</p>
+
+<h2 id="karta">Где в спра­воч­нике что</h2>
+<div class="tbl-wrap">
+<table class="tbl refmap">
+  <thead>
+    <tr><th>Пункт</th><th>О чём</th><th>Где разо­брано</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>п. 1</td><td>Уско­ре­ние, его про­ек­ция и модуль</td><td><a href="shag-1.html#p1">Шаг 1</a></td></tr>
+    <tr><td>п. 2</td><td>Закон ско­ро­сти <i class="v">vₓ</i>(<i class="v">t</i>)</td><td><a href="shag-2.html#p2">Шаг 2</a></td></tr>
+    <tr><td>п. 3</td><td>Три формулы про­ек­ции пе­ре­ме­ще­ния</td><td><a href="shag-3.html#p3">Шаг 3</a></td></tr>
+    <tr><td>п. 4</td><td>Ко­ор­ди­ната <i class="v">x</i>(<i class="v">t</i>)</td><td><a href="shag-4.html#p4">Шаг 4</a></td></tr>
+    <tr><td>п. 5</td><td>Графики <i class="v">aₓ</i>(<i class="v">t</i>), <i class="v">vₓ</i>(<i class="v">t</i>), <i class="v">x</i>(<i class="v">t</i>)</td><td><a href="shag-2.html#p5">Шаг 2</a>, <a href="shag-4.html#p5">Шаг 4</a></td></tr>
+    <tr><td>п. 6</td><td>Путь, пе­ре­ме­ще­ние и площадь</td><td><a href="shag-3.html#p6">Шаг 3</a>, <a href="shag-4.html#p11">Шаг 4</a></td></tr>
+    <tr><td>п. 7</td><td>Уско­ре­ние по графику <i class="v">vₓ</i>(<i class="v">t</i>)</td><td><a href="shag-2.html#p7">Шаг 2</a></td></tr>
+    <tr><td>п. 8</td><td>Путь и пе­ре­ме­ще­ние по графику <i class="v">vₓ</i>(<i class="v">t</i>)</td><td><a href="shag-3.html#p8">Шаг 3</a></td></tr>
+    <tr><td>п. 9</td><td>Ско­рость по графику <i class="v">x</i>(<i class="v">t</i>)</td><td><a href="shag-4.html#p9">Шаг 4</a></td></tr>
+    <tr><td>п. 10</td><td>Путь по графику <i class="v">x</i>(<i class="v">t</i>)</td><td><a href="shag-4.html#p10">Шаг 4</a></td></tr>
+    <tr><td>п. 11</td><td>События на графике <i class="v">x</i>(<i class="v">t</i>)</td><td><a href="shag-4.html#p11">Шаг 4</a></td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2 id="shagi">Четыре шага</h2>
+<ul class="cards">
+<li><a href="shag-1.html"><span class="n">Шаг 1</span><span class="t">Уско­ре­ние</span><span class="d">Что такое уско­ре­ние, его про­ек­ция и модуль, откуда единица м/⁠с².</span></a></li>
+<li><a href="shag-2.html"><span class="n">Шаг 2</span><span class="t">Ско­рость</span><span class="d">Закон ско­ро­сти, график — прямая, уско­ре­ние по наклону.</span></a></li>
+<li><a href="shag-3.html"><span class="n">Шаг 3</span><span class="t">Пе­ре­ме­ще­ние</span><span class="d">Площадь под гра­фи­ком ско­ро­сти: три формулы из одной тра­пе­ции.</span></a></li>
+<li><a href="shag-4.html"><span class="n">Шаг 4</span><span class="t">Ко­ор­ди­ната</span><span class="d">Урав­не­ние дви­же­ния, па­ра­бола, ско­рость и путь по графику x(t).</span></a></li>
+</ul>
+
+</main>
+
+<footer class="pager"><span></span><a href="shag-1.html">Шаг 1: уско­ре­ние →</a></footer>
+</div>
+</body>
+</html>

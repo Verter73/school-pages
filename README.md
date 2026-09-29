@@ -5,8 +5,9 @@
 Сайт: https://verter73.github.io/school-pages/
 
 - `index.html` — витрина: список страниц хранится в массиве `PAGES` внутри страницы; новая страница добавляется одной строкой.
+- `physics-9-sr3/` — справочник к СР 3 «Равноускоренное движение»: стержень темы (площадь и наклон графиков), живая модель `motion.js`, 29.09.2026.
 - `physics-9-dz7/` — домашняя работа 7 (9 класс): теория и подсказки по шагам без готовых ответов, 28.09.2026.
 - `physics-9-kinematics/`, `physics-9-vectors/` — сайты тем (подпроекты, перенесены 24.09.2026 из отдельных репозиториев вместе с историей). Новая тема — новая подпапка здесь, не новый репозиторий.
 - `prompt.html` — готовый промпт для любого ИИ-чата: подсказки, разбор задачи или объяснение темы с нуля.
 
-Сейчас в витрине: «Кинематика для 9 класса» (https://verter73.github.io/school-pages/physics-9-kinematics/), «Векторы для 9 класса» (https://verter73.github.io/school-pages/physics-9-vectors/) и «Домашняя работа 7: ускорение и графики» (https://verter73.github.io/school-pages/physics-9-dz7/).
+Сейчас в витрине: «Кинематика для 9 класса» (https://verter73.github.io/school-pages/physics-9-kinematics/), «Векторы для 9 класса» (https://verter73.github.io/school-pages/physics-9-vectors/), «Домашняя работа 7: ускорение и графики» (https://verter73.github.io/school-pages/physics-9-dz7/) и «Равноускоренное движение: справочник к СР 3» (https://verter73.github.io/school-pages/physics-9-sr3/).

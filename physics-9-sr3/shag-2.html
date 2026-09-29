@@ -8,10 +8,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap">
 <link rel="stylesheet" href="style.css?v=1">
-<link rel="stylesheet" href="motion.css?v=1">
+<link rel="stylesheet" href="motion.css?v=2">
 <script src="graph.js?v=1" defer></script>
 <script src="declutter.js?v=1" defer></script>
-<script src="motion.js?v=2" defer></script>
+<script src="motion.js?v=3" defer></script>
 </head>
 <body>
 <div class="wrap">
@@ -32,7 +32,7 @@
 
 <p class="lead">Из опре­де­ле­ния уско­ре­ния (шаг 1) сразу по­лу­ча­ется формула ско­ро­сти в любой момент. Её график — прямая, а по наклону этой прямой чи­та­ется уско­ре­ние.</p>
 
-<h2 id="p2">Закон ско­ро­сти: откуда он берётся</h2>
+<h2 id="p2"><span class="pnum">п. 2</span> Закон ско­ро­сти: откуда он берётся</h2><p class="back"><a href="index.html#karta">↩ к таблице «Где в спра­воч­нике что»</a></p>
 <p>Возьмём формулу уско­ре­ния из шага 1: <i class="v">aₓ</i> = <span class="frac"><span><i class="v">vₓ</i> − <i class="v">v₀ₓ</i></span><span><i class="v">t</i></span></span>. Умножим обе части на <i class="v">t</i>: <i class="v">aₓ</i>·<i class="v">t</i> = <i class="v">vₓ</i> − <i class="v">v₀ₓ</i>. Пе­ре­несём <i class="v">v₀ₓ</i> в другую часть — получим закон ско­ро­сти:</p>
 <div class="rule">
 <div class="formula"><i class="v">vₓ</i>(<i class="v">t</i>) = <i class="v">v₀ₓ</i> + <i class="v">aₓ</i>·<i class="v">t</i></div>
@@ -41,7 +41,7 @@
 <p>Словами: ско­рость сейчас = ско­рость в начале + из­ме­не­ние за одну секунду × число секунд. Формула верна, пока уско­ре­ние не ме­ня­ется (<i class="v">aₓ</i> = const; «const» — «по­сто­ян­ная»).</p>
 <p><b>Пример.</b> <i class="v">v₀ₓ</i> = 3 м/⁠с, <i class="v">aₓ</i> = 2 м/⁠с². Через 4 с: <i class="v">vₓ</i> = 3 м/⁠с + 2 м/⁠с² · 4 с = 3 м/⁠с + 8 м/⁠с = 11 м/⁠с.</p>
 
-<h2 id="p5">Графики уско­ре­ния и ско­ро­сти</h2>
+<h2 id="p5"><span class="pnum">п. 5</span> Графики уско­ре­ния и ско­ро­сти</h2><p class="back"><a href="index.html#karta">↩ к таблице «Где в спра­воч­нике что»</a></p>
 <p><b>График про­ек­ции уско­ре­ния</b> <i class="v">aₓ</i>(<i class="v">t</i>) — прямая, па­рал­лель­ная оси времени: уско­ре­ние не ме­ня­ется, в любой момент одно и то же число. Выше оси времени — <i class="v">aₓ</i> &gt; 0, ниже — <i class="v">aₓ</i> &lt; 0.</p>
 <p><b>График про­ек­ции ско­ро­сти</b> <i class="v">vₓ</i>(<i class="v">t</i>) — на­клон­ная прямая. Почему прямая: за каждую секунду ско­рость ме­ня­ется на одно и то же число <i class="v">aₓ</i>, а точки, у которых каждый шаг вверх оди­на­ко­вый, лежат на одной прямой. Прямая на­чи­на­ется на вер­ти­каль­ной оси в точке <i class="v">v₀ₓ</i>.</p>
 <div class="motion" data-motion='{"title":"Графики ускорения и скорости одного движения","x0":0,"v0":1,"a":1,"T":6,"fixed":{"a":[-2,2],"v":[-18,18]},"panels":["a","v"],"sliders":["v0","a"],"readout":["t","ax","vx"]}'></div>
@@ -52,7 +52,7 @@
 <div class="motion" data-motion='{"title":"Площадь под графиком ускорения — изменение скорости","x0":0,"v0":1,"a":1,"T":6,"t0":4,"panels":["a"],"area":true,"controls":false,"sliders":[],"readout":["t","vx"]}'></div>
 <p>При <i class="v">aₓ</i> = 1 м/⁠с² за 4 с площадь пря­мо­уголь­ника 1 м/⁠с² · 4 с = 4 м/⁠с. На столько выросла ско­рость: с 1 до 5 м/⁠с.</p>
 
-<h2 id="p7">Уско­ре­ние по графику ско­ро­сти</h2>
+<h2 id="p7"><span class="pnum">п. 7</span> Уско­ре­ние по графику ско­ро­сти</h2><p class="back"><a href="index.html#karta">↩ к таблице «Где в спра­воч­нике что»</a></p>
 <div class="rule">
 <div class="formula"><i class="v">aₓ</i> = <span class="frac"><span>Δ<i class="v">vₓ</i></span><span>Δ<i class="v">t</i></span></span> = <span class="frac"><span><i class="v">v</i><sub>x2</sub> − <i class="v">v</i><sub>x1</sub></span><span><i class="v">t₂</i> − <i class="v">t₁</i></span></span></div>
 <p class="legend">Здесь (<i class="v">t₁</i>; <i class="v">v</i><sub>x1</sub>) и (<i class="v">t₂</i>; <i class="v">v</i><sub>x2</sub>) — две точки на прямой графика: <i class="v">t₁</i> и <i class="v">t₂</i> — моменты времени (с), <i class="v">v</i><sub>x1</sub> и <i class="v">v</i><sub>x2</sub> — про­ек­ции ско­ро­сти в эти моменты (м/⁠с). Индексы 1 и 2 — номера точек. Δ<i class="v">t</i> = <i class="v">t₂</i> − <i class="v">t₁</i> — сколько прошло времени, Δ<i class="v">vₓ</i> = <i class="v">v</i><sub>x2</sub> − <i class="v">v</i><sub>x1</sub> — на сколько из­ме­ни­лась про­ек­ция ско­ро­сти.</p>

@@ -108,6 +108,11 @@
             }, container);
             el("title", {}, svg).textContent = cfg.title;
 
+            // Side column: buttons, sliders, readout (right of the figure on wide screens)
+            const side = document.createElement("div");
+            side.className = "motion-side";
+            container.appendChild(side);
+
             const controlsDiv = document.createElement("div");
             if (cfg.controls) {
                 controlsDiv.className = "motion-controls";
@@ -167,7 +172,7 @@
                 labelTime.appendChild(inputTime);
                 controlsDiv.appendChild(labelTime);
             }
-            container.appendChild(controlsDiv);
+            side.appendChild(controlsDiv);
 
             // Parameter Sliders
             const sliderEls = {};
@@ -202,7 +207,7 @@
 
                 label.appendChild(span);
                 label.appendChild(input);
-                container.appendChild(label);
+                side.appendChild(label);
                 sliderEls[key] = { span, input };
             });
 
@@ -210,7 +215,7 @@
             const pReadout = document.createElement("p");
             if (cfg.readout.length > 0) {
                 pReadout.className = "motion-readout";
-                container.appendChild(pReadout);
+                side.appendChild(pReadout);
             }
 
             // --- Drawing Logic ---

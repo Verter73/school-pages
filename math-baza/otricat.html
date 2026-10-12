@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Отрицательные числа</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="style.css?v=1">
+  <link rel="stylesheet" href="math.css?v=5">
+  <script src="drill.js?v=2" defer></script>
+  <script src="numline.js?v=5" defer></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="home" href="index.html">Ма­те­ма­тика: база · неделя 1</a>
+    <nav class="tasks" aria-label="Разделы">
+      <a class="theory" href="https://verter73.github.io/school-pages/">← Витрина</a>
+      <a class="theory" href="index.html">Оглав­ле­ние</a>
+      <a href="poryadok.html" title="Занятие 1">1</a>
+      <a href="stolbik.html" title="Занятие 2">2</a>
+      <a href="otricat.html" title="Занятие 3" aria-current="page">3</a>
+    </nav>
+  </header>
+  <main>
+    <h1><span class="num">Ма­те­ма­тика: база · занятие 3</span>От­ри­ца­тель­ные числа и чи­сло­вая прямая</h1>
+    <p class="lead">Цель: ты ставишь числа на прямую, срав­ни­ва­ешь, скла­ды­ва­ешь и вы­чи­та­ешь с от­ри­ца­тель­ными, знаешь правило знаков при умно­же­нии. Это выход на задание 7 ОГЭ («какое число от­ме­чено на прямой», «какое из чисел больше»). Ответы и под­сказки спря­таны: сначала реши сам, потом нажми кнопку.</p>
+    <section id="vspomnit">
+<h2>Вспо­мнить</h2>
+<ol class="tl">
+<li class="task" data-id="r1" data-n="1."><span class="expr">7 · 8</span></li>
+<li class="task" data-id="r2" data-n="2."><span class="expr">56 : 7</span></li>
+<li class="task" data-id="r3" data-n="3."><span class="expr">2 + 3 · 4</span></li>
+<li class="task" data-id="r4" data-n="4."><span class="expr">48 · 11</span></li>
+<li class="task" data-id="r5" data-n="5."><span class="expr">93 : 3</span></li>
+<li class="task" data-id="r6" data-n="6."><span class="expr">100 − 36 : 6 · 2</span></li>
+</ol>
+</section>
+
+<section id="beglost">
+<h2>Бег­лость</h2>
+<p>Таблица: сначала примеры, по­ме­чен­ные в твоём журнале, потом эти:</p>
+<ol class="tl">
+<li class="task" data-id="b1" data-n="1."><span class="expr">6 · 8</span></li>
+<li class="task" data-id="b2" data-n="2."><span class="expr">9 · 6</span></li>
+<li class="task" data-id="b3" data-n="3."><span class="expr">7 · 9</span></li>
+<li class="task" data-id="b4" data-n="4."><span class="expr">64 : 8</span></li>
+<li class="task" data-id="b5" data-n="5."><span class="expr">49 : 7</span></li>
+<li class="task" data-id="b6" data-n="6."><span class="expr">36 : 6</span></li>
+</ol>
+<p>Затем «сосед»: для каждого числа назови число на 1 меньше и на 1 больше.</p>
+<ol class="tl">
+<li class="task" data-id="c1" data-n="1."><span class="expr">100</span></li>
+<li class="task" data-id="c2" data-n="2."><span class="expr">0</span></li>
+<li class="task" data-id="c3" data-n="3."><span class="expr">−1</span></li>
+<li class="task" data-id="c4" data-n="4."><span class="expr">−10</span></li>
+<li class="task" data-id="c5" data-n="5."><span class="expr">999</span></li>
+</ol>
+</section>
+
+<section id="pravilo">
+<h2>Правило</h2>
+<div class="def">
+<p><b>Чи­сло­вая прямая.</b> Прямая со стрел­кой вправо, на ней точка 0 и еди­нич­ный отрезок. Правее нуля — по­ло­жи­тель­ные числа, левее — от­ри­ца­тель­ные. Чем правее точка, тем число больше. Поэтому −3 &lt; 2 и −7 &lt; −2: минус семь левее минус двух.</p>
+</div>
+<figure class="fig">
+<img src="fig/o1.svg" width="480" height="252" alt="Числовая прямая со стрелкой вправо, ноль выделен. Отмечены числа −7, −3, −2 и 2. Слева числа меньше, справа больше: −7 левее −2, поэтому −7 &lt; −2.">
+<figcaption>Чем правее точка на прямой, тем число больше.</figcaption>
+</figure>
+<div class="note">
+<p><b class="tag">Из жизни.</b> Тем­пе­ра­тура: −7° хо­лод­нее, чем −2°. Долг: «у меня −500 рублей» хуже, чем «−100».</p>
+</div>
+<figure class="fig">
+<img src="fig/o2.svg" width="480" height="332" alt="Вертикальный термометр с отметками 0°, −2° и −7°. Столбик ртути доходит до −7°, это ниже на шкале, значит −7° холоднее, чем −2°.">
+<figcaption>Ниже на шкале — хо­лод­нее: −7° хо­лод­нее, чем −2°.</figcaption>
+</figure>
+<div class="def">
+<p><b>Модуль числа</b> — рас­сто­я­ние от нуля до числа на прямой. Пишут |−5| = 5, |5| = 5. Рас­сто­я­ние не бывает от­ри­ца­тель­ным, поэтому модуль всегда ≥ 0. Знак сам по себе ничего не говорит о «размере» — говорит, в какую сторону от нуля.</p>
+</div>
+<figure class="fig">
+<img src="fig/o3.svg" width="480" height="252" alt="Числовая прямая с нулём посередине. Две дуги от нуля длиной 5: влево до −5 и вправо до 5. Модуль |−5| = 5 и |5| = 5: это расстояние от нуля, а не знак.">
+<figcaption>Модуль — рас­сто­я­ние от нуля, поэтому он не бывает от­ри­ца­тель­ным.</figcaption>
+</figure>
+<div class="rule">
+<p><b>Сло­же­ние и вы­чи­та­ние — как шаги по прямой.</b> При­ба­вить — шаг вправо, вычесть — шаг влево.</p>
+<p>Когда шагать долго, правило: если знаки оди­на­ко­вые — модули скла­ды­ваем, знак остав­ляем (−3 − 5 = −8). Если знаки разные — из боль­шего модуля вы­чи­таем меньший, знак берём у того, чей модуль больше (4 − 9: 9 − 4 = 5, у 9 минус, ответ −5).</p>
+</div>
+<figure class="fig">
+<div class="figrow">
+<img src="fig/o4a.svg" width="480" height="232" alt="Пять зелёных дуг вправо от −3 до 2: −3 + 5 = 2, 5 шагов вправо.">
+<img src="fig/o4b.svg" width="480" height="232" alt="Пять красных дуг влево от −3 до −8: −3 − 5 = −8, 5 шагов влево.">
+<img src="fig/o4c.svg" width="480" height="232" alt="Девять красных дуг влево от 4 до −5 через ноль: 4 − 9 = −5, 9 шагов влево, через 0.">
+</div>
+<figcaption>Шаги по прямой: при­ба­вить — вправо (зелёные дуги), вычесть — влево (красные).</figcaption>
+</figure>
+<figure class="fig">
+<img src="fig/o6.svg" width="480" height="430" alt="Две панели. Одинаковые знаки: стрелки длиной 3 и 5 в одну сторону, модули складываем, 3 + 5 = 8, знак тот же. Разные знаки: стрелка 4 вправо и стрелка 9 влево, из большего модуля вычитаем меньший, 9 − 4 = 5, у девятки минус, ответ 4 − 9 = −5.">
+<figcaption>Когда шагать долго: оди­на­ко­вые знаки — скла­ды­ваем модули, разные — вы­чи­таем.</figcaption>
+</figure>
+<div class="rule">
+<p><b>Умно­же­ние: правило знаков.</b> Плюс на минус — минус; минус на минус — плюс.</p>
+<ul>
+<li>(−2) · 3 = −6 (три раза по −2: −2, −4, −6).</li>
+<li>(−2) · (−3) = 6.</li>
+<li>Для деления то же самое: −12 : 4 = −3; −12 : (−4) = 3.</li>
+</ul>
+</div>
+<figure class="fig">
+<img src="fig/o5a.svg" width="480" height="312" alt="Таблица знаков при умножении: плюс на плюс — плюс, плюс на минус — минус, минус на плюс — минус, минус на минус — плюс. Примеры: (−2) · 3 = −6 и (−2) · (−3) = 6.">
+<img src="fig/o5b.svg" width="480" height="230" alt="Три красные дуги влево по 2 от нуля: (−2) · 3 — это три раза по −2, получается −6.">
+<figcaption>Правило знаков: оди­на­ко­вые знаки — плюс, разные — минус; (−2) · 3 — три раза по −2.</figcaption>
+</figure>
+</section>
+
+<section id="primer">
+<h2>Разо­бран­ный пример</h2>
+<p>Ниже у каждого примера — чи­сло­вая прямая. Меняй число, дей­ствие и ко­ли­че­ство шагов и смотри, куда придёшь.</p>
+<div class="worked" data-expr="-3+5" data-ans="2">
+<p><b>−3 + 5.</b> Стою на −3, делаю 5 шагов вправо: −2, −1, 0, 1, 2. Ответ <span class="res">2</span>.</p>
+<div class="numline" data-start="-3" data-op="+" data-steps="5"></div>
+</div>
+<div class="worked" data-expr="-3-5" data-ans="-8">
+<p><b>−3 − 5.</b> Стою на −3, 5 шагов влево: −4, −5, −6, −7, −8. Ответ <span class="res">−8</span>.</p>
+<div class="numline" data-start="-3" data-op="-" data-steps="5"></div>
+</div>
+<div class="worked" data-expr="4-9" data-ans="-5">
+<p><b>4 − 9.</b> Стою на 4, 9 шагов влево: 3, 2, 1, 0, −1, −2, −3, −4, −5. Ответ <span class="res">−5</span>.</p>
+</div>
+</section>
+
+<section id="podskazka">
+<h2>С под­сказ­кой</h2>
+<p>Решай сам. Под­сказки от­кры­вай по одной, только если застрял.</p>
+<ol class="tl">
+<li class="task" data-id="h1" data-n="1."><span class="expr">−6 + 10 − 7</span></li>
+</ol>
+</section>
+
+<section id="sam">
+<h2>Сам</h2>
+<ol class="tl">
+<li class="task" data-id="s1" data-n="а)"><span class="expr">−8 + 3</span></li>
+<li class="task" data-id="s2" data-n="б)"><span class="expr">−8 − 3</span></li>
+<li class="task" data-id="s3" data-n="в)"><span class="expr">5 − 12</span></li>
+<li class="task" data-id="s4" data-n="г)"><span class="expr">(−4) · 5</span></li>
+<li class="task" data-id="s5" data-n="д)"><span class="expr">(−4) · (−5)</span></li>
+<li class="task" data-id="s6" data-n="е)"><span class="expr">Какое число больше: −15 или −3?</span></li>
+</ol>
+</section>
+
+<section id="lovushka">
+<h2>Ловушка</h2>
+<div class="trap">
+<p><b class="tag">Ловушка.</b> −8 − 3 — это не −8 + 3. Минус перед числом говорит «шаг влево», и шаги влево от от­ри­ца­тель­ного числа уводят ещё дальше от нуля. Проверь себя: нарисуй прямую, если со­мне­ва­ешься — это не стыдно, это ин­стру­мент.</p>
+</div>
+</section>
+
+<section id="smes">
+<h2>Смесь</h2>
+<p>10 заданий — срез всей недели.</p>
+<ol class="tl">
+<li class="task" data-id="m1" data-n="1."><span class="expr">−5 + 2</span></li>
+<li class="task" data-id="m2" data-n="2."><span class="expr">36 : 4 · 2</span></li>
+<li class="task" data-id="m3" data-n="3."><span class="expr">32 · 12</span></li>
+<li class="task" data-id="m4" data-n="4."><span class="expr">(−3) · (−6)</span></li>
+<li class="task" data-id="m5" data-n="5."><span class="expr">7 − 10</span></li>
+<li class="task" data-id="m6" data-n="6."><span class="expr">(9 + 6) : 5</span></li>
+<li class="task" data-id="m7" data-n="7."><span class="expr">|−12|</span></li>
+<li class="task" data-id="m8" data-n="8."><span class="expr">−2 − 9</span></li>
+<li class="task" data-id="m9" data-n="9."><span class="expr">Что больше: −1 или −100?</span></li>
+<li class="task" data-id="m10" data-n="10."><span class="expr">150 : 7 — с остат­ком</span></li>
+</ol>
+<p class="score" data-for="smes"></p>
+</section>
+
+<section id="zhurnal">
+<h2>Журнал</h2>
+<div class="log">
+<p>Запиши 1–3 строки: «что пе­ре­пу­тал → как про­ве­рить». Дополни строкой «Смесь: верно N из 10» — это итог недели.</p>
+<ul>
+<li>…</li>
+</ul>
+</div>
+</section>
+  </main>
+  <footer class="pager">
+    <a href="stolbik.html">← Занятие 2</a>
+    <a href="index.html">Оглав­ле­ние →</a>
+  </footer>
+</div>
+<script type="application/json" id="data">
+{"r1":{"ans":[56]},"r2":{"ans":[8]},"r3":{"ans":[14]},"r4":{"ans":[528]},"r5":{"ans":[31]},"r6":{"ans":[88]},
+"b1":{"ans":[48]},"b2":{"ans":[54]},"b3":{"ans":[63]},"b4":{"ans":[8]},"b5":{"ans":[7]},"b6":{"ans":[6]},
+"c1":{"ans":[99,101],"labels":["на 1 меньше","на 1 больше"]},"c2":{"ans":[-1,1],"labels":["на 1 меньше","на 1 больше"]},"c3":{"ans":[-2,0],"labels":["на 1 меньше","на 1 больше"]},"c4":{"ans":[-11,-9],"labels":["на 1 меньше","на 1 больше"]},"c5":{"ans":[998,1000],"labels":["на 1 меньше","на 1 больше"]},
+"h1":{"ans":[-3],"hints":["Слева направо, сначала −6 + 10.","Получилось 4, теперь 4 − 7."]},
+"s1":{"ans":[-5]},"s2":{"ans":[-11]},"s3":{"ans":[-7]},"s4":{"ans":[-20]},"s5":{"ans":[20]},"s6":{"ans":[-3]},
+"m1":{"ans":[-3]},"m2":{"ans":[18]},"m3":{"ans":[384]},"m4":{"ans":[18]},"m5":{"ans":[-3]},"m6":{"ans":[3]},"m7":{"ans":[12]},"m8":{"ans":[-11]},"m9":{"ans":[-1]},"m10":{"ans":[21,3],"labels":["частное","остаток"]}}
+</script>
+</body>
+</html>

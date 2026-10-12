@@ -1,0 +1,54 @@
+/* Дополнения к общему style.css: задания с кнопками, поля ввода, числовая прямая.
+   Цвета — только переменные из style.css (светлая и тёмная темы). */
+ol.tl { list-style: none; padding: 0; margin: .6em 0; display: grid; gap: 10px; }
+ol.tl > li.task { position: relative; background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px 10px 46px; text-align: left; hyphens: manual; }
+ol.tl > li.task::before { content: attr(data-n); position: absolute; left: 12px; top: 10px; font-family: var(--font-mono); font-weight: 500; color: var(--muted); }
+.expr { font-family: var(--font-ui); font-weight: 600; font-size: 1.2rem; color: var(--ink); overflow-wrap: anywhere; }
+.qrow { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 8px; }
+.qrow label { font-family: var(--font-mono); font-size: .8rem; color: var(--muted); display: inline-flex; align-items: center; gap: 6px; }
+.qrow input { font: inherit; font-family: var(--font-ui); font-size: 1.1rem; width: 6.5em; max-width: 100%; padding: 7px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink); }
+.qrow input:focus-visible, .btn:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
+.btn { font-family: var(--font-ui); font-size: 1rem; font-weight: 600; min-height: 40px; padding: 6px 14px; border-radius: 8px; border: 1px solid var(--blue); background: var(--paper); color: var(--blue); cursor: pointer; }
+.btn:hover { background: var(--blue-tint); }
+.btn.main { background: var(--blue); color: var(--on-accent); }
+.btn.main:hover { background: var(--blue); filter: brightness(1.1); }
+.hint, .sol { margin-top: 8px; padding: 8px 12px; border-radius: 8px; background: var(--blue-tint); border: 1px solid var(--blue-soft); text-align: left; hyphens: manual; }
+.hint b, .sol b { font-family: var(--font-ui); color: var(--blue); }
+.sol { background: var(--paper); border: 2px solid var(--red); }
+.sol b { color: var(--red); }
+.verdict { margin-top: 8px; font-family: var(--font-ui); font-weight: 600; min-height: 1.4em; }
+.verdict.ok { color: var(--green); }
+.verdict.bad { color: var(--red); }
+.task.done { border-color: var(--green); }
+.worked { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; margin: .8em 0; }
+.worked ul, .worked ol { margin: .4em 0 .4em 1.2em; }
+.worked .res { font-family: var(--font-ui); font-weight: 700; color: var(--red); }
+pre.col { font-family: var(--font-mono); font-size: 1rem; line-height: 1.35; background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: 10px 14px; overflow-x: auto; max-width: 100%; margin: .6em 0; color: var(--ink); }
+.score { font-family: var(--font-ui); font-weight: 600; margin-top: 10px; }
+.log { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 12px 16px; margin: 1em 0; }
+.log ul { margin: .4em 0; padding-left: 1.2em; }
+.nl-wrap { background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 8px; margin: .8em 0; }
+.nl-wrap svg { display: block; width: 100%; height: auto; }
+.nl-wrap .nl-axis { stroke: var(--ink); stroke-width: 2; fill: none; }
+.nl-wrap .nl-tick { stroke: var(--ink); stroke-width: 1.5; }
+.nl-wrap .nl-num { font-family: var(--font-ui); font-size: 17px; fill: var(--ink); text-anchor: middle; }
+.nl-wrap .nl-zero { font-weight: 700; fill: var(--red); }
+.nl-wrap .nl-arc { stroke: var(--blue); stroke-width: 3; fill: none; }
+.nl-wrap .nl-dot { fill: var(--red); }
+.nl-wrap .nl-start { fill: var(--blue); }
+.nl-ctl { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 6px 0 2px; }
+.nl-ctl label { font-family: var(--font-mono); font-size: .8rem; color: var(--muted); display: inline-flex; align-items: center; gap: 6px; }
+.nl-ctl select { font: inherit; font-family: var(--font-ui); font-size: 1rem; padding: 6px 8px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink); max-width: 100%; }
+.nl-out { font-family: var(--font-ui); font-weight: 600; margin: 4px 0 0; min-height: 1.4em; }
+.cards a { text-decoration: none; }
+figure.fig img { display: block; width: 100%; max-width: 560px; height: auto; margin: 0 auto; }
+figure.fig[hidden] { display: none; }
+.figrow { display: flex; flex-wrap: wrap; gap: 12px; }
+.figrow img { flex: 1 1 300px; min-width: 0; width: auto; max-width: 100%; }
+@media (max-width: 480px) {
+  .expr { font-size: 1.1rem; }
+  pre.col { font-size: .85rem; white-space: pre-wrap; }
+  ol.tl > li.task { padding-left: 38px; }
+  .qrow input { width: 5.5em; }
+  .nl-wrap .nl-num { font-size: 26px; }
+}

@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Столбиком и остаток</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="style.css?v=1">
+  <link rel="stylesheet" href="math.css?v=5">
+  <script src="drill.js?v=2" defer></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="home" href="index.html">Ма­те­ма­тика: база · неделя 1</a>
+    <nav class="tasks" aria-label="Разделы">
+      <a class="theory" href="https://verter73.github.io/school-pages/">← Витрина</a>
+      <a class="theory" href="index.html">Оглав­ле­ние</a>
+      <a href="poryadok.html" title="Занятие 1">1</a>
+      <a href="stolbik.html" title="Занятие 2" aria-current="page">2</a>
+      <a href="otricat.html" title="Занятие 3">3</a>
+    </nav>
+  </header>
+  <main>
+    <h1><span class="num">Ма­те­ма­тика: база · занятие 2</span>Умно­же­ние и деление стол­би­ком, остаток</h1>
+    <p class="lead">Цель: ты умно­жа­ешь дву­знач­ное на дву­знач­ное и делишь трёх­знач­ное на дву­знач­ное на бумаге, на­зы­ва­ешь остаток. Ответы и под­сказки спря­таны: сначала реши сам, потом нажми кнопку.</p>
+    <section id="vspomnit">
+<h2>Вспо­мнить</h2>
+<ol class="tl">
+<li class="task" data-id="r1" data-n="1."><span class="expr">8 · 7</span></li>
+<li class="task" data-id="r2" data-n="2."><span class="expr">54 : 6</span></li>
+<li class="task" data-id="r3" data-n="3."><span class="expr">4 + 5 · 2</span></li>
+<li class="task" data-id="r4" data-n="4."><span class="expr">(4 + 5) · 2</span></li>
+<li class="task" data-id="r5" data-n="5."><span class="expr">60 − 24 : 4</span></li>
+<li class="task" data-id="r6" data-n="6."><span class="expr">12 · 10</span></li>
+</ol>
+</section>
+
+<section id="beglost">
+<h2>Бег­лость</h2>
+<p>Сначала повтори три примера, которые вчера шли дольше всех (они за­пи­саны в твоём журнале). Потом — эти:</p>
+<ol class="tl">
+<li class="task" data-id="b1" data-n="1."><span class="expr">7 · 6</span></li>
+<li class="task" data-id="b2" data-n="2."><span class="expr">9 · 8</span></li>
+<li class="task" data-id="b3" data-n="3."><span class="expr">6 · 6</span></li>
+<li class="task" data-id="b4" data-n="4."><span class="expr">56 : 7</span></li>
+<li class="task" data-id="b5" data-n="5."><span class="expr">81 : 9</span></li>
+<li class="task" data-id="b6" data-n="6."><span class="expr">42 : 6</span></li>
+<li class="task" data-id="b7" data-n="7."><span class="expr">9 · 7</span></li>
+<li class="task" data-id="b8" data-n="8."><span class="expr">8 · 6</span></li>
+</ol>
+<p>Затем — умно­же­ние на 10 и 100. Ответь и объясни словами, что про­ис­хо­дит с нулями.</p>
+<ol class="tl">
+<li class="task" data-id="n1" data-n="1."><span class="expr">23 · 10</span></li>
+<li class="task" data-id="n2" data-n="2."><span class="expr">23 · 100</span></li>
+<li class="task" data-id="n3" data-n="3."><span class="expr">450 : 10</span></li>
+</ol>
+</section>
+
+<section id="pravilo">
+<h2>Правило</h2>
+<div class="rule">
+<p><b>Умно­же­ние стол­би­ком.</b> Умно­жаем на каждую цифру второго мно­жи­теля от­дельно, начиная с единиц, и сдви­гаем строку на одну позицию влево, потому что вторая цифра — это десятки.</p>
+</div>
+<div class="rule">
+<p><b>Деление стол­би­ком с остат­ком.</b> Пример: 50 : 7. Сколько раз 7 по­ме­ща­ется в 50? 7 · 7 = 49, 7 · 8 = 56 — много. Значит 7 раз, и остаётся 50 − 49 = 1. За­пи­сы­вают: 50 : 7 = 7 (ост. 1). Про­верка: 7 · 7 + 1 = 50.</p>
+</div>
+<div class="def">
+<p><b>Остаток</b> — то, что не по­де­ли­лось. Остаток всегда меньше де­ли­теля: если по­лу­чился остаток 7 при делении на 7, значит, можно было взять ещё один раз.</p>
+</div>
+</section>
+
+<section id="primer">
+<h2>Разо­бран­ный пример</h2>
+<div class="worked" data-expr="34*12" data-ans="408">
+<p><b>34 · 12</b></p>
+<pre class="col">   34
+ × 12
+ ----
+   68    ← 34 · 2 (единицы)
+  34     ← 34 · 1 (десятки), сдвиг на одну позицию влево
+ ----
+  408</pre>
+<p>Ответ: <span class="res">408</span>.</p>
+</div>
+<p>Про­верка при­кид­кой: 34 · 12 — это при­мерно 30 · 10 = 300 и ещё немного. 408 похоже на правду, 48 или 4080 — нет.</p>
+<figure class="fig">
+<img src="fig/s1.svg" width="480" height="432" alt="Умножение столбиком 34 · 12. Первая строка 68 — это 34 · 2, вторая 340 — это 34 · 10 со сдвигом на одну позицию влево, сумма 408. Ниже прикидка: примерно 30 · 10 = 300, две полосы разной длины, 300 и 408.">
+<figcaption>Ча­стич­ные про­из­ве­де­ния: единицы и десятки со сдвигом влево, потом сумма и при­кидка.</figcaption>
+</figure>
+<div class="worked" data-expr="divmod:50/7" data-ans="7 ост. 1">
+<p><b>50 : 7</b> = <span class="res">7 (ост. 1)</span>. Про­верка: 7 · 7 + 1 = 50.</p>
+</div>
+<figure class="fig">
+<img src="fig/s2.svg" width="480" height="400" alt="Пятьдесят кружков разложены в 7 групп по 7, один лишний кружок остаётся отдельно: 50 = 7 · 7 + 1. Остаток 1 меньше делителя 7.">
+<figcaption>Деление с остат­ком: что не по­де­ли­лось — то остаток.</figcaption>
+</figure>
+</section>
+
+<section id="podskazka">
+<h2>С под­сказ­кой</h2>
+<p>Решай сам. Под­сказки от­кры­вай по одной, только если застрял.</p>
+<ol class="tl">
+<li class="task" data-id="h1" data-n="1."><span class="expr">456 : 12</span></li>
+</ol>
+<figure class="fig" hidden data-reveal="done" data-task="h1">
+<img src="fig/s3.svg" width="480" height="345" alt="Деление столбиком 456 : 12. 45 : 12 = 3, 45 − 36 = 9, сносим 6, получаем 96, 96 : 12 = 8, остаток 0. Частное 38. Проверка: 38 · 12 = 456.">
+<figcaption>Деление стол­би­ком по шагам: делим, умно­жаем, вы­чи­таем, сносим цифру.</figcaption>
+</figure>
+</section>
+
+<section id="sam">
+<h2>Сам</h2>
+<ol class="tl">
+<li class="task" data-id="s1" data-n="а)"><span class="expr">27 · 14</span></li>
+<li class="task" data-id="s2" data-n="б)"><span class="expr">812 : 4</span></li>
+<li class="task" data-id="s3" data-n="в)"><span class="expr">95 : 8 — с остат­ком</span></li>
+</ol>
+</section>
+
+<section id="lovushka">
+<h2>Ловушка</h2>
+<div class="trap">
+<p><b class="tag">Ловушка.</b> В б) после того как 8 : 4 = 2, цифра 1 на 4 не делится — в частном пишем 0, а не про­пус­каем разряд. Ответ 203, не 23. Про­верка при­кид­кой: 812 : 4 ≈ 800 : 4 = 200.</p>
+</div>
+<figure class="fig">
+<img src="fig/s4.svg" width="480" height="316" alt="Частное 812 : 4 = 203 по разрядам: в десятках стоит ноль, его нужно писать. Рядом перечёркнутое неверное частное 23, в котором разряд потерян. Прикидка 812 : 4 ≈ 800 : 4 = 200.">
+<figcaption>Ноль в частном нельзя про­пус­кать: 203, а не 23.</figcaption>
+</figure>
+</section>
+
+<section id="smes">
+<h2>Смесь</h2>
+<ol class="tl">
+<li class="task" data-id="m1" data-n="1."><span class="expr">19 − 3 · 4</span></li>
+<li class="task" data-id="m2" data-n="2."><span class="expr">45 · 11</span></li>
+<li class="task" data-id="m3" data-n="3."><span class="expr">8 · 9</span></li>
+<li class="task" data-id="m4" data-n="4."><span class="expr">91 : 7</span></li>
+<li class="task" data-id="m5" data-n="5."><span class="expr">(20 − 8) : 4</span></li>
+<li class="task" data-id="m6" data-n="6."><span class="expr">23 · 10 + 5</span></li>
+<li class="task" data-id="m7" data-n="7."><span class="expr">63 : 9 · 3</span></li>
+<li class="task" data-id="m8" data-n="8."><span class="expr">74 : 9 — с остат­ком</span></li>
+<li class="task" data-id="m9" data-n="9."><span class="expr">100 − 100 : 4</span></li>
+</ol>
+<p class="score" data-for="smes"></p>
+</section>
+
+<section id="zhurnal">
+<h2>Журнал</h2>
+<div class="log">
+<p>Запиши 1–3 строки: «что пе­ре­пу­тал → как про­ве­рить».</p>
+<ul>
+<li>…</li>
+</ul>
+</div>
+</section>
+  </main>
+  <footer class="pager">
+    <a href="poryadok.html">← Занятие 1</a>
+    <a href="otricat.html">Занятие 3 →</a>
+  </footer>
+</div>
+<script type="application/json" id="data">
+{"r1":{"ans":[56]},"r2":{"ans":[9]},"r3":{"ans":[14]},"r4":{"ans":[18]},"r5":{"ans":[54]},"r6":{"ans":[120]},
+"b1":{"ans":[42]},"b2":{"ans":[72]},"b3":{"ans":[36]},"b4":{"ans":[8]},"b5":{"ans":[9]},"b6":{"ans":[7]},"b7":{"ans":[63]},"b8":{"ans":[48]},
+"n1":{"ans":[230]},"n2":{"ans":[2300]},"n3":{"ans":[45]},
+"h1":{"ans":[38],"hints":["В 45 сколько раз по 12? (12·3 = 36, 12·4 = 48 — много) → 3, остаток 45 − 36 = 9.","Сносим 6, получаем 96. В 96 сколько раз по 12? → 8."],"sol":"Проверка: 38 · 12 = 456."},
+"s1":{"ans":[378]},"s2":{"ans":[203]},"s3":{"ans":[11,7],"labels":["частное","остаток"]},
+"m1":{"ans":[7]},"m2":{"ans":[495]},"m3":{"ans":[72]},"m4":{"ans":[13]},"m5":{"ans":[3]},"m6":{"ans":[235]},"m7":{"ans":[21]},"m8":{"ans":[8,2],"labels":["частное","остаток"]},"m9":{"ans":[75]}}
+</script>
+</body>
+</html>

@@ -17,6 +17,8 @@
     var hints = rec.hints || [];
     var sol = rec.sol;
     var labels = rec.labels || [];
+    var types = rec.types || [];
+    function typeOf(i) { return types[i] || rec.type || 'num'; }
 
     var qrow = document.createElement('div');
     qrow.className = 'qrow';
@@ -31,6 +33,11 @@
       input.setAttribute('inputmode', 'text');
       input.autocomplete = 'off';
       input.setAttribute('aria-label', lab || 'Ответ');
+      var tpi = typeOf(i);
+      if (tpi !== 'num' && window.FracAns) {
+        input.placeholder = window.FracAns.placeholder(tpi);
+        input.setAttribute('data-t', tpi);
+      }
       label.appendChild(input);
       qrow.appendChild(label);
       inputs.push(input);
@@ -92,19 +99,22 @@
 
     function check() {
       var vals = [];
+      var ok = true;
+      var extraMsg = '';
       for (var i = 0; i < inputs.length; i++) {
-        var raw = inputs[i].value;
-        var n = norm(raw);
+        var tp = typeOf(i);
+        if (tp !== 'num' && window.FracAns) {
+          var res = window.FracAns.check(tp, inputs[i].value, ans[i]);
+          if (res.invalid) { setVerdict(res.msg, ''); return; }
+          if (!res.ok) { ok = false; if (res.msg) extraMsg = res.msg; }
+          continue;
+        }
+        var n = norm(inputs[i].value);
         if (n === '' || !/^-?\d+(\.\d+)?$/.test(n)) {
           setVerdict('Введи число в каждое поле.', '');
           return;
         }
-        vals.push(Number(n));
-      }
-
-      var ok = true;
-      for (var j = 0; j < ans.length; j++) {
-        if (vals[j] !== ans[j]) { ok = false; break; }
+        if (Number(n) !== ans[i]) ok = false;
       }
 
       if (ok) {
@@ -114,7 +124,7 @@
         updateScore(li);
       } else {
         state.attempts++;
-        setVerdict('Не сошлось, найди шаг, где разошлось.', 'bad');
+        setVerdict(extraMsg ? 'Не сошлось. ' + extraMsg : 'Не сошлось, найди шаг, где разошлось.', 'bad');
         if (state.attempts >= 2 && !state.solBtn) {
           var sb = document.createElement('button');
           sb.type = 'button';

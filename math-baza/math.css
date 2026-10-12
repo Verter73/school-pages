@@ -43,6 +43,9 @@ pre.col { font-family: var(--font-mono); font-size: 1rem; line-height: 1.35; bac
 .cards a { text-decoration: none; }
 figure.fig img { display: block; width: 100%; max-width: 560px; height: auto; margin: 0 auto; }
 figure.fig[hidden] { display: none; }
+.qrow input[data-t] { width: 8em; }
+.qrow input[data-t="list"] { width: 13em; }
+.qrow input::placeholder { color: var(--muted); opacity: .7; }
 .figrow { display: flex; flex-wrap: wrap; gap: 12px; }
 .figrow img { flex: 1 1 300px; min-width: 0; width: auto; max-width: 100%; }
 @media (max-width: 480px) {
@@ -52,3 +55,5 @@ figure.fig[hidden] { display: none; }
   .qrow input { width: 5.5em; }
   .nl-wrap .nl-num { font-size: 26px; }
 }
+/* Неделя 2: подписи не мельче 14 px на экране */
+h1 .num, figure.fig figcaption, .qrow label, .cards .n { font-size: .9rem; }

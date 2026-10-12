@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Сложение и вычитание дробей</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="style.css?v=1">
+  <link rel="stylesheet" href="math.css?v=6">
+  <script src="frac.js?v=1" defer></script>
+  <script src="drill.js?v=3" defer></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="home" href="index.html">Ма­те­ма­тика: база · неделя 2</a>
+    <nav class="tasks" aria-label="Разделы">
+      <a class="theory" href="https://verter73.github.io/school-pages/">← Витрина</a>
+      <a class="theory" href="index.html">Оглав­ле­ние</a>
+      <a href="drob1.html" title="Занятие 4">4</a>
+      <a href="drob2.html" title="Занятие 5">5</a>
+      <a href="drob3.html" title="Занятие 6" aria-current="page">6</a>
+    </nav>
+  </header>
+  <main>
+    <h1><span class="num">Ма­те­ма­тика: база · занятие 6</span>Сло­же­ние и вы­чи­та­ние дробей</h1>
+    <p class="lead">Цель: ты скла­ды­ва­ешь и вы­чи­та­ешь дроби с оди­на­ко­выми и разными зна­ме­на­те­лями и сме­шан­ные числа, со­кра­ща­ешь ре­зуль­тат и вы­де­ля­ешь целую часть. Это задание 6 ОГЭ в самом частом виде. Смесь сегодня — не­дель­ный срез. Ответы и под­сказки спря­таны: сначала реши сам, потом нажми кнопку.</p>
+    <div class="rule">
+      <p><b>Как за­пи­сы­вать ответ.</b> Число — целое число. Дробь — через черту и со­кра­щён­ная до конца, на­при­мер 3/4. Сме­шан­ное число — целая часть, пробел, дробь, на­при­мер 2 3/4. Знак — один символ: &lt;, &gt; или =.</p>
+    </div>
+    <section id="vspomnit">
+<h2>Вспо­мнить</h2>
+<p>Без под­ска­зок, сразу про­верка. Отмечай, на чём спо­ткнулся, — в журнал.</p>
+<ol class="tl">
+<li class="task" data-id="r1" data-n="1."><span class="expr">Знак: 5/8 и 7/12.</span></li>
+<li class="task" data-id="r2" data-n="2."><span class="expr">Найди НОЗ чисел 6 и 8.</span></li>
+<li class="task" data-id="r3" data-n="3."><span class="expr">29/6 — запиши сме­шан­ным числом.</span></li>
+<li class="task" data-id="r4" data-n="4."><span class="expr">3&nbsp;3/4 — запиши не­пра­виль­ной дробью.</span></li>
+<li class="task" data-id="r5" data-n="5."><span class="expr">Сократи 35/49.</span></li>
+<li class="task" data-id="r6" data-n="6."><span class="expr">4 − 13</span></li>
+</ol>
+</section>
+
+<section id="beglost">
+<h2>Бег­лость: до целого и оди­на­ко­вые части</h2>
+<p>Две игры. Ошибся — пример вер­нётся: по­про­буй ещё раз. Без таймера.</p>
+<p><b>Игра 1. «До целого».</b> Сколько не хватает до 1?</p>
+<ol class="tl">
+<li class="task" data-id="b1" data-n="1."><span class="expr">Сколько не хватает до 1: 1/4.</span></li>
+<li class="task" data-id="b2" data-n="2."><span class="expr">Сколько не хватает до 1: 2/5.</span></li>
+<li class="task" data-id="b3" data-n="3."><span class="expr">Сколько не хватает до 1: 5/8.</span></li>
+<li class="task" data-id="b4" data-n="4."><span class="expr">Сколько не хватает до 1: 7/10.</span></li>
+<li class="task" data-id="b5" data-n="5."><span class="expr">Сколько не хватает до 1: 4/9.</span></li>
+<li class="task" data-id="b6" data-n="6."><span class="expr">Сколько не хватает до 1: 1/6.</span></li>
+</ol>
+<p><b>Игра 2. «Оди­на­ко­вые части».</b> Скла­ды­ваем в уме доли оди­на­ко­вого размера. Ре­зуль­тат сократи.</p>
+<ol class="tl">
+<li class="task" data-id="b7" data-n="1."><span class="expr">1/4 + 1/4</span></li>
+<li class="task" data-id="b8" data-n="2."><span class="expr">1/3 + 1/3</span></li>
+<li class="task" data-id="b9" data-n="3."><span class="expr">3/8 + 3/8</span></li>
+</ol>
+</section>
+
+<section id="pravilo">
+<h2>Правило</h2>
+<div class="rule">
+<p><b>Правило 1. Оди­на­ко­вые зна­ме­на­тели.</b> a/c + b/c = (a + b)/c и a/c − b/c = (a − b)/c. Здесь a и b — чис­ли­тели (сколько частей у каждой дроби), c — общий зна­ме­на­тель (на сколько равных частей раз­де­лено целое). Зна­ме­на­тель <b>не ме­ня­ется</b>: размер частей тот же, мы лишь считаем, сколько их стало. Ре­зуль­тат со­кра­тить, если можно. Если чис­ли­тель вышел больше зна­ме­на­теля, вы­де­лить целую часть.</p>
+</div>
+<figure class="fig">
+<img src="fig/d3_1.svg" width="480" height="250" alt="Полоска, разделённая на 7 равных частей. Закрашены 2 части, ещё 3 части дорисованы другим цветом. Подпись: 2/7 + 3/7 = 5/7.">
+<figcaption>Зна­ме­на­тель при сло­же­нии не ме­ня­ется: 2/7 + 3/7 = 5/7.</figcaption>
+</figure>
+<div class="rule">
+<p><b>Правило 2. Разные зна­ме­на­тели.</b> Скла­ды­вать и вы­чи­тать можно только части одного размера. Поэтому сначала при­во­дим дроби к наи­мень­шему общему зна­ме­на­телю (занятие 5), потом дей­ствуем по правилу 1.</p>
+</div>
+<div class="note">
+<p><b class="tag">Из жизни.</b> К по­ло­вине пирога до­ба­вили треть такого же пирога. Сколько всего? Режем всё на шестые доли: 3/6 + 2/6 = 5/6.</p>
+</div>
+<figure class="fig">
+<img src="fig/d3_2.svg" width="480" height="388" alt="Две полоски одной длины: первая разделена на 2 части, закрашена 1; вторая разделена на 3 части, закрашена 1. Ниже обе перечерчены на шестые: видно 3 и 2 закрашенные клетки. Рядом полоска, где закрашено 5 клеток из 6.">
+<figcaption>По­ло­вина и треть в шестых долях: 3/6 + 2/6 = 5/6.</figcaption>
+</figure>
+<div class="rule">
+<p><b>Правило 3. Сме­шан­ные числа.</b> Скла­ды­ваем от­дельно целые части и от­дельно дробные. Если дробная часть вышла не­пра­виль­ной, вы­де­ляем целую и до­бав­ляем её к целым. При вы­чи­та­нии (умень­ша­е­мое — то, из чего вы­чи­тают, вы­чи­та­е­мое — то, что вы­чи­тают), когда дробная часть умень­ша­е­мого меньше дробной части вы­чи­та­е­мого, «за­ни­маем» единицу у целой части и пре­вра­щаем её в дробь со зна­ме­на­те­лем нужного размера: 3 1/5 = 2 + 1 + 1/5 = 2 6/5.</p>
+</div>
+<figure class="fig">
+<img src="fig/d3_3.svg" width="480" height="320" alt="Полоски-шоколадки по 5 долей. Сверху три целые и ещё одна доля, ниже одна целая разменена на 5 пятых: 3 1/5 стало 2 6/5. Стрелка подписана «разменять на 5 пятых».">
+<figcaption>За­ни­маем единицу: 3 1/5 = 2 6/5.</figcaption>
+</figure>
+</section>
+
+<section id="primer">
+<h2>Разо­бран­ный пример</h2>
+<div class="worked" data-expr="1/2 + 1/3" data-ans="5/6">
+<p><b>А. 1/2 + 1/3</b></p>
+<ul>
+<li>НОЗ = 6. Мно­жи­тели: 6 : 2 = 3 и 6 : 3 = 2.</li>
+<li>1/2 = 3/6, 1/3 = 2/6. Скла­ды­ваем: 3/6 + 2/6 = 5/6.</li>
+<li>Ответ: <span class="res">5/6</span>.</li>
+</ul>
+</div>
+<div class="worked" data-expr="3/4 + 5/6" data-ans="1 7/12">
+<p><b>Б. 3/4 + 5/6</b></p>
+<ul>
+<li>НОЗ = 12. Мно­жи­тели: 12 : 4 = 3 и 12 : 6 = 2.</li>
+<li>9/12 + 10/12 = 19/12. Это не­пра­виль­ная дробь: 19 : 12 = 1 (ост. 7).</li>
+<li>Ответ: <span class="res">1 7/12</span>.</li>
+</ul>
+</div>
+<div class="worked" data-expr="2 3/4 + 1 3/4" data-ans="4 1/2">
+<p><b>В. 2&nbsp;3/4 + 1&nbsp;3/4</b></p>
+<ul>
+<li>Целые: 2 + 1 = 3. Дробные: 3/4 + 3/4 = 6/4 = 1 2/4 = 1 1/2.</li>
+<li>3 + 1 1/2 = 4 1/2.</li>
+<li>Ответ: <span class="res">4 1/2</span>.</li>
+</ul>
+</div>
+<div class="worked" data-expr="3 1/5 − 1 3/5" data-ans="1 3/5">
+<p><b>Г. 3&nbsp;1/5 − 1&nbsp;3/5</b></p>
+<ul>
+<li>Дробная часть 1/5 меньше 3/5. За­ни­маем: 3 1/5 = 2 6/5.</li>
+<li>2 6/5 − 1 3/5 = (2 − 1) + (6/5 − 3/5) = 1 3/5.</li>
+<li>Ответ: <span class="res">1 3/5</span>.</li>
+</ul>
+</div>
+</section>
+
+<section id="podskazka">
+<h2>С под­сказ­кой</h2>
+<p>Решай сам. Под­сказку от­кры­вай, только если застрял.</p>
+<ol class="tl">
+<li class="task" data-id="h1" data-n="1."><span class="expr">7/10 − 2/15</span></li>
+</ol>
+<figure class="fig" hidden data-reveal="hint2" data-task="h1">
+<img src="fig/d3_4.svg" width="480" height="300" alt="Две полоски с общей сеткой из 30 клеток: закрашено 21 клетка для 7/10 и 4 клетки для 2/15. Разность на рисунке не показана.">
+<figcaption>Обе дроби в трид­ца­тых долях (вы­чи­та­ние — тебе).</figcaption>
+</figure>
+</section>
+
+<section id="sam">
+<h2>Сам</h2>
+<p>Ре­зуль­тат со­кра­щай до конца, а если чис­ли­тель вышел больше зна­ме­на­теля, выдели целую часть. Два раза не сошлось — по­явится кнопка «По­ка­зать решение».</p>
+<ol class="tl">
+<li class="task" data-id="s1" data-n="а)"><span class="expr">2/9 + 5/9</span></li>
+<li class="task" data-id="s2" data-n="б)"><span class="expr">7/12 − 5/12</span></li>
+<li class="task" data-id="s3" data-n="в)"><span class="expr">1/6 + 3/4</span></li>
+<li class="task" data-id="s4" data-n="г)"><span class="expr">5/6 − 3/8</span></li>
+<li class="task" data-id="s5" data-n="д)"><span class="expr">2&nbsp;2/3 + 1&nbsp;3/4</span></li>
+<li class="task" data-id="s6" data-n="е)"><span class="expr">4&nbsp;1/6 − 1&nbsp;5/6</span></li>
+</ol>
+</section>
+
+<section id="lovushka">
+<h2>Ловушка</h2>
+<div class="trap">
+<p><b class="tag">Ловушка.</b> 1/2 + 1/3 = 2/5. Здесь сложили чис­ли­тели и сложили зна­ме­на­тели. Так нельзя. Про­верка при­кид­кой: 1/2 + 1/3 — это по­ло­вина и ещё что-то, значит ре­зуль­тат больше 1/2. А 2/5 меньше 1/2 (2/5 = 4/10, 1/2 = 5/10). Значит, ответ не сошёлся. В а) не скла­ды­вай зна­ме­на­тели: размер частей остаётся тем же. Проверь себя: частей какого размера считаем?</p>
+</div>
+</section>
+
+<section id="smes">
+<h2>Смесь — не­дель­ный срез</h2>
+<p>Впе­ре­мешку: дроби, знаки, порядок дей­ствий, деление. Это итог недели: 10 заданий. Ре­зуль­тат смотри в строке «Верно: N из 10» под за­да­ни­ями.</p>
+<ol class="tl">
+<li class="task" data-id="m1" data-n="1."><span class="expr">1/5 + 2/5</span></li>
+<li class="task" data-id="m2" data-n="2."><span class="expr">5/6 − 1/3</span></li>
+<li class="task" data-id="m3" data-n="3."><span class="expr">1/4 + 2/3</span></li>
+<li class="task" data-id="m4" data-n="4."><span class="expr">3&nbsp;1/2 + 2&nbsp;1/3</span></li>
+<li class="task" data-id="m5" data-n="5."><span class="expr">5 − 2&nbsp;3/7</span></li>
+<li class="task" data-id="m6" data-n="6."><span class="expr">Что больше: 7/9 или 3/4?</span></li>
+<li class="task" data-id="m7" data-n="7."><span class="expr">21/6 — запиши сме­шан­ным числом после со­кра­ще­ния.</span></li>
+<li class="task" data-id="m8" data-n="8."><span class="expr">(−3) · 9</span></li>
+<li class="task" data-id="m9" data-n="9."><span class="expr">6 + 4 · 5 − 8</span></li>
+<li class="task" data-id="m10" data-n="10."><span class="expr">156 : 12</span></li>
+</ol>
+<p class="score" data-for="smes"></p>
+</section>
+
+<section id="zhurnal">
+<h2>Журнал</h2>
+<div class="log">
+<p>Запиши 1–3 строки: «что пе­ре­пу­тал → как про­ве­рить». Пример формы: «сложил зна­ме­на­тели → зна­ме­на­тель при сло­же­нии не ме­ня­ется, считаю части одного размера». Там же отметь ре­зуль­тат смеси из строки «Верно: N из 10».</p>
+<ul>
+<li>…</li>
+</ul>
+</div>
+</section>
+  </main>
+  <footer class="pager">
+    <a href="drob2.html">← Занятие 5</a>
+    <a href="index.html">Оглав­ле­ние →</a>
+  </footer>
+</div>
+<script type="application/json" id="data">
+{"r1":{"type":"sign","ans":[">"]},"r2":{"ans":[24]},"r3":{"type":"mixed","ans":["4 5/6"]},"r4":{"type":"frac","ans":["15/4"]},"r5":{"type":"frac","ans":["5/7"]},"r6":{"ans":[-9]},
+"b1":{"type":"frac","ans":["3/4"]},"b2":{"type":"frac","ans":["3/5"]},"b3":{"type":"frac","ans":["3/8"]},"b4":{"type":"frac","ans":["3/10"]},"b5":{"type":"frac","ans":["5/9"]},"b6":{"type":"frac","ans":["5/6"]},
+"b7":{"type":"frac","ans":["1/2"]},"b8":{"type":"frac","ans":["2/3"]},"b9":{"type":"frac","ans":["3/4"]},
+"h1":{"type":"frac","ans":["17/30"],"hints":["НОЗ чисел 10 и 15? Числа, кратные 15: 15, 30. 30 делится на 10.","Множители 3 и 2. Получилось 21/30 − 4/30."],"sol":"НОЗ = 30: 7/10 = 21/30 и 2/15 = 4/30. Вычитаем числители: 21 − 4 = 17, получилось 17/30."},
+"s1":{"type":"frac","ans":["7/9"],"sol":"Знаменатель остаётся 9: 2 + 5 = 7, получилось 7/9."},
+"s2":{"type":"frac","ans":["1/6"],"sol":"7 − 5 = 2, знаменатель 12: получилось 2/12. Сокращаем на 2: 1/6."},
+"s3":{"type":"frac","ans":["11/12"],"sol":"НОЗ = 12: 1/6 = 2/12 и 3/4 = 9/12. 2/12 + 9/12 = 11/12."},
+"s4":{"type":"frac","ans":["11/24"],"sol":"НОЗ = 24: 5/6 = 20/24 и 3/8 = 9/24. 20/24 − 9/24 = 11/24."},
+"s5":{"type":"mixed","ans":["4 5/12"],"sol":"Целые: 2 + 1 = 3. Дробные: 2/3 + 3/4 = 8/12 + 9/12 = 17/12 = 1 5/12. Всего 3 + 1 5/12 = 4 5/12."},
+"s6":{"type":"mixed","ans":["2 1/3"],"sol":"Дробная часть 1/6 меньше 5/6, занимаем: 4 1/6 = 3 7/6. Тогда 3 7/6 − 1 5/6 = 2 2/6 = 2 1/3."},
+"m1":{"type":"frac","ans":["3/5"]},"m2":{"type":"frac","ans":["1/2"]},"m3":{"type":"frac","ans":["11/12"]},"m4":{"type":"mixed","ans":["5 5/6"]},"m5":{"type":"mixed","ans":["2 4/7"]},
+"m6":{"type":"frac","ans":["7/9"]},"m7":{"type":"mixed","ans":["3 1/2"]},"m8":{"ans":[-27]},"m9":{"ans":[18]},"m10":{"ans":[13]}}
+</script>
+</body>
+</html>

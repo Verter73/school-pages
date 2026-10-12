@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Сравнение дробей</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="style.css?v=1">
+  <link rel="stylesheet" href="math.css?v=6">
+  <script src="frac.js?v=1" defer></script>
+  <script src="drill.js?v=3" defer></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="home" href="index.html">Ма­те­ма­тика: база · неделя 2</a>
+    <nav class="tasks" aria-label="Разделы">
+      <a class="theory" href="https://verter73.github.io/school-pages/">← Витрина</a>
+      <a class="theory" href="index.html">Оглав­ле­ние</a>
+      <a href="drob1.html" title="Занятие 4">4</a>
+      <a href="drob2.html" title="Занятие 5" aria-current="page">5</a>
+      <a href="drob3.html" title="Занятие 6">6</a>
+    </nav>
+  </header>
+  <main>
+    <h1><span class="num">Ма­те­ма­тика: база · занятие 5</span>Срав­не­ние дробей и общий зна­ме­на­тель</h1>
+    <p class="lead">Цель: ты срав­ни­ва­ешь две дроби, на­хо­дишь наи­мень­ший общий зна­ме­на­тель и до­пол­ни­тель­ные мно­жи­тели, при­во­дишь дроби к общему зна­ме­на­телю. Это основа для сло­же­ния и вы­чи­та­ния на сле­ду­ю­щем занятии. Ответы и под­сказки спря­таны: сначала реши сам, потом нажми кнопку.</p>
+    <div class="rule">
+      <p><b>Как за­пи­сы­вать ответ.</b> Число — целое число. Дробь — через черту и со­кра­щён­ная до конца, на­при­мер 3/4. Сме­шан­ное число — целая часть, пробел, дробь, на­при­мер 2 3/4. Знак — один символ: &lt;, &gt; или =. Не­сколько дробей — через запятую.</p>
+    </div>
+    <section id="vspomnit">
+<h2>Вспо­мнить</h2>
+<p>Без под­ска­зок, сразу про­верка. Отмечай, на чём спо­ткнулся, — в журнал.</p>
+<ol class="tl">
+<li class="task" data-id="r1" data-n="1."><span class="expr">Сократи 12/18.</span></li>
+<li class="task" data-id="r2" data-n="2."><span class="expr">7/4 — запиши сме­шан­ным числом.</span></li>
+<li class="task" data-id="r3" data-n="3."><span class="expr">2&nbsp;3/5 — запиши не­пра­виль­ной дробью.</span></li>
+<li class="task" data-id="r4" data-n="4."><span class="expr">(−4) · 6</span></li>
+<li class="task" data-id="r5" data-n="5."><span class="expr">12 · 15</span></li>
+<li class="task" data-id="r6" data-n="6."><span class="expr">9 + 2 · (8 − 5)</span></li>
+</ol>
+</section>
+
+<section id="beglost">
+<h2>Бег­лость: со­кра­тить и до­стро­ить</h2>
+<p>Две игры. Ошибся — пример вер­нётся: по­про­буй ещё раз. Без таймера.</p>
+<p><b>Игра 1. «Сократи быстро».</b></p>
+<ol class="tl">
+<li class="task" data-id="b1" data-n="1."><span class="expr">Сократи 4/8.</span></li>
+<li class="task" data-id="b2" data-n="2."><span class="expr">Сократи 6/9.</span></li>
+<li class="task" data-id="b3" data-n="3."><span class="expr">Сократи 10/20.</span></li>
+<li class="task" data-id="b4" data-n="4."><span class="expr">Сократи 12/16.</span></li>
+<li class="task" data-id="b5" data-n="5."><span class="expr">Сократи 15/45.</span></li>
+<li class="task" data-id="b6" data-n="6."><span class="expr">Сократи 14/35.</span></li>
+</ol>
+<p><b>Игра 2. «Дострой дробь».</b> Впиши чис­ли­тель вместо во­про­си­тель­ного знака. Объясни словами: на сколько умно­жили зна­ме­на­тель, на столько же умно­жаем чис­ли­тель.</p>
+<ol class="tl">
+<li class="task" data-id="b7" data-n="1."><span class="expr">1/2 = ?/6</span></li>
+<li class="task" data-id="b8" data-n="2."><span class="expr">2/3 = ?/9</span></li>
+<li class="task" data-id="b9" data-n="3."><span class="expr">3/4 = ?/12</span></li>
+<li class="task" data-id="b10" data-n="4."><span class="expr">5/6 = ?/18</span></li>
+</ol>
+</section>
+
+<section id="pravilo">
+<h2>Правило</h2>
+<p><b>Три случая.</b> Как срав­ни­вать две дроби, зависит от того, какие у них чис­ли­тели и зна­ме­на­тели.</p>
+<div class="rule">
+<p><b>1. Оди­на­ко­вые зна­ме­на­тели.</b> Части одного размера, значит больше та дробь, у которой чис­ли­тель больше: 2/7 &lt; 5/7.</p>
+</div>
+<figure class="fig">
+<img src="fig/d2_1.svg" width="480" height="326" alt="Две одинаковые полоски, каждая разделена на 7 равных частей. На первой закрашены 2 части, на второй 5. Подпись: больше там, где числитель больше.">
+<figcaption>Оди­на­ко­вые зна­ме­на­тели: срав­ни­ваем чис­ли­тели.</figcaption>
+</figure>
+<div class="rule">
+<p><b>2. Оди­на­ко­вые чис­ли­тели.</b> Берём одно и то же число частей, но размер частей разный. Чем на большее число частей раз­де­лили целое, тем эти части мельче. Значит, больше та дробь, у которой зна­ме­на­тель <b>меньше</b>: 1/3 &gt; 1/5.</p>
+</div>
+<figure class="fig">
+<img src="fig/d2_2.svg" width="480" height="326" alt="Две одинаковые полоски: первая разделена на 3 части, вторая на 5. В каждой закрашена одна часть. Закрашенная часть первой полоски длиннее.">
+<figcaption>Оди­на­ко­вые чис­ли­тели: чем меньше зна­ме­на­тель, тем крупнее часть.</figcaption>
+</figure>
+<div class="rule">
+<p><b>3. Разные зна­ме­на­тели и разные чис­ли­тели.</b> При­во­дим дроби к одному зна­ме­на­телю. Только тогда можно срав­ни­вать чис­ли­тели.</p>
+</div>
+<p class="def"><b>Наи­мень­ший общий зна­ме­на­тель (НОЗ)</b> — наи­мень­шее число, которое делится на оба зна­ме­на­теля. Как найти: вы­пи­сы­ваем числа, которые делятся на <b>больший</b> зна­ме­на­тель (кратные), и берём первое, которое делится ещё и на меньший.</p>
+<p class="def"><b>До­пол­ни­тель­ный мно­жи­тель</b> — число k, на которое умно­жаем чис­ли­тель и зна­ме­на­тель дроби, чтобы по­лу­чить НОЗ. Он равен НОЗ : зна­ме­на­тель дроби. Само пре­об­ра­зо­ва­ние: a/b = (a · k)/(b · k). Здесь a — чис­ли­тель, b — зна­ме­на­тель, k — до­пол­ни­тель­ный мно­жи­тель. Зна­че­ние дроби не ме­ня­ется (занятие 4).</p>
+<div class="note">
+<p><b class="tag">Из жизни.</b> Что больше, 3/8 пиццы или 5/12 такой же пиццы? Куски разного размера, на глаз не видно. Режем обе пиццы на оди­на­ко­вые мелкие куски, и можно считать.</p>
+</div>
+<figure class="fig">
+<img src="fig/d2_3.svg" width="480" height="340" alt="Две одинаковые полоски одна над другой с общей сеткой из 24 клеток. Закрашено 9 клеток (это 3/8) и 10 клеток (это 5/12). Закрашено больше во второй полоске.">
+<figcaption>Общая сетка из 24 клеток: 3/8 = 9/24 и 5/12 = 10/24.</figcaption>
+</figure>
+</section>
+
+<section id="primer">
+<h2>Разо­бран­ный пример</h2>
+<div class="worked" data-expr="Сравни 3/8 и 5/12." data-ans="&lt;">
+<p><b>Сравни 3/8 и 5/12.</b></p>
+<ul>
+<li>Больший зна­ме­на­тель 12. Кратные 12: 12, 24. 12 на 8 не делится. 24 : 8 = 3, делится. НОЗ = 24.</li>
+<li>До­пол­ни­тель­ные мно­жи­тели: для 3/8 — 24 : 8 = 3; для 5/12 — 24 : 12 = 2.</li>
+<li>3/8 = (3 · 3)/(8 · 3) = 9/24. 5/12 = (5 · 2)/(12 · 2) = 10/24.</li>
+<li>9/24 &lt; 10/24, значит 3/8 &lt; 5/12. Ответ: <span class="res">3/8 &lt; 5/12</span>.</li>
+</ul>
+</div>
+</section>
+
+<section id="podskazka">
+<h2>С под­сказ­кой</h2>
+<p>Решай сам. Под­сказку от­кры­вай, только если застрял.</p>
+<ol class="tl">
+<li class="task" data-id="h1" data-n="1."><span class="expr">Сравни 5/6 и 7/9.</span></li>
+</ol>
+<figure class="fig" hidden data-reveal="hint2" data-task="h1">
+<img src="fig/d2_4.svg" width="480" height="300" alt="Две полоски с общей сеткой из 18 клеток: закрашено 15 клеток для 5/6 и 14 клеток для 7/9. Знак сравнения на рисунке не показан.">
+<figcaption>Обе дроби на сетке из 18 клеток (знак поставь сам).</figcaption>
+</figure>
+</section>
+
+<section id="sam">
+<h2>Сам</h2>
+<p>Сначала приведи дроби к общему зна­ме­на­телю, если он разный. Два раза не сошлось — по­явится кнопка «По­ка­зать решение».</p>
+<ol class="tl">
+<li class="task" data-id="s1" data-n="а)"><span class="expr">Знак: 3/7 и 5/7.</span></li>
+<li class="task" data-id="s2" data-n="б)"><span class="expr">Знак: 4/9 и 4/5.</span></li>
+<li class="task" data-id="s3" data-n="в)"><span class="expr">Знак: 2/3 и 5/8.</span></li>
+<li class="task" data-id="s4" data-n="г)"><span class="expr">Знак: 7/10 и 11/15.</span></li>
+<li class="task" data-id="s5" data-n="д)"><span class="expr">Рас­по­ложи по воз­рас­та­нию: 1/2, 2/5, 3/4.</span></li>
+<li class="task" data-id="s6" data-n="е)"><span class="expr">Найди НОЗ для 5/6 и 3/10 и приведи обе дроби к нему.</span></li>
+</ol>
+</section>
+
+<section id="lovushka">
+<h2>Ловушка</h2>
+<div class="trap">
+<p><b class="tag">Ловушка.</b> «1/5 больше 1/3, потому что 5 больше 3». Это срав­не­ние зна­ме­на­те­лей как обычных чисел. Зна­ме­на­тель говорит, на сколько частей раз­де­лили целое, а не сколько частей взяли. Чем больше зна­ме­на­тель при оди­на­ко­вом чис­ли­теле, тем мельче части. Про­верка кар­тин­кой или жизнью: пирог на 5 человек делится на более мелкие куски, чем пирог на 3. В б) проверь именно это. Проверь себя: ты срав­ни­вал чис­ли­тели или зна­ме­на­тели?</p>
+</div>
+</section>
+
+<section id="smes">
+<h2>Смесь</h2>
+<p>Впе­ре­мешку: дроби, порядок дей­ствий, знаки, таблица. Форму ответа под­ска­зы­вает серый образец в поле.</p>
+<ol class="tl">
+<li class="task" data-id="m1" data-n="1."><span class="expr">Сократи 21/28.</span></li>
+<li class="task" data-id="m2" data-n="2."><span class="expr">11/3 — запиши сме­шан­ным числом.</span></li>
+<li class="task" data-id="m3" data-n="3."><span class="expr">Что больше: 5/9 или 4/7?</span></li>
+<li class="task" data-id="m4" data-n="4."><span class="expr">−9 − 4</span></li>
+<li class="task" data-id="m5" data-n="5."><span class="expr">36 : 4 · 3</span></li>
+<li class="task" data-id="m6" data-n="6."><span class="expr">45 · 12</span></li>
+<li class="task" data-id="m7" data-n="7."><span class="expr">Рас­по­ложи по воз­рас­та­нию: 3/4, 2/3, 5/6.</span></li>
+<li class="task" data-id="m8" data-n="8."><span class="expr">Найди НОЗ чисел 4 и 10.</span></li>
+<li class="task" data-id="m9" data-n="9."><span class="expr">Приведи 3/5 к зна­ме­на­телю 35: чему равен чис­ли­тель?</span></li>
+</ol>
+<p class="score" data-for="smes"></p>
+</section>
+
+<section id="zhurnal">
+<h2>Журнал</h2>
+<div class="log">
+<p>Запиши 1–3 строки: «что пе­ре­пу­тал → как про­ве­рить». Пример формы: «сравнил зна­ме­на­тели вместо чис­ли­те­лей → привожу к общему зна­ме­на­телю и смотрю на чис­ли­тели».</p>
+<ul>
+<li>…</li>
+</ul>
+</div>
+</section>
+  </main>
+  <footer class="pager">
+    <a href="drob1.html">← Занятие 4</a>
+    <a href="drob3.html">Занятие 6 →</a>
+  </footer>
+</div>
+<script type="application/json" id="data">
+{"r1":{"type":"frac","ans":["2/3"]},"r2":{"type":"mixed","ans":["1 3/4"]},"r3":{"type":"frac","ans":["13/5"]},"r4":{"ans":[-24]},"r5":{"ans":[180]},"r6":{"ans":[15]},
+"b1":{"type":"frac","ans":["1/2"]},"b2":{"type":"frac","ans":["2/3"]},"b3":{"type":"frac","ans":["1/2"]},"b4":{"type":"frac","ans":["3/4"]},"b5":{"type":"frac","ans":["1/3"]},"b6":{"type":"frac","ans":["2/5"]},
+"b7":{"ans":[3]},"b8":{"ans":[6]},"b9":{"ans":[9]},"b10":{"ans":[15]},
+"h1":{"type":"sign","ans":[">"],"hints":["Назови числа, которые делятся на 9: 9, 18. Какое из них делится ещё и на 6?","НОЗ = 18. Множители: 18 : 6 = 3 и 18 : 9 = 2. Получилось 15/18 и 14/18."],"sol":"НОЗ = 18: 5/6 = 15/18 и 7/9 = 14/18. 15 больше 14, значит 5/6 больше 7/9."},
+"s1":{"type":"sign","ans":["<"],"sol":"Знаменатели одинаковые, числитель 3 меньше числителя 5."},
+"s2":{"type":"sign","ans":["<"],"sol":"Числители одинаковые, поэтому больше та дробь, у которой знаменатель меньше: 5 меньше 9, значит 4/5 больше 4/9."},
+"s3":{"type":"sign","ans":[">"],"sol":"НОЗ = 24: 2/3 = 16/24 и 5/8 = 15/24. 16 больше 15."},
+"s4":{"type":"sign","ans":["<"],"sol":"НОЗ = 30: 7/10 = 21/30 и 11/15 = 22/30. 21 меньше 22."},
+"s5":{"type":"list","ans":["2/5, 1/2, 3/4"],"sol":"НОЗ = 20: 1/2 = 10/20, 2/5 = 8/20, 3/4 = 15/20. По возрастанию числителей 8, 10, 15."},
+"s6":{"type":"num","types":["num","raw","raw"],"labels":["НОЗ","5/6 =","3/10 ="],"ans":[30,"25/30","9/30"],"sol":"НОЗ = 30: 6 · 5 = 30 и 10 · 3 = 30. Множители 5 и 3: 5/6 = 25/30 и 3/10 = 9/30."},
+"m1":{"type":"frac","ans":["3/4"]},"m2":{"type":"mixed","ans":["3 2/3"]},"m3":{"type":"frac","ans":["4/7"]},"m4":{"ans":[-13]},"m5":{"ans":[27]},"m6":{"ans":[540]},
+"m7":{"type":"list","ans":["2/3, 3/4, 5/6"]},"m8":{"ans":[20]},"m9":{"ans":[21]}}
+</script>
+</body>
+</html>

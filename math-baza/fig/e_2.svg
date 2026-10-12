@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 290" width="480" height="290" role="img" aria-label="Вычитание столбиком: число с дописанным нулём над вычитаемым"><title>Вычитание столбиком: число с дописанным нулём над вычитаемым</title><style>
+.bg{fill:#FAF5EC;stroke:#D8C9B0;stroke-width:2}
+.t{fill:#1E2F35}.tm{fill:#4E4638}.tb{fill:#1B5E74}.tr{fill:#A63F18}.tg{fill:#3F6A22}.td{fill:#7A4F06}.to{fill:#F7F0E4}
+.fb{fill:#DDE4DE}.fr{fill:#F2DDCF}.fg{fill:#E2E6CE}.fd{fill:#F6E3B6}.fp{fill:#FAF5EC}
+.fbs{fill:#1B5E74}.frs{fill:#A63F18}.fgs{fill:#3F6A22}.fds{fill:#7A4F06}.fi{fill:#1E2F35}
+.sb{stroke:#1B5E74}.sr{stroke:#A63F18}.sg{stroke:#3F6A22}.sd{stroke:#7A4F06}.si{stroke:#1E2F35}.sl{stroke:#D8C9B0}
+@media (prefers-color-scheme: dark){
+.bg{fill:#243034;stroke:#3E4E53}
+.t{fill:#F8F0E3}.tm{fill:#D2C6B0}.tb{fill:#8ECBDD}.tr{fill:#F09866}.tg{fill:#B3D67F}.td{fill:#EDC274}.to{fill:#1C2528}
+.fb{fill:#22373D}.fr{fill:#3F2B23}.fg{fill:#2C3725}.fd{fill:#3A3020}.fp{fill:#243034}
+.fbs{fill:#8ECBDD}.frs{fill:#F09866}.fgs{fill:#B3D67F}.fds{fill:#EDC274}.fi{fill:#F8F0E3}
+.sb{stroke:#8ECBDD}.sr{stroke:#F09866}.sg{stroke:#B3D67F}.sd{stroke:#EDC274}.si{stroke:#F8F0E3}.sl{stroke:#3E4E53}
+}
+text{font-family:Jost,"Segoe UI",Arial,sans-serif;font-weight:600}
+.mono{font-family:"JetBrains Mono",Consolas,"Courier New",monospace}
+path,line,rect,circle{stroke-linecap:round;stroke-linejoin:round}
+</style><rect class="bg" x="1" y="1" width="478" height="288" rx="14"/><text x="240" y="34" class="tm" font-size="24" text-anchor="middle">Числа записаны столбиком</text><path d="M 330.0 84 Q 305.0 40 280.0 84" class="sb" fill="none" stroke-width="3"/><polygon points="280.0,84.0 280.0,67.9 293.9,75.8" class="fbs"/><text x="352" y="76" class="tb" font-size="22" text-anchor="start">занимаем</text><text x="150" y="150" class="tb" font-size="40" text-anchor="middle">1</text><text x="200" y="150" class="tg" font-size="40" text-anchor="middle">4</text><text x="240" y="150" class="t" font-size="40" text-anchor="middle">,</text><text x="280" y="150" class="tr" font-size="40" text-anchor="middle">7</text><rect x="306" y="108" width="48" height="52" rx="8" class="fp sr" stroke-width="3" stroke-dasharray="6 6"/><text x="330" y="150" class="tm" font-size="40" text-anchor="middle">0</text><text x="100" y="214" class="t" font-size="40" text-anchor="middle">−</text><text x="200" y="214" class="tg" font-size="40" text-anchor="middle">6</text><text x="240" y="214" class="t" font-size="40" text-anchor="middle">,</text><text x="280" y="214" class="tr" font-size="40" text-anchor="middle">8</text><text x="330" y="214" class="td" font-size="40" text-anchor="middle">5</text><line x1="90" y1="228" x2="360" y2="228" class="si" stroke-width="4"/><text x="240" y="270" class="tm" font-size="22" text-anchor="middle">сотые: 0 − 5 — занимаем у десятых</text></svg>

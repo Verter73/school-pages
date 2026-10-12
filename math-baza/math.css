@@ -76,3 +76,14 @@ h1 .num, figure.fig figcaption, .qrow label, .cards .n { font-size: .9rem; }
 @media (max-width: 480px) {
   ol.tl > li.task[data-n^="1"][data-n$="."]:not([data-n="1."]) { padding-left: 48px; }
 }
+/* Таблицы данных (неделя 6): v=8, правила только для table.data, остальные страницы не затронуты */
+table.data { width: 100%; border-collapse: collapse; font-family: var(--font-ui); font-size: 1rem; margin: .6em 0; background: var(--paper); color: var(--ink); }
+table.data caption { text-align: left; font-weight: 600; padding: 4px 0 6px; color: var(--muted); }
+table.data th, table.data td { border: 1px solid var(--line); padding: 6px 8px; text-align: left; vertical-align: top; }
+table.data thead th { background: var(--blue-tint); }
+table.data tbody th { font-weight: 600; }
+table.data td.n { text-align: right; font-variant-numeric: tabular-nums; }
+@media (max-width: 480px) {
+  table.data { font-size: .9rem; }
+  table.data th, table.data td { padding: 5px 6px; }
+}

@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Сложение и вычитание десятичных дробей</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="style.css?v=1">
+  <link rel="stylesheet" href="math.css?v=7">
+  <script src="frac.js?v=2" defer></script>
+  <script src="drill.js?v=3" defer></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="home" href="index.html">Ма­те­ма­тика: база · неделя 4</a>
+    <nav class="tasks" aria-label="Разделы">
+      <a class="theory" href="https://verter73.github.io/school-pages/">← Витрина</a>
+      <a class="theory" href="index.html">Оглав­ле­ние</a>
+      <a href="desyat2.html" title="Занятие 10" aria-current="page">10</a>
+      <a href="desyat3.html" title="Занятие 11">11</a>
+      <a href="desyat4.html" title="Занятие 12">12</a>
+    </nav>
+  </header>
+  <main>
+    <h1><span class="num">Ма­те­ма­тика: база · занятие 10</span>Сло­же­ние и вы­чи­та­ние де­ся­тич­ных дробей</h1>
+    <p class="lead">Цель: ты скла­ды­ва­ешь и вы­чи­та­ешь де­ся­тич­ные дроби стол­би­ком: ставишь запятую под запятой, до­пи­сы­ва­ешь нули и решаешь задачу с день­гами. Это задание 6 ОГЭ. Ответы и под­сказки спря­таны: сначала реши сам, потом нажми кнопку.</p>
+    <div class="rule">
+      <p><b>Как за­пи­сы­вать ответ.</b> Число — целое число. Дробь — через черту и со­кра­щён­ная до конца, на­при­мер 3/4. Сме­шан­ное число — целая часть, пробел, дробь, на­при­мер 2 3/4. Де­ся­тич­ная дробь — с запятой, на­при­мер 3,25. Знак — один символ: &lt;, &gt; или =.</p>
+    </div>
+<section id="vspomnit">
+<h2>Вспо­мнить</h2>
+<p>Без под­ска­зок, сразу про­верка. Отмечай, на чём спо­ткнулся, — в журнал.</p>
+<ol class="tl">
+<li class="task" data-id="r1" data-n="1."><span class="expr">Запиши цифрами: «шесть целых пять сотых».</span></li>
+<li class="task" data-id="r2" data-n="2."><span class="expr">Округли 3,846 до сотых.</span></li>
+<li class="task" data-id="r3" data-n="3."><span class="expr">Знак: 0,09 и 0,1.</span></li>
+<li class="task" data-id="r4" data-n="4."><span class="expr">3/5 : 9/10</span></li>
+<li class="task" data-id="r5" data-n="5."><span class="expr">7/9 − 1/6</span></li>
+<li class="task" data-id="r6" data-n="6."><span class="expr">29 · 13</span></li>
+</ol>
+</section>
+
+<section id="beglost">
+<h2>Бег­лость: до единицы и вокруг</h2>
+<p>Игра «до единицы и вокруг». Ошибся — пример вер­нётся: по­про­буй ещё раз. Без таймера. Пока счи­та­ешь, скажи себе, на какие десятые или сотые смот­ришь.</p>
+<ol class="tl">
+<li class="task" data-id="b1" data-n="1."><span class="expr">1 − 0,3</span></li>
+<li class="task" data-id="b2" data-n="2."><span class="expr">1 − 0,25</span></li>
+<li class="task" data-id="b3" data-n="3."><span class="expr">1 − 0,6</span></li>
+<li class="task" data-id="b4" data-n="4."><span class="expr">1 − 0,05</span></li>
+<li class="task" data-id="b5" data-n="5."><span class="expr">0,8 + 0,5</span></li>
+<li class="task" data-id="b6" data-n="6."><span class="expr">0,9 − 0,4</span></li>
+<li class="task" data-id="b7" data-n="7."><span class="expr">0,15 + 0,05</span></li>
+<li class="task" data-id="b8" data-n="8."><span class="expr">0,4 + 0,7</span></li>
+</ol>
+</section>
+
+<section id="pravilo">
+<h2>Правило</h2>
+<div class="rule">
+<p><b>Скла­ды­ваем и вы­чи­таем стол­би­ком.</b> Разряд — это место цифры в числе: единицы, десятые, сотые. Сла­га­е­мые — числа, которые скла­ды­вают. Умень­ша­е­мое — число, из ко­то­рого вы­чи­тают, вы­чи­та­е­мое — число, которое вы­чи­тают.</p>
+<ol>
+<li>Запиши числа друг под другом так, чтобы <b>запятая стояла под запятой</b>: единицы под еди­ни­цами, десятые под де­ся­тыми, сотые под сотыми.</li>
+<li>Пустые места справа заполни нулями: 3,5 = 3,50, а целое 7 = 7,00. Ноль в конце дробной части число не меняет.</li>
+<li>Скла­ды­вай или вычитай, как целые числа, справа налево. Если в разряде вышло больше девяти — пе­ре­неси единицу в со­сед­ний слева разряд. Если из меньшей цифры вы­чи­тают большую — «займи» единицу у со­сед­него слева разряда.</li>
+<li>В ответе поставь запятую точно под за­пя­тыми.</li>
+</ol>
+<p><b>Почему так.</b> Скла­ды­вать можно только части одного размера. Десятые скла­ды­ваем с де­ся­тыми, сотые с сотыми — так же, как у обык­но­вен­ных дробей мы при­во­дим к общему зна­ме­на­телю.</p>
+</div>
+<figure class="fig">
+<img src="fig/e_1.svg" width="480" height="310" alt="Таблица разрядов с колонками: десятки, единицы, запятая, десятые, сотые. В неё вписаны числа 13,5 и 2,48 так, что запятые стоят одна под другой; в числе 13,5 дописан ноль в сотых, цифры разных разрядов цветные.">
+<figcaption>Запятая под запятой: 13,5 = 13,50, и сотые стоят под сотыми.</figcaption>
+</figure>
+<div class="note">
+<p><b class="tag">Из жизни.</b> Хлеб стоит 42,50 руб., молоко — 68,90 руб. Стол­би­ком рубли пишем под рублями, копейки под ко­пей­ками. Если числа сдви­нуть, рубли сло­жатся с ко­пей­ками, и сумма выйдет не­пра­виль­ной.</p>
+</div>
+</section>
+
+<section id="primer">
+<h2>Разо­бран­ный пример</h2>
+<div class="worked" data-expr="3,45 + 12,8" data-ans="16,25">
+<p><b>А. 3,45 + 12,8</b></p>
+<pre class="col">   3,45
++ 12,80    ← дописали ноль в сотых
+-------
+  16,25</pre>
+<ul>
+<li>Сотые: 5 + 0 = 5. Десятые: 4 + 8 = 12, пишем 2, а 1 пе­ре­но­сим в единицы.</li>
+<li>Единицы: 3 + 2 + 1 (перенос) = 6. Десятки: 1 спус­каем вниз.</li>
+<li>Ответ: <span class="res">16,25</span>.</li>
+</ul>
+</div>
+<div class="worked" data-expr="5 − 1,35" data-ans="3,65">
+<p><b>Б. 5 − 1,35</b></p>
+<pre class="col">  5,00    ← целое число записали с нулями
+− 1,35
+------
+  3,65</pre>
+<ul>
+<li>Сотые: 0 − 5 не по­лу­ча­ется. Десятых тоже нет, поэтому за­ни­маем у единиц: 5,00 = 4 целых 9 десятых 10 сотых. Сотые: 10 − 5 = 5.</li>
+<li>Десятые: 9 − 3 = 6. Единицы: 4 − 1 = 3.</li>
+<li>Ответ: <span class="res">3,65</span>. Про­верка: 3,65 + 1,35 = 5,00.</li>
+</ul>
+</div>
+</section>
+
+<section id="podskazka">
+<h2>С под­сказ­кой</h2>
+<p>Решай сам. Под­сказку от­кры­вай, только если застрял.</p>
+<ol class="tl">
+<li class="task" data-id="h1" data-n="1."><span class="expr">14,7 − 6,85</span></li>
+</ol>
+<figure class="fig" hidden data-reveal="hint2" data-task="h1">
+<img src="fig/e_2.svg" width="480" height="290" alt="Столбик: число 14,70 над числом 6,85, запятая под запятой; дописанный ноль в сотых выделен красным, дуга показывает, что сотые занимают единицу у десятых. Результат вычитания на рисунке не показан.">
+<figcaption>Числа за­пи­саны стол­би­ком, ноль дописан (вы­чи­та­ние — тебе).</figcaption>
+</figure>
+</section>
+
+<section id="sam">
+<h2>Сам</h2>
+<p>Стол­би­ком, на бумаге. В задании е) ответ — число рублей. Два раза не сошлось — по­явится кнопка «По­ка­зать решение».</p>
+<ol class="tl">
+<li class="task" data-id="s1" data-n="а)"><span class="expr">2,6 + 0,45</span></li>
+<li class="task" data-id="s2" data-n="б)"><span class="expr">12,07 + 3,9</span></li>
+<li class="task" data-id="s3" data-n="в)"><span class="expr">9,5 − 3,27</span></li>
+<li class="task" data-id="s4" data-n="г)"><span class="expr">10 − 4,08</span></li>
+<li class="task" data-id="s5" data-n="д)"><span class="expr">0,75 + 0,25 + 1,5</span></li>
+<li class="task" data-id="s6" data-n="е)"><span class="expr">В ко­шельке было 100 руб. Купили тетрадь за 27,50 руб. и ручку за 15,90 руб. Сколько денег оста­лось?</span></li>
+</ol>
+</section>
+
+<section id="lovushka">
+<h2>Ловушка</h2>
+<div class="trap">
+<p><b class="tag">Ловушка.</b> 1,8 + 0,34 = 0,52. Здесь числа за­пи­сали как целые, вы­ров­няв по правому краю: запятые ока­за­лись не друг под другом, и десятые сло­жи­лись с сотыми. Про­верка при­кид­кой: 1,8 + 0,34 больше 1,8, а 0,52 меньше 1. Значит, ответ не сошёлся. Пра­вильно: 1,80 + 0,34 = 2,14. Проверь себя: запятая стоит под запятой? Нули до­пи­саны?</p>
+</div>
+</section>
+
+<section id="smes">
+<h2>Смесь</h2>
+<p>Впе­ре­мешку: де­ся­тич­ные и обык­но­вен­ные дроби, округ­ле­ние, знаки. Это 9 заданий. Ре­зуль­тат смотри в строке «Верно: N из 9» под за­да­ни­ями.</p>
+<ol class="tl">
+<li class="task" data-id="m1" data-n="1."><span class="expr">4,3 + 5,78</span></li>
+<li class="task" data-id="m2" data-n="2."><span class="expr">8 − 2,5</span></li>
+<li class="task" data-id="m3" data-n="3."><span class="expr">2/3 · 9/10</span></li>
+<li class="task" data-id="m4" data-n="4."><span class="expr">7/8 : 7/2</span></li>
+<li class="task" data-id="m5" data-n="5."><span class="expr">Знак: 0,52 и 0,5.</span></li>
+<li class="task" data-id="m6" data-n="6."><span class="expr">3,05 + 0,95</span></li>
+<li class="task" data-id="m7" data-n="7."><span class="expr">1/6 + 2/9</span></li>
+<li class="task" data-id="m8" data-n="8."><span class="expr">12,5 − 0,75</span></li>
+<li class="task" data-id="m9" data-n="9."><span class="expr">Округли 6,095 до сотых.</span></li>
+</ol>
+<p class="score" data-for="smes"></p>
+</section>
+
+<section id="zhurnal">
+<h2>Журнал</h2>
+<div class="log">
+<p>Запиши 1–3 строки: «что пе­ре­пу­тал → как про­ве­рить». Пример формы: «сложил не те разряды → пишу запятую под запятой и до­пол­няю нулями». Там же отметь ре­зуль­тат смеси из строки «Верно: N из 9».</p>
+<ul>
+<li>…</li>
+</ul>
+</div>
+</section>
+
+  </main>
+  <footer class="pager">
+    <a href="index.html">← Оглав­ле­ние</a>
+    <a href="desyat3.html">Занятие 11 →</a>
+  </footer>
+</div>
+<script type="application/json" id="data">
+{
+"r1":{"type":"dec","ans":["6,05"]},
+"r2":{"type":"dec","ans":["3,85"]},
+"r3":{"type":"sign","ans":["<"]},
+"r4":{"type":"frac","ans":["2/3"]},
+"r5":{"type":"frac","ans":["11/18"]},
+"r6":{"ans":[377]},
+"b1":{"type":"dec","ans":["0,7"]},
+"b2":{"type":"dec","ans":["0,75"]},
+"b3":{"type":"dec","ans":["0,4"]},
+"b4":{"type":"dec","ans":["0,95"]},
+"b5":{"type":"dec","ans":["1,3"]},
+"b6":{"type":"dec","ans":["0,5"]},
+"b7":{"type":"dec","ans":["0,2"]},
+"b8":{"type":"dec","ans":["1,1"]},
+"h1":{"type":"dec","ans":["7,85"],"hints":["У какого числа меньше знаков после запятой? Допиши ему ноль: 14,70.","Сотые: 0 − 5 не получается, занимаем у десятых. Дальше считай справа налево, а где цифры не хватает, занимай у соседнего слева разряда."],"sol":"Допишем ноль: 14,70 − 6,85. Сотые: 10 − 5 = 5 (заняли у десятых). Десятые: 6 − 8 не получается, занимаем у единиц, 16 − 8 = 8. Единицы: 13 − 6 = 7, десятки 0. Получилось 7,85. Проверка: 7,85 + 6,85 = 14,70."},
+"s1":{"type":"dec","ans":["3,05"],"sol":"2,6 = 2,60. Сотые: 0 + 5 = 5. Десятые: 6 + 4 = 10, пишем 0, 1 переносим. Единицы: 2 + 0 + 1 = 3. Получилось 3,05."},
+"s2":{"type":"dec","ans":["15,97"],"sol":"3,9 = 3,90. Сотые: 7 + 0 = 7. Десятые: 0 + 9 = 9. Единицы: 2 + 3 = 5, десятки 1. Получилось 15,97."},
+"s3":{"type":"dec","ans":["6,23"],"sol":"9,5 = 9,50. Сотые: 0 − 7, занимаем: 10 − 7 = 3. Десятые: 4 − 2 = 2. Единицы: 9 − 3 = 6. Получилось 6,23."},
+"s4":{"type":"dec","ans":["5,92"],"sol":"10 = 10,00. Сотые: 10 − 8 = 2 (заняли), десятые: 9 − 0 = 9, единицы: 9 − 4 = 5. Получилось 5,92. Проверка: 5,92 + 4,08 = 10,00."},
+"s5":{"type":"dec","ans":["2,5"],"sol":"1,5 = 1,50. Сотые: 5 + 5 + 0 = 10, пишем 0, 1 переносим. Десятые: 7 + 2 + 5 + 1 = 15, пишем 5, 1 переносим. Единицы: 0 + 0 + 1 + 1 = 2. Получилось 2,50 = 2,5."},
+"s6":{"type":"dec","ans":["56,6"],"sol":"Тетрадь и ручка вместе: 27,50 + 15,90 = 43,40 руб. Осталось 100,00 − 43,40 = 56,60 руб., то есть 56,6."},
+"m1":{"type":"dec","ans":["10,08"]},
+"m2":{"type":"dec","ans":["5,5"]},
+"m3":{"type":"frac","ans":["3/5"]},
+"m4":{"type":"frac","ans":["1/4"]},
+"m5":{"type":"sign","ans":[">"]},
+"m6":{"ans":[4]},
+"m7":{"type":"frac","ans":["7/18"]},
+"m8":{"type":"dec","ans":["11,75"]},
+"m9":{"type":"dec","ans":["6,10"]}
+}
+</script>
+</body>
+</html>

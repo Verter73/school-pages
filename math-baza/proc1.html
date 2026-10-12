@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Процент</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="style.css?v=1">
+  <link rel="stylesheet" href="math.css?v=7">
+  <script src="frac.js?v=2" defer></script>
+  <script src="drill.js?v=3" defer></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="home" href="index.html">Ма­те­ма­тика: база · неделя 5</a>
+    <nav class="tasks" aria-label="Разделы">
+      <a class="theory" href="https://verter73.github.io/school-pages/">← Витрина</a>
+      <a class="theory" href="index.html">Оглав­ле­ние</a>
+      <a href="proc1.html" title="Занятие 13" aria-current="page">13</a>
+      <a href="proc2.html" title="Занятие 14">14</a>
+      <a href="proc3.html" title="Занятие 15">15</a>
+    </nav>
+  </header>
+  <main>
+    <h1><span class="num">Ма­те­ма­тика: база · занятие 13</span>Процент</h1>
+    <p class="lead">Цель: ты знаешь, что 1 % — это одна сотая часть, на­хо­дишь процент от числа и число по его про­центу. Это основа заданий 1–5 ОГЭ (скидки, над­бавки) и тек­сто­вых задач. Ответы и под­сказки спря­таны: сначала реши сам, потом нажми кнопку.</p>
+    <div class="rule">
+      <p><b>Как за­пи­сы­вать ответ.</b> Число — целое число. Дробь — через черту и со­кра­щён­ная до конца, на­при­мер 3/4. Де­ся­тич­ная дробь — с запятой, на­при­мер 3,25. Про­центы за­пи­сы­вай просто числом, без знака %.</p>
+    </div>
+<section id="vspomnit">
+<h2>Вспо­мнить</h2>
+<p>Без под­ска­зок, сразу про­верка. Отмечай, на чём спо­ткнулся, — в журнал.</p>
+<ol class="tl">
+<li class="task" data-id="r1" data-n="1."><span class="expr">0,6 + 0,25</span></li>
+<li class="task" data-id="r2" data-n="2."><span class="expr">Запиши 3/4 де­ся­тич­ной дробью.</span></li>
+<li class="task" data-id="r3" data-n="3."><span class="expr">2,5 · 4</span></li>
+<li class="task" data-id="r4" data-n="4."><span class="expr">1/2 + 1/3</span></li>
+<li class="task" data-id="r5" data-n="5."><span class="expr">7 − 12 + 3</span></li>
+<li class="task" data-id="r6" data-n="6."><span class="expr">100 : 8 — де­ся­тич­ной дробью</span></li>
+</ol>
+</section>
+
+<section id="beglost">
+<h2>Бег­лость: сотая часть</h2>
+<p>Игра «сотая часть»: сколько про­цен­тов от какого числа. Приём: 10 % — это одна десятая часть числа. Ошибся — пример вер­нётся: по­про­буй ещё раз. Без таймера.</p>
+<ol class="tl">
+<li class="task" data-id="b1" data-n="1."><span class="expr">10 % от 60</span></li>
+<li class="task" data-id="b2" data-n="2."><span class="expr">50 % от 18</span></li>
+<li class="task" data-id="b3" data-n="3."><span class="expr">25 % от 40</span></li>
+<li class="task" data-id="b4" data-n="4."><span class="expr">1 % от 800</span></li>
+<li class="task" data-id="b5" data-n="5."><span class="expr">100 % от 35</span></li>
+<li class="task" data-id="b6" data-n="6."><span class="expr">75 % от 100</span></li>
+</ol>
+<p>Теперь «туда и обратно»: про­центы и де­ся­тич­ные дроби.</p>
+<ol class="tl">
+<li class="task" data-id="b7" data-n="7."><span class="expr">0,3 — это сколько про­цен­тов?</span></li>
+<li class="task" data-id="b8" data-n="8."><span class="expr">45 % — это какая де­ся­тич­ная дробь?</span></li>
+<li class="task" data-id="b9" data-n="9."><span class="expr">7 % — какая де­ся­тич­ная дробь?</span></li>
+</ol>
+</section>
+
+<section id="pravilo">
+<h2>Правило</h2>
+<div class="rule">
+<p><b>Процент.</b> Процент — это одна сотая часть числа. Знак % чи­та­ется «процент». Запись: 1 % = 1/100 = 0,01. Значит, 100 % — это всё число целиком, 50 % — по­ло­вина, 25 % — чет­верть, 10 % — десятая часть. Процент всегда считают от какого-то числа: оно и есть 100 %.</p>
+<p><b>Три вопроса про про­центы</b> (сегодня первые два).</p>
+<p><b>1. Найти процент от числа.</b> Сколько будет p % от числа A? Сначала узнаём 1 %: A : 100. Потом умно­жаем на p. Формула: p % от A равно A : 100 · p. Здесь A — всё число (то, от чего берём процент), p — сколько про­цен­тов нужно взять, ре­зуль­тат — часть числа в тех же еди­ни­цах, что и A (рубли — рубли, ки­ло­граммы — ки­ло­граммы).</p>
+<p><b>2. Найти число по его про­центу.</b> Из­вестно, что p % числа равны B. Находим 1 %: B : p. Потом всё число — это 100 %: (B : p) · 100. Здесь B — из­вест­ная часть, p — сколько про­цен­тов она со­став­ляет, ре­зуль­тат — всё число.</p>
+</div>
+<figure class="fig">
+<img src="fig/g_1.svg" width="480" height="340" alt="Две полосы. Верхняя — всё число 250, разделена на 10 частей по 10 процентов, закрашены 3 части. Нижняя разделена на 100 мелких делений, закрашены 30 — это 30 процентов. Подпись: 30 % от 250 = 75.">
+<figcaption>Одна сотая — это 1 %: 30 % от 250 = 75.</figcaption>
+</figure>
+<div class="note">
+<p><b class="tag">Из жизни.</b> В ма­га­зине скидка 10 % на товар за 1000 рублей. 1 % — это 10 рублей, 10 % — это 100 рублей. Скидка — 100 рублей.</p>
+</div>
+</section>
+
+<section id="primer">
+<h2>Разо­бран­ный пример</h2>
+<div class="worked" data-expr="Найти 30 % от 250." data-ans="75">
+<p><b>1. Найти 30 % от 250.</b></p>
+<ul>
+<li>1 % от 250: 250 : 100 = 2,5.</li>
+<li>30 % — это 30 таких частей: 2,5 · 30 = 75.</li>
+<li>Ответ: <span class="res">75</span>. Про­верка при­кид­кой: 30 % — чуть меньше трети, а треть от 250 — около 83. Число 75 похоже на правду.</li>
+</ul>
+</div>
+<div class="worked" data-expr="15 % числа равны 45. Найти число." data-ans="300">
+<p><b>2. 15 % числа равны 45. Найти число.</b></p>
+<ul>
+<li>15 % — это 45. Значит, 1 % — это 45 : 15 = 3.</li>
+<li>Всё число — это 100 %, то есть 3 · 100 = 300.</li>
+<li>Ответ: <span class="res">300</span>. Про­верка: 15 % от 300 = 3 · 15 = 45. Схо­дится.</li>
+</ul>
+</div>
+</section>
+
+<section id="podskazka">
+<h2>С под­сказ­кой</h2>
+<p>Решай сам. Под­сказку от­кры­вай, только если застрял.</p>
+<ol class="tl">
+<li class="task" data-id="h1" data-n="а)"><span class="expr">12 % от 150.</span></li>
+<li class="task" data-id="h2" data-n="б)"><span class="expr">40 % числа равны 28. Найди число.</span></li>
+</ol>
+<figure class="fig" hidden data-reveal="hint2" data-task="h1">
+<img src="fig/g_2.svg" width="480" height="280" alt="Полоса из 100 мелких делений: всё число 150 — это 100 процентов, одно деление — 1 процент, закрашены 12 делений. Чему равны один процент и закрашенная часть, на рисунке не показано.">
+<figcaption>12 делений по 1 % (подсчёт — тебе).</figcaption>
+</figure>
+<figure class="fig" hidden data-reveal="hint2" data-task="h2">
+<img src="fig/g_3.svg" width="480" height="240" alt="Полоса из 100 мелких делений: закрашены 40 делений, и эта часть равна 28. Чему равны одно деление и вся полоса, на рисунке не показано.">
+<figcaption>40 % числа равны 28 (число — тебе).</figcaption>
+</figure>
+</section>
+
+<section id="sam">
+<h2>Сам</h2>
+<p>Ответ — число. Два раза не сошлось — по­явится кнопка «По­ка­зать решение».</p>
+<ol class="tl">
+<li class="task" data-id="s1" data-n="а)"><span class="expr">20 % от 50</span></li>
+<li class="task" data-id="s2" data-n="б)"><span class="expr">5 % от 240</span></li>
+<li class="task" data-id="s3" data-n="в)"><span class="expr">60 % числа равны 36. Найди число.</span></li>
+<li class="task" data-id="s4" data-n="г)"><span class="expr">8 % от 125</span></li>
+<li class="task" data-id="s5" data-n="д)"><span class="expr">25 % числа равны 30. Найди число.</span></li>
+</ol>
+</section>
+
+<section id="lovushka">
+<h2>Ловушка</h2>
+<div class="trap">
+<p><b class="tag">Ловушка.</b> Найти 30 % от 90. Многие пишут ответ 30: «трид­цать про­цен­тов — значит трид­цать». Но 30 — это сколько про­цен­тов, а не сколько штук. Про­верка: 50 % от 90 — это по­ло­вина, 45. А 30 % — меньше по­ло­вины, то есть меньше 45. Значит, ответ не сошёлся. Пра­вильно: 1 % от 90 — это 0,9, а 30 % — это 0,9 · 30 = 27. Проверь себя: процент считаю от какого числа, и мой ответ меньше или больше по­ло­вины?</p>
+</div>
+</section>
+
+<section id="smes">
+<h2>Смесь</h2>
+<p>Впе­ре­мешку: про­центы, дроби, де­ся­тич­ные дроби, порядок дей­ствий. За­пи­сы­вай шаги. Это 10 заданий. Ре­зуль­тат смотри в строке «Верно: N из 10» под за­да­ни­ями.</p>
+<ol class="tl">
+<li class="task" data-id="m1" data-n="1."><span class="expr">10 % от 70</span></li>
+<li class="task" data-id="m2" data-n="2."><span class="expr">35 % от 200</span></li>
+<li class="task" data-id="m3" data-n="3."><span class="expr">10 % числа равны 6. Найди число.</span></li>
+<li class="task" data-id="m4" data-n="4."><span class="expr">3/5 + 1/5</span></li>
+<li class="task" data-id="m5" data-n="5."><span class="expr">2,4 · 5</span></li>
+<li class="task" data-id="m6" data-n="6."><span class="expr">15 % от 60</span></li>
+<li class="task" data-id="m7" data-n="7."><span class="expr">3/4 · 2/3</span></li>
+<li class="task" data-id="m8" data-n="8."><span class="expr">50 % числа равны 17. Найди число.</span></li>
+<li class="task" data-id="m9" data-n="9."><span class="expr">6 − 4 · (3 − 5)</span></li>
+<li class="task" data-id="m10" data-n="10."><span class="expr">Скидка 10 % на товар ценой 800 рублей. Сколько рублей со­став­ляет скидка?</span></li>
+</ol>
+<p class="score" data-for="smes"></p>
+</section>
+
+<section id="zhurnal">
+<h2>Журнал</h2>
+<div class="log">
+<p>Запиши 1–3 строки: «что пе­ре­пу­тал → как про­ве­рить». Пример формы: «взял число про­цен­тов как ответ → про­ве­ряю: сколько будет 50 % и 100 % от этого числа, и срав­ни­ваю». Там же отметь ре­зуль­тат смеси из строки «Верно: N из 10».</p>
+<ul>
+<li>…</li>
+</ul>
+</div>
+</section>
+
+  </main>
+  <footer class="pager">
+    <a href="index.html">← Оглав­ле­ние</a>
+    <a href="proc2.html">Занятие 14 →</a>
+  </footer>
+</div>
+<script type="application/json" id="data">
+{
+"r1":{"type":"dec","ans":["0,85"]},
+"r2":{"type":"dec","ans":["0,75"]},
+"r3":{"ans":[10]},
+"r4":{"type":"frac","ans":["5/6"]},
+"r5":{"ans":[-2]},
+"r6":{"type":"dec","ans":["12,5"]},
+"b1":{"ans":[6]},
+"b2":{"ans":[9]},
+"b3":{"ans":[10]},
+"b4":{"ans":[8]},
+"b5":{"ans":[35]},
+"b6":{"ans":[75]},
+"b7":{"ans":[30]},
+"b8":{"type":"dec","ans":["0,45"]},
+"b9":{"type":"dec","ans":["0,07"]},
+"h1":{"ans":[18],"hints":["Чему равен 1 %?","150 : 100 = 1,5. Сколько будет 12 таких частей?"],"sol":"Один процент — это 150 : 100 = 1,5. 12 % — это 12 таких частей: 1,5 · 12 = 18."},
+"h2":{"ans":[70],"hints":["Если 40 % — это 28, то чему равен 1 %?","28 : 40 = 0,7, а всё число — сколько процентов?"],"sol":"Один процент — это 28 : 40 = 0,7. Всё число — это 100 %: 0,7 · 100 = 70. Проверка: 40 % от 70 = 0,7 · 40 = 28."},
+"s1":{"ans":[10],"sol":"1 % от 50 — это 50 : 100 = 0,5. 20 % — это 0,5 · 20 = 10."},
+"s2":{"ans":[12],"sol":"1 % от 240 — это 2,4. 5 % — это 2,4 · 5 = 12."},
+"s3":{"ans":[60],"sol":"1 % — это 36 : 60 = 0,6. Всё число — 100 %: 0,6 · 100 = 60."},
+"s4":{"ans":[10],"sol":"1 % от 125 — это 1,25. 8 % — это 1,25 · 8 = 10."},
+"s5":{"ans":[120],"sol":"25 % — это четверть, значит всё число в 4 раза больше: 30 · 4 = 120. Или: 1 % — это 30 : 25 = 1,2, а 100 % — это 1,2 · 100 = 120."},
+"m1":{"ans":[7]},
+"m2":{"ans":[70]},
+"m3":{"ans":[60]},
+"m4":{"type":"frac","ans":["4/5"]},
+"m5":{"ans":[12]},
+"m6":{"ans":[9]},
+"m7":{"type":"frac","ans":["1/2"]},
+"m8":{"ans":[34]},
+"m9":{"ans":[14]},
+"m10":{"ans":[80]}
+}
+</script>
+</body>
+</html>

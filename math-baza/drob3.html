@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap">
   <link rel="stylesheet" href="style.css?v=1">
-  <link rel="stylesheet" href="math.css?v=6">
-  <script src="frac.js?v=1" defer></script>
+  <link rel="stylesheet" href="math.css?v=8">
+  <script src="frac.js?v=3" defer></script>
   <script src="drill.js?v=3" defer></script>
 </head>
 <body>
@@ -26,9 +26,9 @@
   </header>
   <main>
     <h1><span class="num">Ма­те­ма­тика: база · занятие 6</span>Сло­же­ние и вы­чи­та­ние дробей</h1>
-    <p class="lead">Цель: ты скла­ды­ва­ешь и вы­чи­та­ешь дроби с оди­на­ко­выми и разными зна­ме­на­те­лями и сме­шан­ные числа, со­кра­ща­ешь ре­зуль­тат и вы­де­ля­ешь целую часть. Это задание 6 ОГЭ в самом частом виде. Смесь сегодня — не­дель­ный срез. Ответы и под­сказки спря­таны: сначала реши сам, потом нажми кнопку.</p>
+    <p class="lead">Цель: ты скла­ды­ва­ешь и вы­чи­та­ешь дроби с оди­на­ко­выми и разными зна­ме­на­те­лями и сме­шан­ные числа, со­кра­ща­ешь ре­зуль­тат и вы­де­ля­ешь целую часть, поль­зу­ешься при­зна­ками де­ли­мо­сти на 3, 9, 4 и 6 при со­кра­ще­нии. Это задание 6 ОГЭ в самом частом виде. Смесь сегодня — не­дель­ный срез. Ответы и под­сказки спря­таны: сначала реши сам, потом нажми кнопку.</p>
     <div class="rule">
-      <p><b>Как за­пи­сы­вать ответ.</b> Число — целое число. Дробь — через черту и со­кра­щён­ная до конца, на­при­мер 3/4. Сме­шан­ное число — целая часть, пробел, дробь, на­при­мер 2 3/4. Знак — один символ: &lt;, &gt; или =.</p>
+      <p><b>Как за­пи­сы­вать ответ.</b> Число — целое число. Дробь — через черту и со­кра­щён­ная до конца, на­при­мер 3/4. Сме­шан­ное число — целая часть, пробел, дробь, на­при­мер 2 3/4. Знак — один символ: &lt;, &gt; или =. Ответ «да» или «нет» — словом. На что делится — числа через запятую, на­при­мер 3, 6, или слова «ни на что».</p>
     </div>
     <section id="vspomnit">
 <h2>Вспо­мнить</h2>
@@ -40,12 +40,15 @@
 <li class="task" data-id="r4" data-n="4."><span class="expr">3&nbsp;3/4 — запиши не­пра­виль­ной дробью.</span></li>
 <li class="task" data-id="r5" data-n="5."><span class="expr">Сократи 35/49.</span></li>
 <li class="task" data-id="r6" data-n="6."><span class="expr">4 − 13</span></li>
+<li class="task" data-id="r7" data-n="7."><span class="expr">Делится ли 8127 на 9?</span></li>
+<li class="task" data-id="r8" data-n="8."><span class="expr">Делится ли 2573 на 3?</span></li>
 </ol>
+<p>Вопросы 7 и 8 — без кар­точки: ответь и объясни вслух своими словами, почему так. Потом сверь ответ со своей кар­точ­кой и исправь её, если ошибся.</p>
 </section>
 
 <section id="beglost">
-<h2>Бег­лость: до целого и оди­на­ко­вые части</h2>
-<p>Две игры. Ошибся — пример вер­нётся: по­про­буй ещё раз. Без таймера.</p>
+<h2>Бег­лость: до целого, оди­на­ко­вые части и признак 6</h2>
+<p>Три игры. Ошибся — пример вер­нётся: по­про­буй ещё раз. Без таймера.</p>
 <p><b>Игра 1. «До целого».</b> Сколько не хватает до 1?</p>
 <ol class="tl">
 <li class="task" data-id="b1" data-n="1."><span class="expr">Сколько не хватает до 1: 1/4.</span></li>
@@ -60,6 +63,36 @@
 <li class="task" data-id="b7" data-n="1."><span class="expr">1/4 + 1/4</span></li>
 <li class="task" data-id="b8" data-n="2."><span class="expr">1/3 + 1/3</span></li>
 <li class="task" data-id="b9" data-n="3."><span class="expr">3/8 + 3/8</span></li>
+</ol>
+<p><b>Игра 3. «Со­став­ной признак».</b> При­знаки 6 и 4 одной строкой. Про­чи­тай правило и пе­ре­скажи его своими словами.</p>
+<div class="rule">
+<p><b>При­знаки 6 и 4.</b> Число делится на 6, если оно делится и на 2, и на 3 сразу. Число делится на 4, если число из его двух по­след­них цифр делится на 4.</p>
+<ul>
+<li>3426 (3 + 4 + 2 + 6 = 15) делится на 6: оно чётное и сумма цифр 15 делится на 3.</li>
+<li>5324 делится на 4: две по­след­ние цифры 24, и 24 : 4 = 6.</li>
+</ul>
+</div>
+<figure class="fig">
+<img src="fig/d3_5.svg" width="480" height="380" alt="Лесенка из ступенек 10, 5, 2, 9, 3 для числа 3426. Зелёный горит на ступеньках 2 и 3. Стрелки от этих двух ступенек сходятся в клетку «6», она тоже зелёная.">
+<figcaption>Число 3426: горят све­то­форы «2» и «3», значит горит и «6».</figcaption>
+</figure>
+<figure class="fig">
+<img src="fig/d3_6.svg" width="480" height="250" alt="Число 5324 в четырёх клетках. Вокруг двух последних цифр, 2 и 4, красная рамка и подпись: для 4 смотрим сюда. Под рамкой вывод: 24 : 4 = 6, делится на 4.">
+<figcaption>Для 4 смотрим на две по­след­ние цифры.</figcaption>
+</figure>
+<div class="note">
+<p><b class="tag">Зачем.</b> Признак под­ска­зы­вает дей­ствие. При сло­же­нии вышло 18/30. 18 делится на 6 (чётное, 1 + 8 = 9 делится на 3), 30 делится на 6 (чётное, 3 + 0 = 3 делится на 3). Делим чис­ли­тель и зна­ме­на­тель на 6: 18/30 = 3/5.</p>
+</div>
+<div class="trap">
+<p><b class="tag">Ловушка.</b> Для 4 одной чётной цифры мало: 26 чётное, но 26 не делится на 4 (26 : 4 = 6, остаток 2).</p>
+</div>
+<p>Для каждого числа назови, на какие из чисел 3, 6, 9 оно делится, или напиши «ни на что».</p>
+<ol class="tl">
+<li class="task" data-id="b10" data-n="1."><span class="expr">На что делится — на 3, 6 или 9: 54</span></li>
+<li class="task" data-id="b11" data-n="2."><span class="expr">На что делится — на 3, 6 или 9: 132</span></li>
+<li class="task" data-id="b12" data-n="3."><span class="expr">На что делится — на 3, 6 или 9: 285</span></li>
+<li class="task" data-id="b13" data-n="4."><span class="expr">На что делится — на 3, 6 или 9: 1089</span></li>
+<li class="task" data-id="b14" data-n="5."><span class="expr">На что делится — на 3, 6 или 9: 7410</span></li>
 </ol>
 </section>
 
@@ -171,8 +204,8 @@
 <li class="task" data-id="m6" data-n="6."><span class="expr">Что больше: 7/9 или 3/4?</span></li>
 <li class="task" data-id="m7" data-n="7."><span class="expr">21/6 — запиши сме­шан­ным числом после со­кра­ще­ния.</span></li>
 <li class="task" data-id="m8" data-n="8."><span class="expr">(−3) · 9</span></li>
-<li class="task" data-id="m9" data-n="9."><span class="expr">6 + 4 · 5 − 8</span></li>
-<li class="task" data-id="m10" data-n="10."><span class="expr">156 : 12</span></li>
+<li class="task" data-id="m9" data-n="9."><span class="expr">Делится ли 3716 на 4?</span></li>
+<li class="task" data-id="m10" data-n="10."><span class="expr">Сократи 66/84.</span></li>
 </ol>
 <p class="score" data-for="smes"></p>
 </section>
@@ -185,6 +218,39 @@
 <li>…</li>
 </ul>
 </div>
+<p><b>Кар­точка при­зна­ков.</b> Допиши в свою кар­точку строки «4» и «6». Признак 6 со­став­ной: число делится на 6, если оно делится и на 2, и на 3. Затем пе­ре­пиши всю кар­точку целиком по памяти, с ле­сен­кой 10 → 5 → 2 → 9 → 3, и только после этого сверь её с об­раз­цом — попроси образец у взрос­лого.</p>
+<div class="card-feat" role="group" aria-label="Карточка признаков">
+<p class="cf-note">Поля для твоей записи. Они нигде не со­хра­ня­ются и никуда не от­прав­ля­ются: за­кро­ешь или об­но­вишь стра­ницу — запись про­падёт. Поэтому потом пе­ре­пиши кар­точку от руки.</p>
+<div class="cf-row cf-head" aria-hidden="true"><span>Де­ли­тель</span><span>Признак одной фразой</span><span>Пример «да»</span><span>Пример «нет»</span></div>
+<div class="cf-row"><b class="cf-d">10</b>
+<label class="cf-cell"><span class="cf-cap">Признак одной фразой</span><input type="text" autocomplete="off" aria-label="Делитель 10: признак"></label>
+<label class="cf-cell"><span class="cf-cap">Пример «да»</span><input type="text" autocomplete="off" aria-label="Делитель 10: пример да"></label>
+<label class="cf-cell"><span class="cf-cap">Пример «нет»</span><input type="text" autocomplete="off" aria-label="Делитель 10: пример нет"></label></div>
+<div class="cf-row"><b class="cf-d">5</b>
+<label class="cf-cell"><span class="cf-cap">Признак одной фразой</span><input type="text" autocomplete="off" aria-label="Делитель 5: признак"></label>
+<label class="cf-cell"><span class="cf-cap">Пример «да»</span><input type="text" autocomplete="off" aria-label="Делитель 5: пример да"></label>
+<label class="cf-cell"><span class="cf-cap">Пример «нет»</span><input type="text" autocomplete="off" aria-label="Делитель 5: пример нет"></label></div>
+<div class="cf-row"><b class="cf-d">2</b>
+<label class="cf-cell"><span class="cf-cap">Признак одной фразой</span><input type="text" autocomplete="off" aria-label="Делитель 2: признак"></label>
+<label class="cf-cell"><span class="cf-cap">Пример «да»</span><input type="text" autocomplete="off" aria-label="Делитель 2: пример да"></label>
+<label class="cf-cell"><span class="cf-cap">Пример «нет»</span><input type="text" autocomplete="off" aria-label="Делитель 2: пример нет"></label></div>
+<div class="cf-row"><b class="cf-d">9</b>
+<label class="cf-cell"><span class="cf-cap">Признак одной фразой</span><input type="text" autocomplete="off" aria-label="Делитель 9: признак"></label>
+<label class="cf-cell"><span class="cf-cap">Пример «да»</span><input type="text" autocomplete="off" aria-label="Делитель 9: пример да"></label>
+<label class="cf-cell"><span class="cf-cap">Пример «нет»</span><input type="text" autocomplete="off" aria-label="Делитель 9: пример нет"></label></div>
+<div class="cf-row"><b class="cf-d">3</b>
+<label class="cf-cell"><span class="cf-cap">Признак одной фразой</span><input type="text" autocomplete="off" aria-label="Делитель 3: признак"></label>
+<label class="cf-cell"><span class="cf-cap">Пример «да»</span><input type="text" autocomplete="off" aria-label="Делитель 3: пример да"></label>
+<label class="cf-cell"><span class="cf-cap">Пример «нет»</span><input type="text" autocomplete="off" aria-label="Делитель 3: пример нет"></label></div>
+<div class="cf-row"><b class="cf-d">4</b>
+<label class="cf-cell"><span class="cf-cap">Признак одной фразой</span><input type="text" autocomplete="off" aria-label="Делитель 4: признак"></label>
+<label class="cf-cell"><span class="cf-cap">Пример «да»</span><input type="text" autocomplete="off" aria-label="Делитель 4: пример да"></label>
+<label class="cf-cell"><span class="cf-cap">Пример «нет»</span><input type="text" autocomplete="off" aria-label="Делитель 4: пример нет"></label></div>
+<div class="cf-row"><b class="cf-d">6</b>
+<label class="cf-cell"><span class="cf-cap">Признак одной фразой</span><input type="text" autocomplete="off" aria-label="Делитель 6: признак"></label>
+<label class="cf-cell"><span class="cf-cap">Пример «да»</span><input type="text" autocomplete="off" aria-label="Делитель 6: пример да"></label>
+<label class="cf-cell"><span class="cf-cap">Пример «нет»</span><input type="text" autocomplete="off" aria-label="Делитель 6: пример нет"></label></div>
+</div>
 </section>
   </main>
   <footer class="pager">
@@ -193,9 +259,10 @@
   </footer>
 </div>
 <script type="application/json" id="data">
-{"r1":{"type":"sign","ans":[">"]},"r2":{"ans":[24]},"r3":{"type":"mixed","ans":["4 5/6"]},"r4":{"type":"frac","ans":["15/4"]},"r5":{"type":"frac","ans":["5/7"]},"r6":{"ans":[-9]},
+{"r1":{"type":"sign","ans":[">"]},"r2":{"ans":[24]},"r3":{"type":"mixed","ans":["4 5/6"]},"r4":{"type":"frac","ans":["15/4"]},"r5":{"type":"frac","ans":["5/7"]},"r6":{"ans":[-9]},"r7":{"type":"yn","ans":["да"]},"r8":{"type":"yn","ans":["нет"]},
 "b1":{"type":"frac","ans":["3/4"]},"b2":{"type":"frac","ans":["3/5"]},"b3":{"type":"frac","ans":["3/8"]},"b4":{"type":"frac","ans":["3/10"]},"b5":{"type":"frac","ans":["5/9"]},"b6":{"type":"frac","ans":["5/6"]},
 "b7":{"type":"frac","ans":["1/2"]},"b8":{"type":"frac","ans":["2/3"]},"b9":{"type":"frac","ans":["3/4"]},
+"b10":{"type":"divs","ans":["3, 6, 9"]},"b11":{"type":"divs","ans":["3, 6"]},"b12":{"type":"divs","ans":["3"]},"b13":{"type":"divs","ans":["3, 9"]},"b14":{"type":"divs","ans":["3, 6"]},
 "h1":{"type":"frac","ans":["17/30"],"hints":["НОЗ чисел 10 и 15? Числа, кратные 15: 15, 30. 30 делится на 10.","Множители 3 и 2. Получилось 21/30 − 4/30."],"sol":"НОЗ = 30: 7/10 = 21/30 и 2/15 = 4/30. Вычитаем числители: 21 − 4 = 17, получилось 17/30."},
 "s1":{"type":"frac","ans":["7/9"],"sol":"Знаменатель остаётся 9: 2 + 5 = 7, получилось 7/9."},
 "s2":{"type":"frac","ans":["1/6"],"sol":"7 − 5 = 2, знаменатель 12: получилось 2/12. Сокращаем на 2: 1/6."},
@@ -204,7 +271,7 @@
 "s5":{"type":"mixed","ans":["4 5/12"],"sol":"Целые: 2 + 1 = 3. Дробные: 2/3 + 3/4 = 8/12 + 9/12 = 17/12 = 1 5/12. Всего 3 + 1 5/12 = 4 5/12."},
 "s6":{"type":"mixed","ans":["2 1/3"],"sol":"Дробная часть 1/6 меньше 5/6, занимаем: 4 1/6 = 3 7/6. Тогда 3 7/6 − 1 5/6 = 2 2/6 = 2 1/3."},
 "m1":{"type":"frac","ans":["3/5"]},"m2":{"type":"frac","ans":["1/2"]},"m3":{"type":"frac","ans":["11/12"]},"m4":{"type":"mixed","ans":["5 5/6"]},"m5":{"type":"mixed","ans":["2 4/7"]},
-"m6":{"type":"frac","ans":["7/9"]},"m7":{"type":"mixed","ans":["3 1/2"]},"m8":{"ans":[-27]},"m9":{"ans":[18]},"m10":{"ans":[13]}}
+"m6":{"type":"frac","ans":["7/9"]},"m7":{"type":"mixed","ans":["3 1/2"]},"m8":{"ans":[-27]},"m9":{"type":"yn","ans":["да"]},"m10":{"type":"frac","ans":["11/14"]}}
 </script>
 </body>
 </html>

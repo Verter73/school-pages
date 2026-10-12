@@ -37,7 +37,7 @@ pre.col { font-family: var(--font-mono); font-size: 1rem; line-height: 1.35; bac
 .nl-wrap .nl-dot { fill: var(--red); }
 .nl-wrap .nl-start { fill: var(--blue); }
 .nl-ctl { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 6px 0 2px; }
-.nl-ctl label { font-family: var(--font-mono); font-size: .8rem; color: var(--muted); display: inline-flex; align-items: center; gap: 6px; }
+.nl-ctl label { font-family: var(--font-mono); font-size: .9rem; color: var(--muted); display: inline-flex; align-items: center; gap: 6px; }
 .nl-ctl select { font: inherit; font-family: var(--font-ui); font-size: 1rem; padding: 6px 8px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink); max-width: 100%; }
 .nl-out { font-family: var(--font-ui); font-weight: 600; margin: 4px 0 0; min-height: 1.4em; }
 .cards a { text-decoration: none; }
@@ -50,10 +50,29 @@ figure.fig[hidden] { display: none; }
 .figrow img { flex: 1 1 300px; min-width: 0; width: auto; max-width: 100%; }
 @media (max-width: 480px) {
   .expr { font-size: 1.1rem; }
-  pre.col { font-size: .85rem; white-space: pre-wrap; }
+  pre.col { font-size: .9rem; white-space: pre-wrap; }
   ol.tl > li.task { padding-left: 38px; }
   .qrow input { width: 5.5em; }
   .nl-wrap .nl-num { font-size: 26px; }
 }
 /* Неделя 2: подписи не мельче 14 px на экране */
 h1 .num, figure.fig figcaption, .qrow label, .cards .n { font-size: .9rem; }
+/* Неделя 2: признаки делимости. Карточка признаков — поля без сохранения и отправки. */
+.qrow input[data-t="divs"] { width: 10em; }
+.card-feat { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; margin: .8em 0; }
+.card-feat .cf-note { margin: 0 0 6px; }
+.cf-row { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; padding: 10px 0; border-top: 1px solid var(--line); }
+.cf-head { display: none; }
+.cf-d { font-family: var(--font-ui); font-size: 1.5rem; font-weight: 700; color: var(--red); }
+.cf-cell { display: flex; flex-direction: column; gap: 4px; font-family: var(--font-mono); font-size: .9rem; color: var(--muted); min-width: 0; }
+.cf-cell input { font: inherit; font-family: var(--font-ui); font-size: 1.1rem; width: 100%; box-sizing: border-box; padding: 7px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink); }
+.cf-cell input:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
+@media (min-width: 720px) {
+  .cf-row { grid-template-columns: 4.5rem 2fr 1fr 1fr; align-items: end; }
+  .cf-head { display: grid; border-top: 0; padding: 4px 0; font-family: var(--font-mono); font-size: .9rem; color: var(--muted); }
+  .cf-cap { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+}
+/* Двузначный номер задания на телефоне не должен задевать текст (номер 10.–19.) */
+@media (max-width: 480px) {
+  ol.tl > li.task[data-n^="1"][data-n$="."]:not([data-n="1."]) { padding-left: 48px; }
+}

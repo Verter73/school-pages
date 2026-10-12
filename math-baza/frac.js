@@ -198,6 +198,60 @@
       return { ok: false, invalid: false, msg: '' };
     }
 
+    if (type === 'dec') {
+      var dt = s.replace(/\s+/g, '').replace('.', ',');
+      if (!/^-?\d+(,\d+)?$/.test(dt)) {
+        return { ok: false, invalid: true, msg: 'Введи десятичную дробь с запятой, например 3,25.' };
+      }
+      var da = String(ans).replace('.', ',');
+      if (dt === da || (/^\d+,0$/.test(da) && dt === da.split(',')[0])) {
+        return { ok: true, invalid: false, msg: '' };
+      }
+      if (Number(dt.replace(',', '.')) === Number(da.replace(',', '.'))) {
+        return { ok: false, invalid: false, msg: 'Значение верное, но проверь число знаков после запятой.' };
+      }
+      return { ok: false, invalid: false, msg: '' };
+    }
+
+    if (type === 'dlist') {
+      var dparts = (s.indexOf(';') >= 0 ? s.split(/\s*;\s*/) : s.split(/\s+/)).filter(function (p) { return p !== ''; });
+      var dok = dparts.length > 0;
+      for (var di = 0; di < dparts.length; di++) {
+        dparts[di] = dparts[di].replace('.', ',').replace(/,$/, '');
+        if (!/^\d+(,\d+)?$/.test(dparts[di])) { dok = false; }
+      }
+      if (!dok) {
+        return { ok: false, invalid: true, msg: 'Введи числа через точку с запятой, например 0,1; 0,25.' };
+      }
+      var dans = String(ans).split(/\s*;\s*/);
+      if (dparts.join(';') === dans.join(';')) {
+        return { ok: true, invalid: false, msg: '' };
+      }
+      var dsort = dparts.slice().sort(function (a, b) { return Number(a.replace(',', '.')) - Number(b.replace(',', '.')); });
+      if (dsort.join(';') === dans.join(';')) {
+        return { ok: false, invalid: false, msg: 'Числа те же, но порядок другой.' };
+      }
+      return { ok: false, invalid: false, msg: '' };
+    }
+
+    if (type === 'divs') {
+      var low = s.toLowerCase().replace(/ё/g, 'е').replace(/[.]+$/, '');
+      var none = /^(ни на что|ни на какое|ни на какие|ничего|никакие)$/.test(low);
+      var nums = low.match(/\d+/g);
+      if (!none && !nums) {
+        return { ok: false, invalid: true, msg: 'Назови числа через запятую, например 2, 5, или напиши «ни на что».' };
+      }
+      var wantNone = String(ans).toLowerCase().indexOf('ни на что') === 0;
+      var uniq = function (a) {
+        return a.map(Number).filter(function (v, i, r) { return r.indexOf(v) === i; })
+          .sort(function (x, y) { return x - y; }).join(',');
+      };
+      if (uniq(none ? [] : nums) === uniq(wantNone ? [] : String(ans).match(/\d+/g))) {
+        return { ok: true, invalid: false, msg: '' };
+      }
+      return { ok: false, invalid: false, msg: '' };
+    }
+
     return { ok: false, invalid: true, msg: 'Неизвестный тип ответа.' };
   }
 
@@ -209,6 +263,9 @@
     if (type === 'sign') return '< > =';
     if (type === 'yn') return 'да / нет';
     if (type === 'list') return '1/2, 3/4';
+    if (type === 'dec') return '3,25';
+    if (type === 'dlist') return '0,1; 0,25';
+    if (type === 'divs') return 'через запятую';
     return '';
   }
 

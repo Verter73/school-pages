@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 344" width="480" height="344" role="img" aria-label="Округление 3,276 до сотых на числовой прямой между 3,27 и 3,28"><title>Округление 3,276 до сотых на числовой прямой между 3,27 и 3,28</title><style>
+.bg{fill:#FAF5EC;stroke:#D8C9B0;stroke-width:2}
+.t{fill:#1E2F35}.tm{fill:#4E4638}.tb{fill:#1B5E74}.tr{fill:#A63F18}.tg{fill:#3F6A22}.td{fill:#7A4F06}.to{fill:#F7F0E4}
+.fb{fill:#DDE4DE}.fr{fill:#F2DDCF}.fg{fill:#E2E6CE}.fd{fill:#F6E3B6}.fp{fill:#FAF5EC}
+.fbs{fill:#1B5E74}.frs{fill:#A63F18}.fgs{fill:#3F6A22}.fds{fill:#7A4F06}.fi{fill:#1E2F35}
+.sb{stroke:#1B5E74}.sr{stroke:#A63F18}.sg{stroke:#3F6A22}.sd{stroke:#7A4F06}.si{stroke:#1E2F35}.sl{stroke:#D8C9B0}
+@media (prefers-color-scheme: dark){
+.bg{fill:#243034;stroke:#3E4E53}
+.t{fill:#F8F0E3}.tm{fill:#D2C6B0}.tb{fill:#8ECBDD}.tr{fill:#F09866}.tg{fill:#B3D67F}.td{fill:#EDC274}.to{fill:#1C2528}
+.fb{fill:#22373D}.fr{fill:#3F2B23}.fg{fill:#2C3725}.fd{fill:#3A3020}.fp{fill:#243034}
+.fbs{fill:#8ECBDD}.frs{fill:#F09866}.fgs{fill:#B3D67F}.fds{fill:#EDC274}.fi{fill:#F8F0E3}
+.sb{stroke:#8ECBDD}.sr{stroke:#F09866}.sg{stroke:#B3D67F}.sd{stroke:#EDC274}.si{stroke:#F8F0E3}.sl{stroke:#3E4E53}
+}
+text{font-family:Jost,"Segoe UI",Arial,sans-serif;font-weight:600}
+.mono{font-family:"JetBrains Mono",Consolas,"Courier New",monospace}
+path,line,rect,circle{stroke-linecap:round;stroke-linejoin:round}
+</style><rect class="bg" x="1" y="1" width="478" height="342" rx="14"/><text x="240" y="32" class="t" font-size="24" text-anchor="middle">Округляем 3,276 до сотых</text><text x="240" y="68" class="tm" font-size="22" text-anchor="middle">3,275</text><line x1="240" y1="78" x2="240" y2="172" class="sd" stroke-width="2" stroke-dasharray="8 6"/><line x1="40" y1="140" x2="440" y2="140" class="si" stroke-width="3"/><line x1="40" y1="130" x2="40" y2="150" class="si" stroke-width="2"/><line x1="80" y1="130" x2="80" y2="150" class="si" stroke-width="2"/><line x1="120" y1="130" x2="120" y2="150" class="si" stroke-width="2"/><line x1="160" y1="130" x2="160" y2="150" class="si" stroke-width="2"/><line x1="200" y1="130" x2="200" y2="150" class="si" stroke-width="2"/><line x1="240" y1="130" x2="240" y2="150" class="si" stroke-width="2"/><line x1="280" y1="130" x2="280" y2="150" class="si" stroke-width="2"/><line x1="320" y1="130" x2="320" y2="150" class="si" stroke-width="2"/><line x1="360" y1="130" x2="360" y2="150" class="si" stroke-width="2"/><line x1="400" y1="130" x2="400" y2="150" class="si" stroke-width="2"/><line x1="440" y1="130" x2="440" y2="150" class="si" stroke-width="2"/><line x1="40" y1="140" x2="280.0" y2="140" class="sr" stroke-width="7"/><line x1="280.0" y1="140" x2="440" y2="140" class="sg" stroke-width="7"/><circle cx="280.0" cy="140" r="10" class="frs"/><text x="280.0" y="108" class="tr" font-size="24" text-anchor="middle">3,276</text><text x="40" y="190" class="tm" font-size="24" text-anchor="middle">3,27</text><text x="440" y="190" class="tm" font-size="24" text-anchor="middle">3,28</text><text x="40" y="238" class="tr" font-size="22" text-anchor="start">до 3,27: 0,006</text><text x="40" y="268" class="tg" font-size="22" text-anchor="start">до 3,28: 0,004</text><text x="240" y="322" class="tg" font-size="32" text-anchor="middle">до сотых — 3,28</text></svg>

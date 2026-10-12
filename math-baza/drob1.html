@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap">
   <link rel="stylesheet" href="style.css?v=1">
-  <link rel="stylesheet" href="math.css?v=6">
-  <script src="frac.js?v=1" defer></script>
+  <link rel="stylesheet" href="math.css?v=8">
+  <script src="frac.js?v=3" defer></script>
   <script src="drill.js?v=3" defer></script>
 </head>
 <body>
@@ -26,9 +26,9 @@
   </header>
   <main>
     <h1><span class="num">Ма­те­ма­тика: база · занятие 4</span>Что такое дробь</h1>
-    <p class="lead">Цель: ты объ­яс­ня­ешь словами, что значат чис­ли­тель и зна­ме­на­тель, ставишь дробь на чи­сло­вую прямую, от­ли­ча­ешь пра­виль­ную дробь от не­пра­виль­ной, пе­ре­во­дишь не­пра­виль­ную дробь в сме­шан­ное число и обратно, со­кра­ща­ешь дробь. Ответы и под­сказки спря­таны: сначала реши сам, потом нажми кнопку.</p>
+    <p class="lead">Цель: ты объ­яс­ня­ешь словами, что значат чис­ли­тель и зна­ме­на­тель, ставишь дробь на чи­сло­вую прямую, от­ли­ча­ешь пра­виль­ную дробь от не­пра­виль­ной, пе­ре­во­дишь не­пра­виль­ную дробь в сме­шан­ное число и обратно, со­кра­ща­ешь дробь, по по­след­ней цифре про­ве­ря­ешь, делится ли число на 2, 5 и 10. Ответы и под­сказки спря­таны: сначала реши сам, потом нажми кнопку.</p>
     <div class="rule">
-      <p><b>Как за­пи­сы­вать ответ.</b> Число — целое число. Дробь — через черту и со­кра­щён­ная до конца, на­при­мер 3/4. Сме­шан­ное число — целая часть, пробел, дробь, на­при­мер 2 3/4. Ответ «да» или «нет» — словом.</p>
+      <p><b>Как за­пи­сы­вать ответ.</b> Число — целое число. Дробь — через черту и со­кра­щён­ная до конца, на­при­мер 3/4. Сме­шан­ное число — целая часть, пробел, дробь, на­при­мер 2 3/4. Ответ «да» или «нет» — словом. На что делится — числа через запятую, на­при­мер 2, 5, или слова «ни на что».</p>
     </div>
     <section id="vspomnit">
 <h2>Вспо­мнить</h2>
@@ -40,12 +40,15 @@
 <li class="task" data-id="r4" data-n="4."><span class="expr">5 − 11</span></li>
 <li class="task" data-id="r5" data-n="5."><span class="expr">3 + 4 · 5</span></li>
 <li class="task" data-id="r6" data-n="6."><span class="expr">23 · 12</span></li>
+<li class="task" data-id="r7" data-n="7."><span class="expr">Делится ли 1250 на 5?</span></li>
+<li class="task" data-id="r8" data-n="8."><span class="expr">Делится ли 347 на 2?</span></li>
 </ol>
+<p>Вопросы 7 и 8 — про де­ли­мость, под­ска­зок нет. Ответь и скажи вслух своими словами, почему так.</p>
 </section>
 
 <section id="beglost">
-<h2>Бег­лость: таблица и общий де­ли­тель</h2>
-<p>Две игры. Ошибся — пример вер­нётся: по­про­буй ещё раз. Без таймера.</p>
+<h2>Бег­лость: таблица, общий де­ли­тель и при­знаки</h2>
+<p>Три игры. Ошибся — пример вер­нётся: по­про­буй ещё раз. Без таймера.</p>
 <p><b>Игра 1. «Стрелка» по таблице.</b></p>
 <ol class="tl">
 <li class="task" data-id="b1" data-n="1."><span class="expr">6 · 7</span></li>
@@ -61,10 +64,34 @@
 <li class="task" data-id="b8" data-n="2."><span class="expr">Наи­боль­шее число, на которое делятся оба: 8 и 12</span></li>
 <li class="task" data-id="b9" data-n="3."><span class="expr">Наи­боль­шее число, на которое делятся оба: 10 и 15</span></li>
 <li class="task" data-id="b10" data-n="4."><span class="expr">Наи­боль­шее число, на которое делятся оба: 12 и 18</span></li>
-<li class="task" data-id="b11" data-n="5."><span class="expr">Наи­боль­шее число, на которое делятся оба: 14 и 21</span></li>
-<li class="task" data-id="b12" data-n="6."><span class="expr">Наи­боль­шее число, на которое делятся оба: 16 и 24</span></li>
-<li class="task" data-id="b13" data-n="7."><span class="expr">Наи­боль­шее число, на которое делятся оба: 18 и 27</span></li>
-<li class="task" data-id="b14" data-n="8."><span class="expr">Наи­боль­шее число, на которое делятся оба: 15 и 25</span></li>
+</ol>
+<p><b>Игра 3. «Лесенка 10 → 5 → 2».</b> Это при­знаки де­ли­мо­сти. Про­чи­тай правило и пе­ре­скажи его своими словами.</p>
+<div class="rule">
+<p><b>При­знаки де­ли­мо­сти по по­след­ней цифре.</b> Смотрим только на <b>по­след­нюю цифру</b>. На 10 делится число, окан­чи­ва­ю­ще­еся на 0. На 5 — на 0 или 5. На 2 — на чётную цифру (0, 2, 4, 6, 8). Идём по сту­пень­кам сверху вниз: сначала 10, потом 5, потом 2.</p>
+<ul>
+<li>3470 делится на 10 (окан­чи­ва­ется на 0), а значит и на 5, и на 2.</li>
+<li>2385 делится на 5, но 2385 не делится на 2 (по­след­няя цифра 5 нечёт­ная).</li>
+<li>1276 делится на 2, но 1276 не делится на 5.</li>
+</ul>
+</div>
+<figure class="fig">
+<img src="fig/d1_6.svg" width="480" height="383" alt="Число 3470 в четырёх клетках, рука показывает пальцем на последнюю цифру 0. Ниже лесенка из трёх ступенек 10, 5, 2; у каждой светофор с зелёным и красным кружком, на всех трёх горит зелёный и написано «да».">
+<figcaption>Лесенка для числа 3470: зелёный горит — по­след­няя цифра под­хо­дит, число делится; красный горел бы — не под­хо­дит, иди ниже.</figcaption>
+</figure>
+<div class="note">
+<p><b class="tag">Зачем.</b> Признак под­ска­зы­вает дей­ствие. Сократи 35/80: 35 делится на 5 (окан­чи­ва­ется на 5), 80 делится на 5 (окан­чи­ва­ется на 0). Делим чис­ли­тель и зна­ме­на­тель на 5: 35/80 = 7/16.</p>
+</div>
+<div class="trap">
+<p><b class="tag">Ловушка.</b> Смотрим на по­след­нюю цифру, не на первую: 52 на­чи­на­ется с 5, но 52 не делится на 5 (окан­чи­ва­ется на 2). Число 0 делится на 2, на 5 и на 10 (0 : 5 = 0).</p>
+</div>
+<p>Для каждого числа назови, на какие из чисел 2, 5, 10 оно делится, или напиши «ни на что».</p>
+<ol class="tl">
+<li class="task" data-id="b11" data-n="1."><span class="expr">На что делится — на 2, 5 или 10: 48</span></li>
+<li class="task" data-id="b12" data-n="2."><span class="expr">На что делится — на 2, 5 или 10: 75</span></li>
+<li class="task" data-id="b13" data-n="3."><span class="expr">На что делится — на 2, 5 или 10: 130</span></li>
+<li class="task" data-id="b14" data-n="4."><span class="expr">На что делится — на 2, 5 или 10: 391</span></li>
+<li class="task" data-id="b15" data-n="5."><span class="expr">На что делится — на 2, 5 или 10: 2764</span></li>
+<li class="task" data-id="b16" data-n="6."><span class="expr">На что делится — на 2, 5 или 10: 1205</span></li>
 </ol>
 </section>
 
@@ -176,6 +203,8 @@
 <li class="task" data-id="m8" data-n="8."><span class="expr">Сократи 45/60.</span></li>
 <li class="task" data-id="m9" data-n="9."><span class="expr">Сколько целых в 29/7?</span></li>
 <li class="task" data-id="m10" data-n="10."><span class="expr">Равны ли 6/8 и 9/12?</span></li>
+<li class="task" data-id="m11" data-n="11."><span class="expr">Делится ли 2605 на 2?</span></li>
+<li class="task" data-id="m12" data-n="12."><span class="expr">Сократи 45/70.</span></li>
 </ol>
 <p class="score" data-for="smes"></p>
 </section>
@@ -188,6 +217,23 @@
 <li>…</li>
 </ul>
 </div>
+<p><b>Кар­точка при­зна­ков.</b> Составь её сам, не спи­сы­вая: для каждого де­ли­теля запиши признак одной фразой своими словами и два своих примера — «да» и «нет». Примеры бери свои, не из занятия. Над кар­точ­кой нарисуй от руки лесенку 10 → 5 → 2. Кар­точка остаётся у тебя: на за­ня­тиях 5 и 6 в неё до­ба­вятся новые строки, и каждое занятие ты будешь сверять её со «Вспо­мнить».</p>
+<div class="card-feat" role="group" aria-label="Карточка признаков">
+<p class="cf-note">Поля для твоей записи. Они нигде не со­хра­ня­ются и никуда не от­прав­ля­ются: за­кро­ешь или об­но­вишь стра­ницу — запись про­падёт. Поэтому потом пе­ре­пиши кар­точку от руки.</p>
+<div class="cf-row cf-head" aria-hidden="true"><span>Де­ли­тель</span><span>Признак одной фразой</span><span>Пример «да»</span><span>Пример «нет»</span></div>
+<div class="cf-row"><b class="cf-d">10</b>
+<label class="cf-cell"><span class="cf-cap">Признак одной фразой</span><input type="text" autocomplete="off" aria-label="Делитель 10: признак"></label>
+<label class="cf-cell"><span class="cf-cap">Пример «да»</span><input type="text" autocomplete="off" aria-label="Делитель 10: пример да"></label>
+<label class="cf-cell"><span class="cf-cap">Пример «нет»</span><input type="text" autocomplete="off" aria-label="Делитель 10: пример нет"></label></div>
+<div class="cf-row"><b class="cf-d">5</b>
+<label class="cf-cell"><span class="cf-cap">Признак одной фразой</span><input type="text" autocomplete="off" aria-label="Делитель 5: признак"></label>
+<label class="cf-cell"><span class="cf-cap">Пример «да»</span><input type="text" autocomplete="off" aria-label="Делитель 5: пример да"></label>
+<label class="cf-cell"><span class="cf-cap">Пример «нет»</span><input type="text" autocomplete="off" aria-label="Делитель 5: пример нет"></label></div>
+<div class="cf-row"><b class="cf-d">2</b>
+<label class="cf-cell"><span class="cf-cap">Признак одной фразой</span><input type="text" autocomplete="off" aria-label="Делитель 2: признак"></label>
+<label class="cf-cell"><span class="cf-cap">Пример «да»</span><input type="text" autocomplete="off" aria-label="Делитель 2: пример да"></label>
+<label class="cf-cell"><span class="cf-cap">Пример «нет»</span><input type="text" autocomplete="off" aria-label="Делитель 2: пример нет"></label></div>
+</div>
 </section>
   </main>
   <footer class="pager">
@@ -196,9 +242,10 @@
   </footer>
 </div>
 <script type="application/json" id="data">
-{"r1":{"ans":[48]},"r2":{"ans":[6]},"r3":{"ans":[-4]},"r4":{"ans":[-6]},"r5":{"ans":[23]},"r6":{"ans":[276]},
+{"r1":{"ans":[48]},"r2":{"ans":[6]},"r3":{"ans":[-4]},"r4":{"ans":[-6]},"r5":{"ans":[23]},"r6":{"ans":[276]},"r7":{"type":"yn","ans":["да"]},"r8":{"type":"yn","ans":["нет"]},
 "b1":{"ans":[42]},"b2":{"ans":[72]},"b3":{"ans":[56]},"b4":{"ans":[9]},"b5":{"ans":[7]},"b6":{"ans":[6]},
-"b7":{"ans":[3]},"b8":{"ans":[4]},"b9":{"ans":[5]},"b10":{"ans":[6]},"b11":{"ans":[7]},"b12":{"ans":[8]},"b13":{"ans":[9]},"b14":{"ans":[5]},
+"b7":{"ans":[3]},"b8":{"ans":[4]},"b9":{"ans":[5]},"b10":{"ans":[6]},
+"b11":{"type":"divs","ans":["2"]},"b12":{"type":"divs","ans":["5"]},"b13":{"type":"divs","ans":["2, 5, 10"]},"b14":{"type":"divs","ans":["ни на что"]},"b15":{"type":"divs","ans":["2"]},"b16":{"type":"divs","ans":["5"]},
 "h1":{"type":"frac","ans":["34/9"],"hints":["Что делаем с целой частью?","3 · 9 = 27, и ещё 7."]},
 "h2":{"type":"frac","ans":["3/4"],"hints":["Назови число, на которое делятся оба.","Оба числа делятся на 12."]},
 "s1":{"type":"frac","ans":["5/12"],"sol":"Закрашено 5 долей из 12 равных, значит 5/12."},
@@ -208,7 +255,8 @@
 "s5":{"type":"frac","ans":["7/9"],"sol":"У правильной дроби числитель меньше знаменателя: 7 меньше 9. Дроби 9/7 и 9/9 неправильные."},
 "s6":{"type":"yn","ans":["да"],"sol":"15 : 5 = 3 и 20 : 5 = 4: числитель и знаменатель разделили на одно и то же число, получилось 3/4."},
 "m1":{"type":"frac","ans":["4/9"]},"m2":{"type":"mixed","ans":["5 2/3"]},"m3":{"type":"frac","ans":["7/2"]},"m4":{"type":"frac","ans":["2/3"]},
-"m5":{"ans":[9]},"m6":{"ans":[8]},"m7":{"ans":[14]},"m8":{"type":"frac","ans":["3/4"]},"m9":{"ans":[4]},"m10":{"type":"yn","ans":["да"]}}
+"m5":{"ans":[9]},"m6":{"ans":[8]},"m7":{"ans":[14]},"m8":{"type":"frac","ans":["3/4"]},"m9":{"ans":[4]},"m10":{"type":"yn","ans":["да"]},
+"m11":{"type":"yn","ans":["нет"]},"m12":{"type":"frac","ans":["9/14"]}}
 </script>
 </body>
 </html>

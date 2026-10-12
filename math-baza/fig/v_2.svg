@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="480" height="300" role="img" aria-label="Сколько раз по одной доле помещается в дроби"><title>Сколько раз по одной доле помещается в дроби</title><style>
+.bg{fill:#FAF5EC;stroke:#D8C9B0;stroke-width:2}
+.t{fill:#1E2F35}.tm{fill:#4E4638}.tb{fill:#1B5E74}.tr{fill:#A63F18}.tg{fill:#3F6A22}.td{fill:#7A4F06}.to{fill:#F7F0E4}
+.fb{fill:#DDE4DE}.fr{fill:#F2DDCF}.fg{fill:#E2E6CE}.fd{fill:#F6E3B6}.fp{fill:#FAF5EC}
+.fbs{fill:#1B5E74}.frs{fill:#A63F18}.fgs{fill:#3F6A22}.fds{fill:#7A4F06}.fi{fill:#1E2F35}
+.sb{stroke:#1B5E74}.sr{stroke:#A63F18}.sg{stroke:#3F6A22}.sd{stroke:#7A4F06}.si{stroke:#1E2F35}.sl{stroke:#D8C9B0}
+@media (prefers-color-scheme: dark){
+.bg{fill:#243034;stroke:#3E4E53}
+.t{fill:#F8F0E3}.tm{fill:#D2C6B0}.tb{fill:#8ECBDD}.tr{fill:#F09866}.tg{fill:#B3D67F}.td{fill:#EDC274}.to{fill:#1C2528}
+.fb{fill:#22373D}.fr{fill:#3F2B23}.fg{fill:#2C3725}.fd{fill:#3A3020}.fp{fill:#243034}
+.fbs{fill:#8ECBDD}.frs{fill:#F09866}.fgs{fill:#B3D67F}.fds{fill:#EDC274}.fi{fill:#F8F0E3}
+.sb{stroke:#8ECBDD}.sr{stroke:#F09866}.sg{stroke:#B3D67F}.sd{stroke:#EDC274}.si{stroke:#F8F0E3}.sl{stroke:#3E4E53}
+}
+text{font-family:Jost,"Segoe UI",Arial,sans-serif;font-weight:600}
+.mono{font-family:"JetBrains Mono",Consolas,"Courier New",monospace}
+path,line,rect,circle{stroke-linecap:round;stroke-linejoin:round}
+</style><rect class="bg" x="1" y="1" width="478" height="298" rx="14"/><text x="240" y="34" class="t" font-size="24" text-anchor="middle">Сколько раз 1/4 помещается в 3/4?</text><rect x="40.00" y="62" width="100.00" height="64" class="fbs sl" stroke-width="1" data-cell="1" data-grp="strip"/><rect x="140.00" y="62" width="100.00" height="64" class="fbs sl" stroke-width="1" data-cell="1" data-grp="strip"/><rect x="240.00" y="62" width="100.00" height="64" class="fbs sl" stroke-width="1" data-cell="1" data-grp="strip"/><rect x="340.00" y="62" width="100.00" height="64" class="fp sl" stroke-width="1" data-cell="0" data-grp="strip"/><rect x="40" y="62" width="400" height="64" rx="0" fill="none" class="si" stroke-width="3"/><rect x="46" y="68" width="88" height="52" fill="none" class="sr" stroke-width="4" rx="8" data-piece="1"/><rect x="146" y="68" width="88" height="52" fill="none" class="sr" stroke-width="4" rx="8" data-piece="1"/><rect x="246" y="68" width="88" height="52" fill="none" class="sr" stroke-width="4" rx="8" data-piece="1"/><text x="90" y="160" class="tr" font-size="24" text-anchor="middle">1/4</text><text x="190" y="160" class="tr" font-size="24" text-anchor="middle">1/4</text><text x="290" y="160" class="tr" font-size="24" text-anchor="middle">1/4</text><text x="240" y="214" class="tg" font-size="24" text-anchor="middle">в 3/4 помещается 3 раза по 1/4</text><text x="240" y="272" class="tg" font-size="32" text-anchor="middle">3/4 : 1/4 = 3</text></svg>

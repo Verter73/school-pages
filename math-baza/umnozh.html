@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Умножение дробей и дробь от числа</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="style.css?v=1">
+  <link rel="stylesheet" href="math.css?v=7">
+  <script src="frac.js?v=2" defer></script>
+  <script src="drill.js?v=3" defer></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="home" href="index.html">Ма­те­ма­тика: база · неделя 3</a>
+    <nav class="tasks" aria-label="Разделы">
+      <a class="theory" href="https://verter73.github.io/school-pages/">← Витрина</a>
+      <a class="theory" href="index.html">Оглав­ле­ние</a>
+      <a href="umnozh.html" title="Занятие 7" aria-current="page">7</a>
+      <a href="delen.html" title="Занятие 8">8</a>
+      <a href="desyat1.html" title="Занятие 9">9</a>
+    </nav>
+  </header>
+  <main>
+    <h1><span class="num">Ма­те­ма­тика: база · занятие 7</span>Умно­же­ние дробей и дробь от числа</h1>
+    <p class="lead">Цель: ты умно­жа­ешь дроби и сме­шан­ные числа, со­кра­ща­ешь «крест-накрест» до умно­же­ния и на­хо­дишь дробь от числа. Ответы и под­сказки спря­таны: сначала реши сам, потом нажми кнопку.</p>
+    <div class="rule">
+      <p><b>Как за­пи­сы­вать ответ.</b> Число — целое число, без единиц из­ме­ре­ния (если в задании сказано, в чём считать, пиши только число). Дробь — через черту и со­кра­щён­ная до конца, на­при­мер 3/4. Сме­шан­ное число — целая часть, пробел, дробь, на­при­мер 2 3/4. Знак — один символ: &lt;, &gt; или =.</p>
+    </div>
+    <section id="vspomnit">
+<h2>Вспо­мнить</h2>
+<p>Без под­ска­зок, сразу про­верка. Отмечай, на чём спо­ткнулся, — в журнал.</p>
+<ol class="tl">
+<li class="task" data-id="r1" data-n="1."><span class="expr">3/4 + 1/6</span></li>
+<li class="task" data-id="r2" data-n="2."><span class="expr">5/6 − 2/9</span></li>
+<li class="task" data-id="r3" data-n="3."><span class="expr">2&nbsp;1/2 + 1&nbsp;3/4</span></li>
+<li class="task" data-id="r4" data-n="4."><span class="expr">Знак: 5/12 и 3/8.</span></li>
+<li class="task" data-id="r5" data-n="5."><span class="expr">(−5) · (−4)</span></li>
+<li class="task" data-id="r6" data-n="6."><span class="expr">3 + (12 − 4) : 2</span></li>
+</ol>
+</section>
+
+<section id="beglost">
+<h2>Бег­лость: доля числа</h2>
+<p>Игра «доля числа» — за­го­товка для дроби от числа. Назови ре­зуль­тат и скажи словами: «раз­де­лил на столько-то равных частей, взял одну». Ошибся — по­про­буй ещё раз. Без таймера.</p>
+<ol class="tl">
+<li class="task" data-id="b1" data-n="1."><span class="expr">Найди 1/2 от 18.</span></li>
+<li class="task" data-id="b2" data-n="2."><span class="expr">Найди 1/3 от 21.</span></li>
+<li class="task" data-id="b3" data-n="3."><span class="expr">Найди 1/4 от 32.</span></li>
+<li class="task" data-id="b4" data-n="4."><span class="expr">Найди 1/5 от 45.</span></li>
+<li class="task" data-id="b5" data-n="5."><span class="expr">Найди 1/6 от 42.</span></li>
+<li class="task" data-id="b6" data-n="6."><span class="expr">Найди 1/8 от 56.</span></li>
+</ol>
+</section>
+
+<section id="pravilo">
+<h2>Правило</h2>
+<div class="rule">
+<p><b>Умно­же­ние дробей.</b> (a/b) · (c/d) = (a · c)/(b · d). Здесь a и c — чис­ли­тели (сколько частей взяли), b и d — зна­ме­на­тели (на сколько равных частей раз­де­лили целое), зна­ме­на­тели не ноль. Чис­ли­тель умно­жаем на чис­ли­тель, зна­ме­на­тель на зна­ме­на­тель. Ре­зуль­тат на­зы­вают <b>про­из­ве­де­нием</b> дробей. Общий зна­ме­на­тель искать <b>не нужно</b>: это не сло­же­ние.</p>
+</div>
+<figure class="fig">
+<img src="fig/u_1.svg" width="480" height="384" alt="Прямоугольник разделён на 3 равных столбца и 4 равные строки, всего 12 клеток. Закрашены 2 столбца из 3 и 3 строки из 4. Клеток с двойной закраской 6. Подпись: 2/3 · 3/4 = 6/12.">
+<figcaption>За­кра­сили 2/3 ширины и 3/4 высоты: клеток с двойной за­крас­кой 6 из 12.</figcaption>
+</figure>
+<div class="rule">
+<p><b>Со­кра­ще­ние «крест-накрест».</b> Перед умно­же­нием можно со­кра­тить любой чис­ли­тель с любым зна­ме­на­те­лем на их общий де­ли­тель (число, на которое делятся оба). Ра­бо­тает, потому что ито­го­вая дробь (a · c)/(b · d) — одно про­из­ве­де­ние сверху и одно снизу. <b>Область при­ме­ни­мо­сти:</b> только когда между дробями стоит <b>умно­же­ние</b>. В сумме или раз­но­сти так со­кра­щать нельзя.</p>
+</div>
+<figure class="fig">
+<img src="fig/u_2.svg" width="480" height="412" alt="Запись 4/9 · 3/8. Числа 4 и 8 зачёркнуты, вместо них 1 и 2; числа 3 и 9 зачёркнуты, вместо них 1 и 3. Результат: 1/6.">
+<figcaption>Крест-накрест: 4 и 8 делим на 4, а 3 и 9 делим на 3.</figcaption>
+</figure>
+<p class="def"><b>Дробь от числа.</b> Чтобы найти a/b от числа N, умно­жаем число на дробь: N · a/b. Здесь N — число, от ко­то­рого берём часть, a/b — какая это часть. Целое число можно за­пи­сать дробью со зна­ме­на­те­лем 1: N = N/1.</p>
+<div class="note">
+<p><b class="tag">Из жизни.</b> В книге 40 страниц, про­чи­тали 3/5 книги. Про­чи­тано: 40 стр. · 3/5 = 24 стр. Единицы со­хра­няем: стра­ницы оста­ются стра­ни­цами.</p>
+</div>
+<figure class="fig">
+<img src="fig/u_3.svg" width="480" height="290" alt="Полоска из 40 клеток разделена на 5 равных блоков по 8 клеток. Закрашены 3 блока, то есть 24 клетки. Подпись: 3/5 от 40 = 24.">
+<figcaption>3/5 от 40: пять блоков по 8 клеток, за­кра­шены три блока.</figcaption>
+</figure>
+<div class="rule">
+<p><b>Сме­шан­ные числа.</b> Сначала пе­ре­во­дим в не­пра­виль­ные дроби (занятие 4), потом умно­жаем.</p>
+</div>
+</section>
+
+<section id="primer">
+<h2>Разо­бран­ный пример</h2>
+<div class="worked" data-expr="2/3 · 3/4" data-ans="1/2">
+<p><b>А. 2/3 · 3/4</b></p>
+<ul>
+<li>Умно­жаем: (2 · 3)/(3 · 4) = 6/12. Со­кра­щаем на 6: 1/2.</li>
+<li>Короче: сначала со­кра­тить 3 сверху и 3 снизу, остаётся 2/4 = 1/2.</li>
+<li>Ответ: <span class="res">1/2</span>.</li>
+</ul>
+</div>
+<div class="worked" data-expr="4/9 · 3/8" data-ans="1/6">
+<p><b>Б. 4/9 · 3/8</b></p>
+<ul>
+<li>Со­кра­щаем крест-накрест: 4 и 8 на 4 — по­лу­чили 1 и 2; 3 и 9 на 3 — по­лу­чили 1 и 3.</li>
+<li>(1 · 1)/(3 · 2) = 1/6.</li>
+<li>Ответ: <span class="res">1/6</span>.</li>
+</ul>
+</div>
+<div class="worked" data-expr="Найди 3/5 от 40 кг." data-ans="24">
+<p><b>В. Найди 3/5 от 40&nbsp;кг.</b></p>
+<ul>
+<li>40 кг · 3/5 = (40 · 3)/5 кг = 120/5 кг = 24 кг. Или короче: 40 : 5 = 8, 8 · 3 = 24.</li>
+<li>Ответ: <span class="res">24 кг</span>.</li>
+</ul>
+</div>
+<div class="worked" data-expr="1 1/2 · 2 2/3" data-ans="4">
+<p><b>Г. 1&nbsp;1/2 · 2&nbsp;2/3</b></p>
+<ul>
+<li>Пе­ре­во­дим: 1 1/2 = 3/2, 2 2/3 = 8/3.</li>
+<li>3/2 · 8/3 = (3 · 8)/(2 · 3). Со­кра­щаем 3 и 3, 8 и 2: по­лу­чили 4.</li>
+<li>Ответ: <span class="res">4</span>.</li>
+</ul>
+</div>
+</section>
+
+<section id="podskazka">
+<h2>С под­сказ­кой</h2>
+<p>Решай сам. Под­сказку от­кры­вай, только если застрял.</p>
+<ol class="tl">
+<li class="task" data-id="h1" data-n="1."><span class="expr">5/6 · 9/10</span></li>
+</ol>
+<figure class="fig" hidden data-reveal="hint2" data-task="h1">
+<img src="fig/u_4.svg" width="480" height="334" alt="Запись 5/6 · 9/10. Числа 9 и 6 выделены одним цветом, числа 5 и 10 другим: каждая пара делится на общее число. Результат на рисунке не показан.">
+<figcaption>Пары чисел для со­кра­ще­ния крест-накрест (со­кра­тить и умно­жить — тебе).</figcaption>
+</figure>
+</section>
+
+<section id="sam">
+<h2>Сам</h2>
+<p>Ре­зуль­тат со­кра­щай до конца, а если нужно, выдели целую часть. Два раза не сошлось — по­явится кнопка «По­ка­зать решение».</p>
+<ol class="tl">
+<li class="task" data-id="s1" data-n="а)"><span class="expr">2/5 · 3/7</span></li>
+<li class="task" data-id="s2" data-n="б)"><span class="expr">3/4 · 8/9</span></li>
+<li class="task" data-id="s3" data-n="в)"><span class="expr">7/12 · 18/21</span></li>
+<li class="task" data-id="s4" data-n="г)"><span class="expr">Найди 3/8 от 56&nbsp;м.</span></li>
+<li class="task" data-id="s5" data-n="д)"><span class="expr">1&nbsp;1/3 · 2&nbsp;1/4</span></li>
+<li class="task" data-id="s6" data-n="е)"><span class="expr">6 · 5/9</span></li>
+</ol>
+</section>
+
+<section id="lovushka">
+<h2>Ловушка</h2>
+<div class="trap">
+<p><b class="tag">Ловушка.</b> Умно­же­ние делают «как сло­же­ние»: остав­ляют зна­ме­на­тель, умно­жают только чис­ли­тели. 2/7 · 3/7 = 6/7. Это ошибка. Про­верка при­кид­кой: мы берём часть от 2/7, значит ре­зуль­тат меньше 2/7. А 6/7 больше обеих дробей. Верно: (2 · 3)/(7 · 7) = 6/49. Проверь себя: зна­ме­на­тели умножил между собой?</p>
+</div>
+</section>
+
+<section id="smes">
+<h2>Смесь</h2>
+<p>Впе­ре­мешку: дроби, дробь от числа, знаки, деление. Форму ответа под­ска­зы­вает серый образец в поле.</p>
+<ol class="tl">
+<li class="task" data-id="m1" data-n="1."><span class="expr">3/5 · 10/9</span></li>
+<li class="task" data-id="m2" data-n="2."><span class="expr">3/4 + 5/8</span></li>
+<li class="task" data-id="m3" data-n="3."><span class="expr">Найди 2/3 от 45&nbsp;кг.</span></li>
+<li class="task" data-id="m4" data-n="4."><span class="expr">7/10 − 1/4</span></li>
+<li class="task" data-id="m5" data-n="5."><span class="expr">2&nbsp;1/2 · 4/5</span></li>
+<li class="task" data-id="m6" data-n="6."><span class="expr">(−9) · 6</span></li>
+<li class="task" data-id="m7" data-n="7."><span class="expr">Что больше: 5/7 или 7/10?</span></li>
+<li class="task" data-id="m8" data-n="8."><span class="expr">468 : 18</span></li>
+<li class="task" data-id="m9" data-n="9."><span class="expr">7/8 · 16/21</span></li>
+</ol>
+<p class="score" data-for="smes"></p>
+</section>
+
+<section id="zhurnal">
+<h2>Журнал</h2>
+<div class="log">
+<p>Запиши 1–3 строки: «что пе­ре­пу­тал → как про­ве­рить». Пример формы: «нашёл общий зна­ме­на­тель при умно­же­нии → общий зна­ме­на­тель нужен только при сло­же­нии, при умно­же­нии чис­ли­тель на чис­ли­тель, зна­ме­на­тель на зна­ме­на­тель».</p>
+<ul>
+<li>…</li>
+</ul>
+</div>
+</section>
+  </main>
+  <footer class="pager">
+    <a href="drob3.html">← Занятие 6</a>
+    <a href="delen.html">Занятие 8 →</a>
+  </footer>
+</div>
+<script type="application/json" id="data">
+{"r1":{"type":"frac","ans":["11/12"]},"r2":{"type":"frac","ans":["11/18"]},"r3":{"type":"mixed","ans":["4 1/4"]},"r4":{"type":"sign","ans":[">"]},"r5":{"ans":[20]},"r6":{"ans":[7]},
+"b1":{"ans":[9]},"b2":{"ans":[7]},"b3":{"ans":[8]},"b4":{"ans":[9]},"b5":{"ans":[7]},"b6":{"ans":[7]},
+"h1":{"type":"frac","ans":["3/4"],"hints":["Найди числитель и знаменатель, которые делятся на общее число. 9 и 6 делятся на 3.","После этого 5 и 10 делятся на 5. Остаётся (1 · 3)/(2 · 2)."],"sol":"Сокращаем крест-накрест: 9 и 6 на 3, 5 и 10 на 5. Остаётся (1 · 3)/(2 · 2) = 3/4."},
+"s1":{"type":"frac","ans":["6/35"],"sol":"Числитель на числитель, знаменатель на знаменатель: (2 · 3)/(5 · 7) = 6/35. Сокращать нечего."},
+"s2":{"type":"frac","ans":["2/3"],"sol":"Сокращаем: 3 и 9 на 3, 8 и 4 на 4. Остаётся (1 · 2)/(1 · 3) = 2/3."},
+"s3":{"type":"frac","ans":["1/2"],"sol":"Сокращаем: 7 и 21 на 7, 18 и 12 на 6. Остаётся (1 · 3)/(2 · 3) = 3/6 = 1/2."},
+"s4":{"ans":[21],"sol":"56 · 3/8: сначала 56 : 8 = 7, потом 7 · 3 = 21 (метра)."},
+"s5":{"ans":[3],"sol":"Переводим: 1 1/3 = 4/3 и 2 1/4 = 9/4. Сокращаем 4 и 4, 9 и 3: остаётся 3."},
+"s6":{"type":"mixed","ans":["3 1/3"],"sol":"6 = 6/1. Умножаем: (6 · 5)/(1 · 9) = 30/9. Сокращаем на 3: 10/3 = 3 1/3."},
+"m1":{"type":"frac","ans":["2/3"]},"m2":{"type":"mixed","ans":["1 3/8"]},"m3":{"ans":[30]},"m4":{"type":"frac","ans":["9/20"]},"m5":{"ans":[2]},"m6":{"ans":[-54]},"m7":{"type":"frac","ans":["5/7"]},"m8":{"ans":[26]},"m9":{"type":"frac","ans":["2/3"]}}
+</script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Деление дробей</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="style.css?v=1">
+  <link rel="stylesheet" href="math.css?v=7">
+  <script src="frac.js?v=2" defer></script>
+  <script src="drill.js?v=3" defer></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="home" href="index.html">Ма­те­ма­тика: база · неделя 3</a>
+    <nav class="tasks" aria-label="Разделы">
+      <a class="theory" href="https://verter73.github.io/school-pages/">← Витрина</a>
+      <a class="theory" href="index.html">Оглав­ле­ние</a>
+      <a href="umnozh.html" title="Занятие 7">7</a>
+      <a href="delen.html" title="Занятие 8" aria-current="page">8</a>
+      <a href="desyat1.html" title="Занятие 9">9</a>
+    </nav>
+  </header>
+  <main>
+    <h1><span class="num">Ма­те­ма­тика: база · занятие 8</span>Деление дробей</h1>
+    <p class="lead">Цель: ты на­хо­дишь число, обрат­ное данному, делишь дробь на дробь, на целое число и целое число на дробь, делишь сме­шан­ные числа и за­пи­сы­ва­ешь деление целых чисел дробью. Ответы и под­сказки спря­таны: сначала реши сам, потом нажми кнопку.</p>
+    <div class="rule">
+      <p><b>Как за­пи­сы­вать ответ.</b> Число — целое число. Дробь — через черту и со­кра­щён­ная до конца, на­при­мер 3/4. Не­пра­виль­ную дробь тоже можно за­пи­сать через черту, на­при­мер 9/4. Сме­шан­ное число — целая часть, пробел, дробь, на­при­мер 2 3/4. Знак — один символ: &lt;, &gt; или =.</p>
+    </div>
+    <section id="vspomnit">
+<h2>Вспо­мнить</h2>
+<p>Без под­ска­зок, сразу про­верка. Отмечай, на чём спо­ткнулся, — в журнал.</p>
+<ol class="tl">
+<li class="task" data-id="r1" data-n="1."><span class="expr">3/8 · 4/9</span></li>
+<li class="task" data-id="r2" data-n="2."><span class="expr">Найди 5/12 от 60.</span></li>
+<li class="task" data-id="r3" data-n="3."><span class="expr">1&nbsp;1/2 · 2/3</span></li>
+<li class="task" data-id="r4" data-n="4."><span class="expr">Знак: 3/5 и 5/8.</span></li>
+<li class="task" data-id="r5" data-n="5."><span class="expr">Найди НОЗ чисел 9 и 12.</span></li>
+<li class="task" data-id="r6" data-n="6."><span class="expr">25 − 3 · (4 + 2)</span></li>
+</ol>
+</section>
+
+<section id="beglost">
+<h2>Бег­лость: пе­ре­верни</h2>
+<p>Игра «пе­ре­верни». Назови число, которое при умно­же­нии на данное даёт 1. Для сме­шан­ного числа сначала пе­ре­веди его в не­пра­виль­ную дробь. Про­верка: пе­ре­множь — по­лу­чится 1? Ошибся — по­про­буй ещё раз. Без таймера.</p>
+<ol class="tl">
+<li class="task" data-id="b1" data-n="1."><span class="expr">Число, обрат­ное 2/3.</span></li>
+<li class="task" data-id="b2" data-n="2."><span class="expr">Число, обрат­ное 4/9.</span></li>
+<li class="task" data-id="b3" data-n="3."><span class="expr">Число, обрат­ное 1/7.</span></li>
+<li class="task" data-id="b4" data-n="4."><span class="expr">Число, обрат­ное 1&nbsp;1/2.</span></li>
+<li class="task" data-id="b5" data-n="5."><span class="expr">Число, обрат­ное 7/10.</span></li>
+<li class="task" data-id="b6" data-n="6."><span class="expr">Число, обрат­ное 5.</span></li>
+</ol>
+</section>
+
+<section id="pravilo">
+<h2>Правило</h2>
+<p class="def"><b>Взаимно обрат­ные числа.</b> Два числа <b>взаимно обрат­ные</b>, если их про­из­ве­де­ние равно 1. Для дроби a/b обрат­ная — b/a. Здесь a — чис­ли­тель, b — зна­ме­на­тель, оба не ноль. Целое число N обратно 1/N, потому что N · 1/N = 1. У нуля обрат­ного числа нет: ничто на ноль не умно­жится и не даст 1.</p>
+<figure class="fig">
+<img src="fig/v_1.svg" width="480" height="352" alt="Две карточки рядом: на левой дробь 3/4, на правой та же дробь, перевёрнутая, 4/3. Между ними стрелка «переверни». Под ними запись 3/4 · 4/3 = 12/12 = 1.">
+<figcaption>Дробь и обрат­ная ей: 3/4 · 4/3 = 12/12 = 1.</figcaption>
+</figure>
+<div class="rule">
+<p><b>Правило деления.</b> Раз­де­лить на дробь — значит умно­жить на обрат­ную ей: (a/b) : (c/d) = (a/b) · (d/c). Здесь a/b — <b>делимое</b> (то, что делим), c/d — <b>де­ли­тель</b> (то, на что делим). Пе­ре­во­ра­чи­ваем <b>де­ли­тель</b>, знак деления меняем на умно­же­ние. <b>Область при­ме­ни­мо­сти:</b> де­ли­тель не равен нулю (c ≠ 0).</p>
+<p>Почему так. Спра­ши­ваем: сколько раз 1/4 по­ме­ща­ется в 3/4? Три раза. По правилу: 3/4 : 1/4 = 3/4 · 4/1 = 3.</p>
+</div>
+<div class="note">
+<p><b class="tag">Из жизни.</b> Налили 3/4 л сока, раздаём ста­ка­нами по 1/4 л. По­лу­чится 3/4 л : 1/4 л = 3 стакана (единицы раз­де­ли­лись, стаканы по­счи­таны числом).</p>
+</div>
+<figure class="fig">
+<img src="fig/v_2.svg" width="480" height="300" alt="Полоска из четырёх долей, закрашены три. Каждая закрашенная доля обведена отдельно: три обведённых кусочка. Подпись: в 3/4 помещается 3 раза по 1/4.">
+<figcaption>В 3/4 по­ме­ща­ется 3 раза по 1/4.</figcaption>
+</figure>
+<p class="def"><b>Дробь как деление.</b> Дробная черта — знак деления: a/b = a : b. Поэтому деление двух целых можно за­пи­сать дробью: 3 : 4 = 3/4, 21 : 6 = 21/6 = 7/2 = 3 1/2. Смысл: 3 пиццы по­де­лили на 4 че­ло­века, каждому по 3/4 пиццы.</p>
+<figure class="fig">
+<img src="fig/v_3.svg" width="480" height="392" alt="Три одинаковых круга, каждый разрезан на 4 части, и четыре человечка. Части раскрашены по цветам человечков: каждому досталось по 3 части. Подпись: 3 : 4 = 3/4.">
+<figcaption>Три пиццы на чет­ве­рых: каждому по 3/4, то есть 3 : 4 = 3/4.</figcaption>
+</figure>
+<div class="rule">
+<p><b>Сме­шан­ные числа.</b> Сначала пе­ре­во­дим в не­пра­виль­ные дроби (занятие 4), потом делим по правилу.</p>
+</div>
+</section>
+
+<section id="primer">
+<h2>Разо­бран­ный пример</h2>
+<div class="worked" data-expr="2/3 : 4/5" data-ans="5/6">
+<p><b>А. 2/3 : 4/5</b></p>
+<ul>
+<li>Де­ли­тель 4/5. Обрат­ная ему 5/4.</li>
+<li>2/3 · 5/4 = 10/12 = 5/6.</li>
+<li>Ответ: <span class="res">5/6</span>.</li>
+</ul>
+</div>
+<div class="worked" data-expr="2 1/4 : 1 1/2" data-ans="1 1/2">
+<p><b>Б. 2&nbsp;1/4 : 1&nbsp;1/2</b></p>
+<ul>
+<li>Пе­ре­во­дим: 2 1/4 = 9/4, 1 1/2 = 3/2.</li>
+<li>9/4 : 3/2 = 9/4 · 2/3. Со­кра­щаем: 9 и 3 на 3, 2 и 4 на 2: (3 · 1)/(2 · 1) = 3/2.</li>
+<li>3/2 = 1 1/2. Ответ: <span class="res">1 1/2</span>.</li>
+</ul>
+</div>
+</section>
+
+<section id="podskazka">
+<h2>С под­сказ­кой</h2>
+<p>Решай сам. Под­сказку от­кры­вай, только если застрял.</p>
+<ol class="tl">
+<li class="task" data-id="h1" data-n="1."><span class="expr">3/8 : 9/16</span></li>
+</ol>
+<figure class="fig" hidden data-reveal="hint2" data-task="h1">
+<img src="fig/v_4.svg" width="480" height="436" alt="Запись 3/8 : 9/16, делитель обведён. Стрелка «переверни» ведёт к записи 3/8 · 16/9. Пары для сокращения: 3 и 9, 8 и 16. Результат на рисунке не показан.">
+<figcaption>Пе­ре­во­ра­чи­ваем де­ли­тель и ищем пары для со­кра­ще­ния (со­кра­тить и умно­жить — тебе).</figcaption>
+</figure>
+</section>
+
+<section id="sam">
+<h2>Сам</h2>
+<p>Ре­зуль­тат со­кра­щай до конца, а если нужно, выдели целую часть. Два раза не сошлось — по­явится кнопка «По­ка­зать решение».</p>
+<ol class="tl">
+<li class="task" data-id="s1" data-n="а)"><span class="expr">5/6 : 5/12</span></li>
+<li class="task" data-id="s2" data-n="б)"><span class="expr">4/7 : 8/21</span></li>
+<li class="task" data-id="s3" data-n="в)"><span class="expr">6 : 3/4</span></li>
+<li class="task" data-id="s4" data-n="г)"><span class="expr">3/5 : 6</span></li>
+<li class="task" data-id="s5" data-n="д)"><span class="expr">1&nbsp;1/3 : 2&nbsp;2/3</span></li>
+<li class="task" data-id="s6" data-n="е)"><span class="expr">15 : 6 — запиши ответ дробью и выдели целую часть.</span></li>
+</ol>
+</section>
+
+<section id="lovushka">
+<h2>Ловушка</h2>
+<div class="trap">
+<p><b class="tag">Ловушка.</b> Пе­ре­во­ра­чи­вают не ту дробь: 2/3 : 4/5 = 3/2 · 4/5 = 6/5. Это неверно, пе­ре­вер­нули <b>делимое</b>, а не де­ли­тель. Про­верка: умножим ответ на де­ли­тель, должно по­лу­читься делимое. 6/5 · 4/5 = 24/25, а не 2/3. Или при­кид­кой: 2/3 меньше, чем 4/5, поэтому частное меньше 1, а 6/5 больше 1. Пра­виль­ный ответ из примера А: 5/6. Проверь себя: пе­ре­во­ра­чи­ваю ту дробь, НА которую делю.</p>
+</div>
+</section>
+
+<section id="smes">
+<h2>Смесь</h2>
+<p>Впе­ре­мешку: деление, сло­же­ние, вы­чи­та­ние, умно­же­ние, знаки. Форму ответа под­ска­зы­вает серый образец в поле.</p>
+<ol class="tl">
+<li class="task" data-id="m1" data-n="1."><span class="expr">7/8 : 7/4</span></li>
+<li class="task" data-id="m2" data-n="2."><span class="expr">2/5 + 1/3</span></li>
+<li class="task" data-id="m3" data-n="3."><span class="expr">9/10 · 5/6</span></li>
+<li class="task" data-id="m4" data-n="4."><span class="expr">4 : 2/5</span></li>
+<li class="task" data-id="m5" data-n="5."><span class="expr">5/6 − 1/4</span></li>
+<li class="task" data-id="m6" data-n="6."><span class="expr">2&nbsp;1/2 : 1&nbsp;1/4</span></li>
+<li class="task" data-id="m7" data-n="7."><span class="expr">Найди 2/9 от 54&nbsp;кг.</span></li>
+<li class="task" data-id="m8" data-n="8."><span class="expr">−4 − 6</span></li>
+<li class="task" data-id="m9" data-n="9."><span class="expr">Запиши 14 : 21 дробью и сократи.</span></li>
+</ol>
+<p class="score" data-for="smes"></p>
+</section>
+
+<section id="zhurnal">
+<h2>Журнал</h2>
+<div class="log">
+<p>Запиши 1–3 строки: «что пе­ре­пу­тал → как про­ве­рить». Пример формы: «пе­ре­вер­нул первую дробь → пе­ре­во­ра­чи­ваю ту, на которую делю, и про­ве­ряю умно­же­нием ответа на де­ли­тель».</p>
+<ul>
+<li>…</li>
+</ul>
+</div>
+</section>
+  </main>
+  <footer class="pager">
+    <a href="umnozh.html">← Занятие 7</a>
+    <a href="desyat1.html">Занятие 9 →</a>
+  </footer>
+</div>
+<script type="application/json" id="data">
+{"r1":{"type":"frac","ans":["1/6"]},"r2":{"ans":[25]},"r3":{"ans":[1]},"r4":{"type":"sign","ans":["<"]},"r5":{"ans":[36]},"r6":{"ans":[7]},
+"b1":{"type":"frac","ans":["3/2"]},"b2":{"type":"frac","ans":["9/4"]},"b3":{"ans":[7]},"b4":{"type":"frac","ans":["2/3"]},"b5":{"type":"frac","ans":["10/7"]},"b6":{"type":"frac","ans":["1/5"]},
+"h1":{"type":"frac","ans":["2/3"],"hints":["Что здесь делитель? Какая дробь ему обратна?","3/8 · 16/9. Сократи крест-накрест."],"sol":"Делитель 9/16, обратная ему 16/9. Умножаем: 3/8 · 16/9. Сокращаем 3 и 9 на 3, 16 и 8 на 8: (1 · 2)/(1 · 3) = 2/3."},
+"s1":{"ans":[2],"sol":"Делитель 5/12, обратная ему 12/5. 5/6 · 12/5: сокращаем 5 и 5, 12 и 6 на 6: остаётся 2."},
+"s2":{"type":"mixed","ans":["1 1/2"],"sol":"4/7 : 8/21 = 4/7 · 21/8. Сокращаем 4 и 8 на 4, 21 и 7 на 7: (1 · 3)/(1 · 2) = 3/2 = 1 1/2."},
+"s3":{"ans":[8],"sol":"Делитель 3/4, обратная ему 4/3. 6 · 4/3: сокращаем 6 и 3 на 3: 2 · 4 = 8."},
+"s4":{"type":"frac","ans":["1/10"],"sol":"6 = 6/1, обратная ей 1/6. 3/5 · 1/6: сокращаем 3 и 6 на 3: (1 · 1)/(5 · 2) = 1/10."},
+"s5":{"type":"frac","ans":["1/2"],"sol":"Переводим: 1 1/3 = 4/3 и 2 2/3 = 8/3. 4/3 : 8/3 = 4/3 · 3/8. Сокращаем 3 и 3, 4 и 8 на 4: (1 · 1)/(1 · 2) = 1/2."},
+"s6":{"type":"mixed","ans":["2 1/2"],"sol":"15 : 6 = 15/6. Сокращаем на 3: 5/2. Выделяем целую часть: 5 : 2 = 2 (ост. 1), получилось 2 1/2."},
+"m1":{"type":"frac","ans":["1/2"]},"m2":{"type":"frac","ans":["11/15"]},"m3":{"type":"frac","ans":["3/4"]},"m4":{"ans":[10]},"m5":{"type":"frac","ans":["7/12"]},"m6":{"ans":[2]},"m7":{"ans":[12]},"m8":{"ans":[-10]},"m9":{"type":"frac","ans":["2/3"]}}
+</script>
+</body>
+</html>
